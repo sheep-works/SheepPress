@@ -8,18 +8,25 @@ hero:
   tagline: 翻訳業務をよりスムーズに、より正確に。
   actions:
     - theme: brand
-      text: Markdown 事例
-      link: /markdown-examples
+      text: 一覧へ
+      link: /product-list
     - theme: alt
-      text: API 事例
-      link: /api-examples
+      text: お問い合わせ
+      link: /contact
 
 features:
-  - title: 機能 A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: 機能 B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: 機能 C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: SheepLint
+    details: AI を活用したテキスト校正ツール
+    link: /sheep-lint
+  - title: SheepComb
+    details: XLF/TMX/TBX の便利な操作
+  - title: SheepGroom
+    details: Office ファイルの対訳化
+  - title: SheepWeave
+    details: 翻訳用のVS Code拡張（オープンソース）
+  - title: SheepLoom
+    details: vivliostyle と Marp を使った資料作成ツール
+  - title: SheepStitch
+    details: 各種プラットフォームでの入力自動化
 ---
 

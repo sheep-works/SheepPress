@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   srcDir: "contents",
-  
+
   // Site-wide settings
   title: "Sheep Tools",
   description: "Sheep family tools for translators",
@@ -17,17 +17,30 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'ホーム', link: '/' },
-          { text: '事例', link: '/markdown-examples' }
+          { text: '製品一覧', link: '/product-list' },
+          { text: 'お問い合わせ', link: '/contact' }
         ],
-        sidebar: [
-          {
-            text: '事例',
-            items: [
-              { text: 'Markdown の書き方', link: '/markdown-examples' },
-              { text: 'ランタイムAPI事例', link: '/api-examples' }
-            ]
-          }
-        ]
+        sidebar: {
+          '/sheep-lint/': [
+            { text: 'トップへ戻る', link: '/' },
+            {
+              text: 'SheepLint',
+              items: [
+                { text: '概要', link: '/sheep-lint/' },
+              ]
+            },
+
+          ],
+          '/': [
+            {
+              text: 'メニュー',
+              items: [
+                { text: '製品一覧', link: '/product-list' },
+                { text: 'お問い合わせ', link: '/contact' }
+              ]
+            }
+          ]
+        }
       }
     },
     en: {
@@ -39,17 +52,29 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Home', link: '/en/' },
-          { text: 'Examples', link: '/en/markdown-examples' }
+          { text: 'Products', link: '/en/product-list' },
+          { text: 'Contact', link: '/en/contact' }
         ],
-        sidebar: [
-          {
-            text: 'Examples',
-            items: [
-              { text: 'Markdown Examples', link: '/en/markdown-examples' },
-              { text: 'Runtime API Examples', link: '/en/api-examples' }
-            ]
-          }
-        ]
+        sidebar: {
+          '/en/sheep-lint/': [
+            {
+              text: 'SheepLint',
+              items: [
+                { text: 'Overview', link: '/en/sheep-lint/' },
+              ]
+            },
+            { text: 'Product List', link: '/en/product-list' }
+          ],
+          '/en/': [
+            {
+              text: 'Menu',
+              items: [
+                { text: 'Products', link: '/en/product-list' },
+                { text: 'Contact', link: '/en/contact' }
+              ]
+            }
+          ]
+        }
       }
     },
     zh: {
@@ -61,20 +86,33 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: '首页', link: '/zh/' },
-          { text: '示例', link: '/zh/markdown-examples' }
+          { text: '产品列表', link: '/zh/product-list' },
+          { text: '联系我们', link: '/zh/contact' }
         ],
-        sidebar: [
-          {
-            text: '示例',
-            items: [
-              { text: 'Markdown 示例', link: '/zh/markdown-examples' },
-              { text: '运行时 API 示例', link: '/zh/api-examples' }
-            ]
-          }
-        ]
+        sidebar: {
+          '/zh/sheep-lint/': [
+            {
+              text: 'SheepLint',
+              items: [
+                { text: '概要', link: '/zh/sheep-lint/' },
+              ]
+            },
+            { text: '产品列表', link: '/zh/product-list' }
+          ],
+          '/zh/': [
+            {
+              text: '菜单',
+              items: [
+                { text: '产品列表', link: '/zh/product-list' },
+                { text: '联系我们', link: '/zh/contact' }
+              ]
+            }
+          ]
+        }
       }
     }
   },
+
 
   themeConfig: {
     // These will be overridden by locale-specific configs if defined there, 
