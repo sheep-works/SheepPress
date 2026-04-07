@@ -2,7 +2,7 @@
 
 ## 全体概念図 ～製品のつながり～
 
-![全体概念図](./abstract.png)
+![全体概念図](/abstract.png)
 
 ## SheepLint
 

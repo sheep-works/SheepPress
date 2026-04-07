@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   srcDir: "contents",
+  base: "/SheepPress/",
 
   // Site-wide settings
   title: "Sheep Tools",
