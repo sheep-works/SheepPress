@@ -18,6 +18,7 @@ export default defineConfig({
         nav: [
           { text: 'ホーム', link: '/' },
           { text: '製品一覧', link: '/product-list' },
+          { text: 'JSON Viewer', link: '/json-viewer' },
           { text: 'お問い合わせ', link: '/contact' }
         ],
         sidebar: {
@@ -36,6 +37,7 @@ export default defineConfig({
               text: 'メニュー',
               items: [
                 { text: '製品一覧', link: '/product-list' },
+                { text: 'JSON Viewer', link: '/json-viewer' },
                 { text: 'お問い合わせ', link: '/contact' }
               ]
             }
@@ -53,6 +55,7 @@ export default defineConfig({
         nav: [
           { text: 'Home', link: '/en/' },
           { text: 'Products', link: '/en/product-list' },
+          { text: 'JSON Viewer', link: '/json-viewer' },
           { text: 'Contact', link: '/en/contact' }
         ],
         sidebar: {
@@ -87,6 +90,7 @@ export default defineConfig({
         nav: [
           { text: '首页', link: '/zh/' },
           { text: '产品列表', link: '/zh/product-list' },
+          { text: 'JSON Viewer', link: '/json-viewer' },
           { text: '联系我们', link: '/zh/contact' }
         ],
         sidebar: {
