@@ -4,7 +4,7 @@
 
 ![全体概念図](/abstract.png)
 
-## SheepLint
+## [SheepLint](/sheep-lint/)
 
 AI を活用したテキスト校正ツールです。
 
@@ -34,7 +34,7 @@ SheepLint の特徴は対訳ファイルに基づいた処理。
 段落単位、シート単位、スライド単位で対訳化することにより、アライン作業にかかる負担を減らしながら、
 対訳状態での AI チェックを実現します。
 
-## SheepWeave
+## [SheepWeave](/sheep-weave/)
 
 翻訳用の VS Code 拡張です。
 

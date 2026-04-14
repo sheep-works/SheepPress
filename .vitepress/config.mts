@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   srcDir: "contents",
-  base: "/SheepPress/",
+  base: "/",
 
   // Site-wide settings
   title: "Sheep Tools",
@@ -32,7 +32,18 @@ export default defineConfig({
                 { text: '概要', link: '/sheep-lint/' },
               ]
             },
-
+          ],
+          '/sheep-weave/': [
+            { text: 'トップへ戻る', link: '/' },
+            {
+              text: 'SheepWeave',
+              items: [
+                { text: '概要', link: '/sheep-weave/' },
+                { text: 'はじめに', link: '/sheep-weave/01_get_started' },
+                { text: '使い始める', link: '/sheep-weave/02_prepare' },
+                { text: '画面の見方', link: '/sheep-weave/03_interfaces' },
+              ]
+            },
           ],
           '/': [
             {
