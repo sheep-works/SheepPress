@@ -18,6 +18,7 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'ホーム', link: '/' },
+          { text: '会社概要', link: '/about' },
           { text: '製品一覧', link: '/product-list' },
           { text: 'JSON Viewer', link: '/json-viewer' },
           { text: 'お問い合わせ', link: '/contact' }
@@ -122,9 +123,9 @@ export default defineConfig({
   themeConfig: {
     // These will be overridden by locale-specific configs if defined there, 
     // but useful for shared settings
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    // socialLinks: [
+    //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+    // ]
   }
 })
 

@@ -3,45 +3,10 @@
 layout: home
 
 hero:
-  name: "Sheep Tools"
-  text: "翻訳者のためのツール群<br/>Sheep ファミリー"
-  tagline: 翻訳業務をよりスムーズに、より正確に。
-  actions:
-    - theme: brand
-      text: 一覧へ
-      link: /product-list
-    - theme: alt
-      text: お問い合わせ
-      link: /contact
-
-features:
-  - title: SheepLint
-    details: AI を活用したテキスト校正ツール
-    link: /sheep-lint
-  - title: SheepWeave
-    details: 翻訳用のVS Code拡張
-    link: /sheep-weave
-  - title: SheepComb
-    details: XLF/TMX/TBX の便利な操作
-    link: /sheep-comb
-  - title: SheepGroom
-    details: Office ファイルの対訳化
-    link: /sheep-groom
-  - title: SheepSpindle
-    details: WASM を使った高速TM/TB処理ツール
-    link: /sheep-spindle
-  - title: SheepShuttle
-    details: SheepWeave 用の JSON ファイル管理ツール
-    link: /sheep-shuttle
-  - title: SheepLoom
-    details: vivliostyle と Marp を使った資料作成ツール
-    link: /sheep-loom
-  - title: SheepStitch
-    details: 各種プラットフォームでの入力自動化
-    link: /sheep-stitch
-  - title: SheepHub
-    details: FastAPI を使ったSheep Tools の簡易APIサーバー
-    link: /sheep-hub
+  name: "合同会社ランベージ"
+  text: "よりよい翻訳のための工夫を"
+  image: "lambuage.png"
+  imageAlt: "lambuage"
 ---
 
 ## 業務内容
@@ -51,15 +16,21 @@ features:
 
 ランベージには、翻訳者とプロジェクトマネージャー（PM）両方の経験を持つスタッフが在籍しており、依頼者と翻訳者の間に入ることで複雑な案件でも誰もが働きやすいよう、調整役としてお手伝いいたします。
 
+---
+
 ### 翻訳＋αのサービス
 翻訳をした訳文は、テキストそのままでは使えないこともあります。PPTやWord、Excelなどのオフィスファイルに反映したり、IllustratorやAutoCADなどの専用ソフトに取り込んだり、動画の字幕にしたり……。
 
 そういった翻訳の「後」に必要な作業も幅広く対応可能です。
 
+---
+
 ### 翻訳用ツール開発
 ランベージは「ひつじの翻訳室」と共同で、翻訳者用便利ツール「TraToys」や、小規模翻訳会社向け案件管理ツール「ひつじの経理部」などを開発しています。
 
 ほかにもVBAやPythonなどを活用し、案件ごとのOfficeファイル前処理・後処理作業の自動化なども実施しています。
+
+---
 
 ### 持続可能な翻訳を目指して
 機械翻訳やAI翻訳がますます便利になっていく現代。ランベージはこうした波を「チャンス」だととらえています。
