@@ -4,24 +4,33 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   srcDir: "contents",
   base: "/",
-
+  // Google Analytics
+  head: [
+    ["script", { async: "true", src: "https://www.googletagmanager.com/gtag/js?id=G-G-PFT0GHJFSL" }],
+    ["script", {}, "window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-XXXXXXXXXX');"]
+  ],
   // Site-wide settings
-  title: "Sheep Tools",
-  description: "Sheep family tools for translators",
+  title: "LAMBUAGE",
+  description: "Lambuage provides tools for translators -- Sheep Family ",
 
   locales: {
     root: {
       label: '日本語',
       lang: 'ja',
-      title: 'Sheep Tools',
-      description: '翻訳者のための Sheep シリーズツール紹介',
+      title: 'LAMBUAGE',
+      description: '翻訳者のための Sheep ファミリーツールを開発・提供',
       themeConfig: {
         nav: [
           { text: 'ホーム', link: '/' },
           { text: '会社概要', link: '/about' },
-          { text: '製品一覧', link: '/product-list' },
-          { text: 'JSON Viewer', link: '/json-viewer' },
-          { text: 'お問い合わせ', link: '/contact' }
+          {
+            text: 'ツール紹介', items: [
+              { text: 'ツール一覧', link: '/product-list' },
+              { text: 'JSON Viewer', link: '/json-viewer' },
+            ]
+          },
+          { text: 'お問い合わせ', link: '/contact' },
+          { text: "What's new", link: '/news' },
         ],
         sidebar: {
           '/sheep-lint/': [
@@ -49,9 +58,10 @@ export default defineConfig({
             {
               text: 'メニュー',
               items: [
-                { text: '製品一覧', link: '/product-list' },
+                { text: 'ツール一覧', link: '/product-list' },
                 { text: 'JSON Viewer', link: '/json-viewer' },
-                { text: 'お問い合わせ', link: '/contact' }
+                { text: 'お問い合わせ', link: '/contact' },
+                { text: "What's new", link: '/news' }
               ]
             }
           ]
@@ -137,6 +147,9 @@ export default defineConfig({
     // socialLinks: [
     //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     // ]
+    footer: {
+      copyright: 'Copyright © 2024-present Lambuage LLC & ひつじの翻訳室'
+    }
   }
 })
 
