@@ -13,4 +13,4 @@ XLF/TMX/TBX を変換したり、別のデータに追加したりするツー�
 
 ## 使い方
 
-[抽出機能](./comb_py.html)
+[抽出機能](/sheep-comb/comb_py.html)
