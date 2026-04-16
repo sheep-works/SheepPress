@@ -39,6 +39,7 @@ export default defineConfig({
               text: 'SheepLint',
               items: [
                 { text: '概要', link: '/sheep-lint/' },
+                { text: 'はじめに', link: '/sheep-lint/01_introduction' },
               ]
             },
           ],
@@ -48,23 +49,27 @@ export default defineConfig({
               text: 'SheepWeave',
               items: [
                 { text: '概要', link: '/sheep-weave/' },
-                { text: 'はじめに', link: '/sheep-weave/01_get_started' },
-                { text: '使い始める', link: '/sheep-weave/02_prepare' },
+                { text: 'はじめに', link: '/sheep-weave/01_introduction' },
+                { text: '使い始める', link: '/sheep-weave/02_get_started' },
                 { text: '画面の見方', link: '/sheep-weave/03_interfaces' },
               ]
             },
           ],
+
           '/': [
             {
               text: 'メニュー',
               items: [
+                { text: 'ホーム', link: '/' },
+                { text: '会社概要', link: '/about' },
                 { text: 'ツール一覧', link: '/product-list' },
                 { text: 'JSON Viewer', link: '/json-viewer' },
                 { text: 'お問い合わせ', link: '/contact' },
-                { text: "What's new", link: '/news' }
+                { text: "What's new", link: '/news' },
               ]
             }
           ]
+
         }
       }
     },
