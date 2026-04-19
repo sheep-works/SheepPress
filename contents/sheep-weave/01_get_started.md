@@ -22,11 +22,11 @@ SheepWeaveはVisual Studio Code（VS Code）をベースに、拡張機能とし
 
 ::: tip
 ダウンロードURL
-- VS Code：https://azure.microsoft.com/ja-jp/products/visual-studio-code
-- Cursor：https://cursor.com/
-- Windsurf：https://windsurf.com/
-- Antigravity：https://antigravity.google/
-- TRAE：https://www.trae.ai/
+- [VS Code](https://azure.microsoft.com/ja-jp/products/visual-studio-code)
+- [Cursor](https://cursor.com/)
+- [Windsurf](https://windsurf.com/)
+- [Antigravity](https://antigravity.google/)
+- [TRAE](https://www.trae.ai/)
 :::
 
 ### Okapi Framework
@@ -38,7 +38,7 @@ SheepWeaveではエディタ画面で直接変換できるよう、Okapi Framewo
 
 ::: tip
 ダウンロードURL
-- Okapi Framework[https://okapiframework.org/]
+- [Okapi Framework](https://okapiframework.org/)
 Download の Latest Stable から自分の環境にあったものをダウンロードし、展開しておいてください。
 :::
 
@@ -48,9 +48,13 @@ Okapi Framework はJavaという言語で動いており、実行にはJavaが�
 
 ::: tip
 ダウンロードURL
-- Java[https://www.java.com/ja/download/]
+- [Java](https://www.java.com/ja/download/)
 :::
 
 ### SheepWeave.vsix
 SheepWeaveをVS Codeにインストールするためのファイルです。分かりやすいところに保存しておいてください。
-https://lambuage.jp.larksuite.com/drive/folder/MVZJfK0dRlCB1SdNUWIj9K1PpOc
+
+::: tip
+ダウンロードURL
+- <a href="/sheep-weave/vsix/sheep-weave-0.0.11.vsix" target="_blank" rel="noopener noreferrer">Ver 0.0.11</a>
+:::

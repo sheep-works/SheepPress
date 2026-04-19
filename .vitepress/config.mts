@@ -49,8 +49,8 @@ export default defineConfig({
               text: 'SheepWeave',
               items: [
                 { text: '概要', link: '/sheep-weave/' },
-                { text: 'はじめに', link: '/sheep-weave/01_introduction' },
-                { text: '使い始める', link: '/sheep-weave/02_get_started' },
+                { text: 'はじめに', link: '/sheep-weave/01_get_started' },
+                { text: '使い始める', link: '/sheep-weave/02_prepare' },
                 { text: '画面の見方', link: '/sheep-weave/03_interfaces' },
               ]
             },
