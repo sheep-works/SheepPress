@@ -1,6 +1,6 @@
 # SheepSpindle
 
-WASM を使った高速TM/TB処理ツールです。
+WASM を使った高速 TM/TB 処理ツールです。
 
 コンセプトは **糸車（Spindle）**。
 

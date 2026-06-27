@@ -19,16 +19,19 @@ features:
     details: AI を活用したテキスト校正ツール
     link: /sheep-lint
   - title: SheepWeave
-    details: 翻訳用のVS Code拡張
+    details: 翻訳用の VS Code 拡張
     link: /sheep-weave
   - title: SheepComb
     details: XLF/TMX/TBX の便利な操作
     link: /sheep-comb
+  - title: SheepBobbin
+    details: LLM を用いた翻訳処理・チェックツール
+    link: /sheep-bobbin
   - title: SheepGroom
     details: Office ファイルの対訳化
     link: /sheep-groom
   - title: SheepSpindle
-    details: WASM を使った高速TM/TB処理ツール
+    details: WASM を使った高速 TM/TB 処理ツール
     link: /sheep-spindle
   - title: SheepShuttle
     details: SheepWeave 用の JSON ファイル管理ツール
@@ -40,7 +43,7 @@ features:
     details: 各種プラットフォームでの入力自動化
     link: /sheep-stitch
   - title: SheepHub
-    details: FastAPI を使ったSheep Tools の簡易APIサーバー
+    details: FastAPI を使った Sheep Tools の簡易 API サーバー
     link: /sheep-hub
 ---
 

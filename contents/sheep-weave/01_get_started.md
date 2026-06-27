@@ -1,12 +1,12 @@
 # はじめに
 
-SheepWeave はプログラミングエディタのいいとこ取りを目指した、新しい翻訳支援ツール（CATツール）です。
+SheepWeave はプログラミングエディタのいいとこ取りを目指した、新しい翻訳支援ツール（CAT ツール）です。
 
 最近のプログラミングエディタは、統合開発環境（IDE）とも呼ばれていますが、その名のとおり様々なツールが統合されて使いやすくなっています。特定のテキストに色をつけたり、文脈に合わせた入力候補を表示したりといったことが可能です。ほかにも自分用のショートカットやキーバインドをつくることもできますし、「選択中の部分を括弧で囲む」ような処理も得意です。
 
-さらに昨今では、AI機能が標準搭載。すぐ横のチャット欄でやり取りするのはもちろん、編集中も前後の文脈にあわせて調整してくれることもあります。たとえば、not more than 1% を 1%未満に翻訳すると、同じようなフレーズをタブだけで変換していくことも可能です。この機能が力を発揮しやすいのがポストエディット。能動態を受動態に書き換えるのもサポートしてくれますし、「全編を敬語に」といったことも可能です。
+さらに昨今では、AI 機能が標準搭載。すぐ横のチャット欄でやり取りするのはもちろん、編集中も前後の文脈にあわせて調整してくれることもあります。たとえば、not more than 1%を 1%未満に翻訳すると、同じようなフレーズをタブだけで変換していくことも可能です。この機能が力を発揮しやすいのがポストエディット。能動態を受動態に書き換えるのもサポートしてくれますし、「全編を敬語に」といったことも可能です。
 
-こんな便利な機能が満載のIDEを、プログラミングだけで使うのはもったいない。その思いから始まっているのがこのSheepWeaveです。これまでOfficeなどで上書き翻訳していた人にも、CATツールをよく使っていた人にも馴染みやすいエディタを目指しています。
+こんな便利な機能が満載の IDE を、プログラミングだけで使うのはもったいない。その思いから始まっているのがこの SheepWeave です。これまで Office などで上書き翻訳していた人にも、CAT ツールをよく使っていた人にも馴染みやすいエディタを目指しています。
 
 ***
 
@@ -14,47 +14,47 @@ SheepWeave はプログラミングエディタのいいとこ取りを目指し
 ## 必要なソフト
 ### エディタ
 
-SheepWeaveはVisual Studio Code（VS Code）をベースに、拡張機能として開発をしています。
+SheepWeave は Visual Studio Code（VS Code）をベースに、拡張機能として開発をしています。
 
-そのため使用するにはVS Codeかその派生製品（Cursor/Windsurf/Antigravity/TRAEなど）をインストールする必要があります。
+そのため使用するには VS Code かその派生製品（Cursor/Windsurf/Antigravity/TRAE など）をインストールする必要があります。
 
-いずれもOSを問わず、無料でインストールできます。
+いずれも OS を問わず、無料でインストールできます。
 
 ::: tip
-ダウンロードURL
-- [VS Code](https://azure.microsoft.com/ja-jp/products/visual-studio-code)
-- [Cursor](https://cursor.com/)
-- [Windsurf](https://windsurf.com/)
-- [Antigravity](https://antigravity.google/)
-- [TRAE](https://www.trae.ai/)
+ダウンロード URL
+-[VS Code](https://azure.microsoft.com/ja-jp/products/visual-studio-code)
+-[Cursor](https://cursor.com/)
+-[Windsurf](https://windsurf.com/)
+-[Antigravity](https://antigravity.google/)
+-[TRAE](https://www.trae.ai/)
 :::
 
 ### Okapi Framework
-SheepWeaveは基本的にバイリンガルファイル（xliff）ベースの入出力を想定しています。
-Office形式やhtmlなども一度xliffに変換することで、一貫したテキストエディタでの翻訳を可能にします。
-すでにmemoqやtradosなどのCATツールをお持ちであれば自前で変換することもできると思いますが、持っていない場合はOkapi Frameworkの使用がおすすめです。
-Okapi Frameworkは歴史ある変換ソフトで、安定した動作が特徴です。
-SheepWeaveではエディタ画面で直接変換できるよう、Okapi Frameworkのなかでもtikalというソフトを利用しますが、多言語ファイルや特殊なフィルタが必要な場合はrainbowというソフトで画面をみながら設定して、xliffを生成することまできます。
+SheepWeave は基本的にバイリンガルファイル（xliff）ベースの入出力を想定しています。
+Office 形式や html なども一度 xliff に変換することで、一貫したテキストエディタでの翻訳を可能にします。
+すでに memoq や trados などの CAT ツールをお持ちであれば自前で変換することもできると思いますが、持っていない場合は Okapi Framework の使用がおすすめです。
+Okapi Framework は歴史ある変換ソフトで、安定した動作が特徴です。
+SheepWeave ではエディタ画面で直接変換できるよう、Okapi Framework のなかでも tikal というソフトを利用しますが、多言語ファイルや特殊なフィルタが必要な場合は rainbow というソフトで画面をみながら設定して、xliff を生成することまできます。
 
 ::: tip
-ダウンロードURL
-- [Okapi Framework](https://okapiframework.org/)
+ダウンロード URL
+-[Okapi Framework](https://okapiframework.org/)
 Download の Latest Stable から自分の環境にあったものをダウンロードし、展開しておいてください。
 :::
 
-### Java実行環境
-Okapi Framework はJavaという言語で動いており、実行にはJavaが必要です。
+### Java 実行環境
+Okapi Framework は Java という言語で動いており、実行には Java が必要です。
 公式サイトからダウンロードしてインストールしておいてください。
 
 ::: tip
-ダウンロードURL
-- [Java](https://www.java.com/ja/download/)
+ダウンロード URL
+-[Java](https://www.java.com/ja/download/)
 :::
 
 ### SheepWeave.vsix
-SheepWeaveをVS Codeにインストールするためのファイルです。分かりやすいところに保存しておいてください。
+SheepWeave を VS Code にインストールするためのファイルです。分かりやすいところに保存しておいてください。
 
 ::: tip
-ダウンロードURL
-- <a href="/sheep-weave/vsix/sheep-weave-0.0.11.vsix" target="_blank" rel="noopener noreferrer">Ver 0.0.11</a>
+ダウンロード URL
+- <a href="https://ogi.teracloud.jp/share/12028f51cf1f58b1" target="_blank" rel="noopener noreferrer">最新はVer 0.0.16</a>
 :::

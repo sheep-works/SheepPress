@@ -55,6 +55,31 @@ export default defineConfig({
               ]
             },
           ],
+          '/sheep-comb/': [
+            { text: 'トップへ戻る', link: '/' },
+            {
+              text: 'SheepComb',
+              items: [
+                { text: '概要', link: '/sheep-comb/' },
+                { text: 'はじめに', link: '/sheep-comb/01_introduction' },
+                { text: '各ステップの詳細手順', link: '/sheep-comb/02_steps_desc' },
+                { text: '対訳検索（コンコーダンス）', link: '/sheep-comb/11_tools_concordance' },
+                { text: 'テキスト比較（差分ツール）', link: '/sheep-comb/12_tools_diff' },
+              ]
+            },
+          ],
+          '/sheep-bobbin/': [
+            { text: 'トップへ戻る', link: '/' },
+            {
+              text: 'SheepBobbin',
+              items: [
+                { text: '概要', link: '/sheep-bobbin/' },
+                { text: 'はじめに', link: '/sheep-bobbin/01_introduction' },
+                { text: 'ローカルLLMとの通信', link: '/sheep-bobbin/02_local_llm' },
+                { text: 'クラウドLLMとの通信', link: '/sheep-bobbin/03_cloud_llm' },
+              ]
+            },
+          ],
 
           '/': [
             {

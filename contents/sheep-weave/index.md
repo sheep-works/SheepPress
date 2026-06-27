@@ -14,6 +14,6 @@ VS Code 拡張機能で実現する翻訳支援ツール（CAT ツール）で�
 
 ## 使い方
 
-1. [はじめに](./01_get_started)
-2. [使い始める](./02_prepare)
-3. [画面の見方](./03_interfaces)
+1.[はじめに](./01_get_started)
+2.[使い始める](./02_prepare)
+3.[画面の見方](./03_interfaces)

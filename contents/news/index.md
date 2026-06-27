@@ -2,7 +2,7 @@
 
 ## 情報発信
 
-ランベージでは [note](https://note.com/lambuage) を用いた情報発信をしています。
+ランベージでは[note](https://note.com/lambuage)を用いた情報発信をしています。
 
 皆様の フォロー＆スキ をお待ちしています。
 
@@ -10,12 +10,12 @@
 
 ### 2026/04/16
 
-- SheepLintのドキュメントを追加
-- SheepCombのお試しページを追加
+- SheepLint のドキュメントを追加
+- SheepComb のお試しページを追加
 
 ### 2026/04/15
 
-- SheepWeaveのドキュメントを追加
+- SheepWeave のドキュメントを追加
 
 ### 2026/04/14
 

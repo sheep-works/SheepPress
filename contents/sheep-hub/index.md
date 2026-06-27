@@ -1,6 +1,6 @@
 # SheepHub
 
-FastAPI を使ったSheep Tools の簡易APIサーバーです。
+FastAPI を使った Sheep Tools の簡易 API サーバーです。
 
 **ハブ（Hub）** という名前のとおり、各種ツール間を簡単につなぎます。
 
@@ -14,7 +14,7 @@ FastAPI を使ったSheep Tools の簡易APIサーバーです。
 
 - **SheepWeave - SheepLint 連携**: SheepWeave で翻訳中のファイルから翻訳・校正を直接リクエスト可能
 - **SheepComb - SheepLint 連携**: SheepComb XLIFF ファイルを編集しやすい CSV に変換して SheepLint で校正可能
-- **SheepShuttle 連携** : SheepWeave でできたJSONファイルを、SheepShuttle で形式変換し、扱いやすく
+- **SheepShuttle 連携** : SheepWeave でできた JSON ファイルを、SheepShuttle で形式変換し、扱いやすく
 
 ## 使い方
 
