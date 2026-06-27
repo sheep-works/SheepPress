@@ -56,5 +56,5 @@ SheepWeave を VS Code にインストールするためのファイルです。
 
 ::: tip
 ダウンロード URL
-- <a href="https://ogi.teracloud.jp/share/12028f51cf1f58b1" target="_blank" rel="noopener noreferrer">最新はVer 0.0.16</a>
+- <a href="https://ogi.teracloud.jp/share/12028f51cf1f58b1" target="_blank" rel="noopener noreferrer">最新は Ver 0.0.16</a>
 :::
