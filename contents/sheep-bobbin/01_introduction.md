@@ -8,7 +8,7 @@ SheepBobbin は AI を用いた翻訳処理ツールです。
 
 # インストール
 
-1. <a href="https://ogi.teracloud.jp/share/12028f51cf1f58b1" target="_blank" rel="noopener noreferrer">こちら</a>にアクセスして exe ファイルをダウンロードします（最新は Ver 1.0.1）
+1. <a href="https://storage.lambuage.com" target="_blank" rel="noopener noreferrer">こちら</a>にアクセスして exe ファイルをダウンロードします（最新は Ver 1.0.1）
 2. ダブルクリックしてインストール＆起動します
 3. 初回起動時はネットワークへのアクセス許可を求められるので、**許可** してください
 

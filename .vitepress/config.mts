@@ -23,6 +23,7 @@ export default defineConfig({
         nav: [
           { text: 'ホーム', link: '/' },
           { text: '会社概要', link: '/about' },
+          { text: '実績', link: '/records' },
           {
             text: 'ツール紹介', items: [
               { text: 'ツール一覧', link: '/product-list' },
@@ -50,8 +51,16 @@ export default defineConfig({
               items: [
                 { text: '概要', link: '/sheep-weave/' },
                 { text: 'はじめに', link: '/sheep-weave/01_get_started' },
-                { text: '使い始める', link: '/sheep-weave/02_prepare' },
-                { text: '画面の見方', link: '/sheep-weave/03_interfaces' },
+                { text: 'チュートリアル（基本体験編）', link: '/sheep-weave/02_tutorial' },
+                { text: '実際のファイルの翻訳', link: '/sheep-weave/03_actual_translation' },
+                { text: '画面の見方', link: '/sheep-weave/04_interfaces' },
+                { text: 'ショートカットと便利な機能', link: '/sheep-weave/05_shortcuts_and_functions' },
+                { text: '継続的な翻訳', link: '/sheep-weave/06_continuous_translation' },
+                { text: 'LLM / AI 連携', link: '/sheep-weave/08_LLM_usage' },
+                { text: 'その他の機能', link: '/sheep-weave/09_other_usage' },
+                { text: '多言語 Excel の翻訳と Rainbow の活用', link: '/sheep-weave/10_rainbow' },
+                { text: 'CATツールについて', link: '/sheep-weave/11_about_cat' },
+                { text: 'VS Codeの使い方', link: '/sheep-weave/12_vscode_usage' },
               ]
             },
           ],
@@ -87,6 +96,7 @@ export default defineConfig({
               items: [
                 { text: 'ホーム', link: '/' },
                 { text: '会社概要', link: '/about' },
+                { text: '実績', link: '/records' },
                 { text: 'ツール一覧', link: '/product-list' },
                 { text: 'JSON Viewer', link: '/json-viewer' },
                 { text: 'お問い合わせ', link: '/contact' },

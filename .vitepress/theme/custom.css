@@ -29,3 +29,13 @@
 /**
  * Customizations
  */
+
+/* 本文内の画像（スクショ等）の視認性を高めるスタイル */
+.vp-doc img {
+  display: block;
+  margin: 1.5rem auto;
+  border: 2px solid var(--vp-c-divider);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
