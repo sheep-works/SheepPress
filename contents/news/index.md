@@ -8,6 +8,11 @@
 
 ## 更新履歴
 
+### 2026/08/18
+
+- SheepWeave と SheepBobbin のマニュアルを追加
+- [配布専用ページ](https://storage.lambuage.com)を作成
+
 ### 2026/04/16
 
 - SheepLint のドキュメントを追加
