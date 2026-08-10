@@ -4,6 +4,9 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   srcDir: "contents",
   base: "/",
+  sitemap: {
+    hostname: 'https://lambuage.com'
+  },
   // Google Analytics
   head: [
     ["script", { async: "true", src: "https://www.googletagmanager.com/gtag/js?id=G-PFT0GHJFSL" }],
@@ -24,12 +27,7 @@ export default defineConfig({
           { text: 'ホーム', link: '/' },
           { text: '会社概要', link: '/about' },
           { text: '実績', link: '/records' },
-          {
-            text: 'ツール紹介', items: [
-              { text: 'ツール一覧', link: '/product-list' },
-              { text: 'JSON Viewer', link: '/json-viewer' },
-            ]
-          },
+          { text: 'ツール一覧', link: '/product-list' },
           { text: 'お問い合わせ', link: '/contact' },
           { text: "What's new", link: '/news' },
         ],
@@ -99,7 +97,6 @@ export default defineConfig({
                 { text: '会社概要', link: '/about' },
                 { text: '実績', link: '/records' },
                 { text: 'ツール一覧', link: '/product-list' },
-                { text: 'JSON Viewer', link: '/json-viewer' },
                 { text: 'お問い合わせ', link: '/contact' },
                 { text: "What's new", link: '/news' },
               ]
@@ -119,7 +116,6 @@ export default defineConfig({
         nav: [
           { text: 'Home', link: '/en/' },
           { text: 'Products', link: '/en/product-list' },
-          { text: 'JSON Viewer', link: '/json-viewer' },
           { text: 'Contact', link: '/en/contact' }
         ],
         sidebar: {
@@ -154,7 +150,6 @@ export default defineConfig({
         nav: [
           { text: '首页', link: '/zh/' },
           { text: '产品列表', link: '/zh/product-list' },
-          { text: 'JSON Viewer', link: '/json-viewer' },
           { text: '联系我们', link: '/zh/contact' }
         ],
         sidebar: {
@@ -181,16 +176,9 @@ export default defineConfig({
     }
   },
 
-
   themeConfig: {
-    // These will be overridden by locale-specific configs if defined there, 
-    // but useful for shared settings
-    // socialLinks: [
-    //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    // ]
     footer: {
       copyright: 'Copyright © 2024-present Lambuage LLC & ひつじの翻訳室'
     }
   }
 })
-

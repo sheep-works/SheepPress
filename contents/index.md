@@ -59,3 +59,9 @@ features:
 また、共同開発者である「ひつじの翻訳室」では、翻訳業務を請け負っております。
 
 お気軽に[お問い合わせ](/contact)ください。
+
+***
+
+# 最新の開発日記・発信
+
+<SocialFeed noteUser="lambuage" xUser="lambuage" />

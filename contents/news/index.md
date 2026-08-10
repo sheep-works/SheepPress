@@ -6,6 +6,10 @@
 
 皆様の フォロー＆スキ をお待ちしています。
 
+## 最新の開発日記・発信
+
+<SocialFeed noteUser="lambuage" xUser="lambuage" />
+
 ## 更新履歴
 
 ### 2026/08/18
