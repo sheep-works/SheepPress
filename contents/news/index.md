@@ -1,3 +1,17 @@
+---
+title: "What's new"
+description: "ランベージおよび Sheep ツールファミリーの最新情報・ニュース"
+date: 2024-01-01
+updated: 2026-08-10
+author: "合同会社ランベージ & ひつじの翻訳室"
+lang: "ja"
+category: "ニュース"
+tags:
+  - "ニュース"
+  - "お知らせ"
+  - "アップデート"
+---
+
 # What's new
 
 ## 情報発信

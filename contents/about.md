@@ -1,4 +1,6 @@
 ---
+title: "会社概要"
+description: "合同会社ランベージの会社概要・業務内容・取り組み"
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
@@ -7,6 +9,15 @@ hero:
  text: "よりよい翻訳のための工夫を"
  image: "lambuage.png"
  imageAlt: "lambuage"
+date: 2024-01-01
+updated: 2026-08-10
+author: "合同会社ランベージ & ひつじの翻訳室"
+lang: "ja"
+category: "会社情報"
+tags:
+  - "会社概要"
+  - "合同会社ランベージ"
+  - "事業内容"
 ---
 
 ## 業務内容

@@ -1,3 +1,17 @@
+---
+title: "ツール一覧"
+description: "翻訳者のための Sheep ツールファミリー製品一覧"
+date: 2024-01-01
+updated: 2026-08-10
+author: "合同会社ランベージ & ひつじの翻訳室"
+lang: "ja"
+category: "製品一覧"
+tags:
+  - "ツール一覧"
+  - "SheepTools"
+  - "CATツール"
+---
+
 # 製品一覧
 
 ## 全体概念図 ～製品のつながり～

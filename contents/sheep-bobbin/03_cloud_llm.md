@@ -1,3 +1,18 @@
+---
+title: "SheepBobbin クラウドLLMとの通信"
+description: "OpenAI / Claude / Gemini 等のクラウド LLM との連携方法"
+date: 2024-01-01
+updated: 2026-08-10
+author: "合同会社ランベージ & ひつじの翻訳室"
+lang: "ja"
+category: "SheepBobbin"
+tags:
+  - "SheepBobbin"
+  - "LLM"
+  - "AI連携"
+  - "ローカルLLM"
+---
+
 # クラウド LLM との通信
 SheepBobbin は、各種クラウド LLM への通信もサポートしています。
 

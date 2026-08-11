@@ -1,3 +1,18 @@
+---
+title: "SheepBobbin ローカルLLMとの通信"
+description: "Ollama 等のローカル LLM と通信する設定方法"
+date: 2024-01-01
+updated: 2026-08-10
+author: "合同会社ランベージ & ひつじの翻訳室"
+lang: "ja"
+category: "SheepBobbin"
+tags:
+  - "SheepBobbin"
+  - "LLM"
+  - "AI連携"
+  - "ローカルLLM"
+---
+
 # ローカル LLM との通信
 
 SheepBobbin でローカル LLM と通信するにはサーバー機能を有効にしておく必要があります。

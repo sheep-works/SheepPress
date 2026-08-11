@@ -1,3 +1,18 @@
+---
+title: "SheepWeave 画面の見方"
+description: "SheepWeave のインターフェースと各パネルの解説"
+date: 2024-01-01
+updated: 2026-08-10
+author: "合同会社ランベージ & ひつじの翻訳室"
+lang: "ja"
+category: "SheepWeave"
+tags:
+  - "SheepWeave"
+  - "CATツール"
+  - "VSCode"
+  - "翻訳支援"
+---
+
 # 画面の見方
 
 SheepWeave では、プログラミングエディタ「VS Code」の画面領域を活用して快適な翻訳環境を提供します。

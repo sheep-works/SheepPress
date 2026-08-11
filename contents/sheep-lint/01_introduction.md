@@ -1,3 +1,18 @@
+---
+title: "SheepLint はじめに"
+description: "SheepLint の導入と使い方"
+date: 2024-01-01
+updated: 2026-08-10
+author: "合同会社ランベージ & ひつじの翻訳室"
+lang: "ja"
+category: "SheepLint"
+tags:
+  - "SheepLint"
+  - "AI校正"
+  - "テキスト校正"
+  - "翻訳品質"
+---
+
 # はじめに
 
 SheepLint は AI を用いた翻訳のチェックツールです。入力に対訳ファイル（xliff/xlsx など）を用いつつ、AI が理解しやすいサイズまで自動で小分けすることで、ファイルをそのまま投入するよりも高精度なチェックが可能になっています。

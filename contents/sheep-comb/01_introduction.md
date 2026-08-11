@@ -1,3 +1,19 @@
+---
+title: "SheepComb はじめに"
+description: "SheepComb の基本機能と使い方"
+date: 2024-01-01
+updated: 2026-08-10
+author: "合同会社ランベージ & ひつじの翻訳室"
+lang: "ja"
+category: "SheepComb"
+tags:
+  - "SheepComb"
+  - "XLF"
+  - "TMX"
+  - "TBX"
+  - "翻訳ツール"
+---
+
 # SheepComb Web の使い方
 
 [SheepComb Web](https://sheepcomb.netlify.app)は、翻訳データの抽出から、カウント・構造化（TM/TB の適用確認）、AI による翻訳・チェック処理、さらには用語の検索やテキスト比較といった、翻訳作業を効率化するための各種機能を備えています。

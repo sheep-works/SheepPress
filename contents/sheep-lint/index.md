@@ -1,3 +1,18 @@
+---
+title: "SheepLint 概要"
+description: "AI を活用した翻訳・テキスト校正ツール SheepLint の概要"
+date: 2024-01-01
+updated: 2026-08-10
+author: "合同会社ランベージ & ひつじの翻訳室"
+lang: "ja"
+category: "SheepLint"
+tags:
+  - "SheepLint"
+  - "AI校正"
+  - "テキスト校正"
+  - "翻訳品質"
+---
+
 # SheepLint
 
 AI を活用したテキスト校正ツールです。

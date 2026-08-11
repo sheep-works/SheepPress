@@ -1,3 +1,18 @@
+---
+title: "SheepWeave 簡易置換のすすめ"
+description: "高速な用語一括置換とスタイル調整の活用法"
+date: 2024-01-01
+updated: 2026-08-10
+author: "合同会社ランベージ & ひつじの翻訳室"
+lang: "ja"
+category: "SheepWeave"
+tags:
+  - "SheepWeave"
+  - "CATツール"
+  - "VSCode"
+  - "翻訳支援"
+---
+
 # 簡易置換のすすめ
 
 簡易置換は VS Code のプログラミングで使う `F2 リネーム` という便利な置換機能に着想を得たものです。

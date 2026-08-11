@@ -1,3 +1,18 @@
+---
+title: "SheepWeave LLM / AI 連携"
+description: "AI/LLM と連携した翻訳補完と自動校正機能"
+date: 2024-01-01
+updated: 2026-08-10
+author: "合同会社ランベージ & ひつじの翻訳室"
+lang: "ja"
+category: "SheepWeave"
+tags:
+  - "SheepWeave"
+  - "CATツール"
+  - "VSCode"
+  - "翻訳支援"
+---
+
 # LLM / AI 連携
 
 SheepWeave は、AI（LLM: 大規模言語モデル）を活用した下訳作成、ポストエディット、訳文の推敲・校正をスムーズに行うための高度な AI 連携機能を備えています。

@@ -1,3 +1,18 @@
+---
+title: "SheepWeave 概要"
+description: "VS Code 拡張機能で実現する翻訳支援ツール（CAT ツール）SheepWeave の概要"
+date: 2024-01-01
+updated: 2026-08-10
+author: "合同会社ランベージ & ひつじの翻訳室"
+lang: "ja"
+category: "SheepWeave"
+tags:
+  - "SheepWeave"
+  - "CATツール"
+  - "VSCode"
+  - "翻訳支援"
+---
+
 # SheepWeave
 
 VS Code 拡張機能で実現する翻訳支援ツール（CAT ツール）です。

@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig, type HeadConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -6,6 +6,61 @@ export default defineConfig({
   base: "/",
   sitemap: {
     hostname: 'https://lambuage.com'
+  },
+  transformHead({ pageData }) {
+    const head: HeadConfig[] = []
+    const domain = 'https://lambuage.com'
+
+    // Clean page path for URL
+    const cleanPath = pageData.relativePath
+      .replace(/index\.md$/, '')
+      .replace(/\.md$/, '.html')
+    const pageUrl = `${domain}/${cleanPath}`
+
+    const title = pageData.title ? `${pageData.title} | LAMBUAGE` : 'LAMBUAGE'
+    const description = pageData.description || 'Lambuage provides tools for translators -- Sheep Family'
+    const ogImage = `${domain}/lambuage.png`
+
+    // OGP Meta Tags
+    head.push(['meta', { property: 'og:site_name', content: 'LAMBUAGE' }])
+    head.push(['meta', { property: 'og:title', content: title }])
+    head.push(['meta', { property: 'og:description', content: description }])
+    head.push(['meta', { property: 'og:type', content: pageData.relativePath === 'index.md' ? 'website' : 'article' }])
+    head.push(['meta', { property: 'og:url', content: pageUrl }])
+    head.push(['meta', { property: 'og:image', content: ogImage }])
+
+    // Twitter Card
+    head.push(['meta', { name: 'twitter:card', content: 'summary_large_image' }])
+    head.push(['meta', { name: 'twitter:title', content: title }])
+    head.push(['meta', { name: 'twitter:description', content: description }])
+    head.push(['meta', { name: 'twitter:image', content: ogImage }])
+
+    // JSON-LD Structured Data
+    const jsonLd = {
+      '@context': 'https://schema.org',
+      '@type': pageData.relativePath === 'index.md' ? 'WebSite' : 'Article',
+      'name': title,
+      'headline': pageData.title || title,
+      'description': description,
+      'url': pageUrl,
+      'publisher': {
+        '@type': 'Organization',
+        'name': '合同会社ランベージ',
+        'url': domain,
+        'logo': {
+          '@type': 'ImageObject',
+          'url': ogImage
+        }
+      }
+    }
+
+    head.push([
+      'script',
+      { type: 'application/ld+json' },
+      JSON.stringify(jsonLd)
+    ])
+
+    return head
   },
   // Google Analytics
   head: [

@@ -1,3 +1,18 @@
+---
+title: "SheepBobbin 概要"
+description: "LLM（大言語モデル）連携ツール SheepBobbin の概要"
+date: 2024-01-01
+updated: 2026-08-10
+author: "合同会社ランベージ & ひつじの翻訳室"
+lang: "ja"
+category: "SheepBobbin"
+tags:
+  - "SheepBobbin"
+  - "LLM"
+  - "AI連携"
+  - "ローカルLLM"
+---
+
 # SheepBobbin
 
 SheepComb の姉妹ツール。

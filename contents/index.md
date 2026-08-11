@@ -1,4 +1,6 @@
 ---
+title: "ホーム"
+description: "翻訳者のための Sheep ファミリーツールを開発・提供"
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
@@ -45,6 +47,15 @@ features:
   - title: SheepHub
     details: FastAPI を使った Sheep Tools の簡易 API サーバー
     link: /sheep-hub
+date: 2024-01-01
+updated: 2026-08-10
+author: "合同会社ランベージ & ひつじの翻訳室"
+lang: "ja"
+category: "トップページ"
+tags:
+  - "LAMBUAGE"
+  - "SheepTools"
+  - "翻訳支援"
 ---
 
 ***

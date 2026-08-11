@@ -1,3 +1,18 @@
+---
+title: "SheepBobbin はじめに"
+description: "SheepBobbin の基本概念と初期設定"
+date: 2024-01-01
+updated: 2026-08-10
+author: "合同会社ランベージ & ひつじの翻訳室"
+lang: "ja"
+category: "SheepBobbin"
+tags:
+  - "SheepBobbin"
+  - "LLM"
+  - "AI連携"
+  - "ローカルLLM"
+---
+
 # はじめに
 
 SheepBobbin は AI を用いた翻訳処理ツールです。

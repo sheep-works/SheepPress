@@ -1,3 +1,18 @@
+---
+title: "SheepWeave 実際のファイルの翻訳"
+description: "実際の翻訳プロジェクトで SheepWeave を活用する方法"
+date: 2024-01-01
+updated: 2026-08-10
+author: "合同会社ランベージ & ひつじの翻訳室"
+lang: "ja"
+category: "SheepWeave"
+tags:
+  - "SheepWeave"
+  - "CATツール"
+  - "VSCode"
+  - "翻訳支援"
+---
+
 # 実際のファイルの翻訳
 
 SheepWeave では主に、業界標準である XLIFF 系ファイル（XLIFF/SDLXLIFF/MXLIFF/MQXLIFF）のほか、実務でよく使われる Office ファイル（Word/Excel/PPT）、HTML や TXT/MD 形式に対応しています。

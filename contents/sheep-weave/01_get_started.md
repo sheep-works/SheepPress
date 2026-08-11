@@ -1,3 +1,18 @@
+---
+title: "SheepWeave はじめに"
+description: "SheepWeave のインストールと初期設定ガイド"
+date: 2024-01-01
+updated: 2026-08-10
+author: "合同会社ランベージ & ひつじの翻訳室"
+lang: "ja"
+category: "SheepWeave"
+tags:
+  - "SheepWeave"
+  - "CATツール"
+  - "VSCode"
+  - "翻訳支援"
+---
+
 # はじめに
 
 SheepWeave はプログラミングエディタのいいとこ取りを目指した、新しい翻訳支援ツール（CAT ツール）です。
