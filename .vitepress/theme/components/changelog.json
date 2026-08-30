@@ -1,0 +1,42 @@
+[
+  {
+    "date": "2026/08/30",
+    "items": [
+      "SheepWeave のマニュアルを一部改訂",
+      "多言語化に向けて、AI による機械翻訳（未校正）を掲載",
+      "その他、お知らせに関するデザインを変更"
+    ]
+  },
+  {
+    "date": "2026/08/08",
+    "items": [
+      "SheepWeave と SheepBobbin のマニュアルを追加",
+      "<a href=\"https://storage.lambuage.com\" target=\"_blank\" rel=\"noopener\">配布専用ページ</a>を作成"
+    ]
+  },
+  {
+    "date": "2026/04/16",
+    "items": [
+      "SheepLint のドキュメントを追加",
+      "SheepComb のお試しページを追加"
+    ]
+  },
+  {
+    "date": "2026/04/15",
+    "items": [
+      "SheepWeave のドキュメントを追加"
+    ]
+  },
+  {
+    "date": "2026/04/14",
+    "items": [
+      "Sheep Tools のドキュメントサイトと、ランベージのウェブサイトを統合"
+    ]
+  },
+  {
+    "date": "2026/04/10",
+    "items": [
+      "Sheep Tools のウェブサイトを公開"
+    ]
+  }
+]

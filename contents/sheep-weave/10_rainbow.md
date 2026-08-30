@@ -2,7 +2,7 @@
 title: "SheepWeave 多言語 Excel の翻訳と Rainbow の活用"
 description: "Rainbow を使用した多言語 Excel ファイルの翻訳手順"
 date: 2024-01-01
-updated: 2026-08-10
+updated: 2026-08-30
 author: "合同会社ランベージ & ひつじの翻訳室"
 lang: "ja"
 category: "SheepWeave"
@@ -39,6 +39,12 @@ Okapi Framework の GUI ツールである **Okapi Rainbow** を併用するこ�
 
 ## 手順 1: Rainbow での XLIFF 抽出
 
+現時点では、note にて使用方法を解説しています。
+今後、本マニュアル用にも整理する予定です。
+
+[Okapi Framework の Rainbow で Excel フィルタを使う ](https://note.com/lambuage/n/n61a79b9e1696)
+
+<!--
 1. **Rainbow の起動とファイル追加**:
    - Rainbow を起動し、**Input List 1** タブに対象の多言語 Excel ファイル（`.xlsx`）をドラッグ＆ドロップで追加します。
 2. **言語コードの設定**:
@@ -49,6 +55,7 @@ Okapi Framework の GUI ツールである **Okapi Rainbow** を併用するこ�
 4. **XLIFF の抽出**:
    - メニューの **`Utilities` ➔ `Extraction File Creation`** を実行します。
    - 指定した出力フォルダに、標準 XLIFF ファイル（`.xlf`）が生成されます。
+-->
 
 ---
 

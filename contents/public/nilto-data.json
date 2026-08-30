@@ -1,0 +1,20 @@
+{
+  "buildTimestamp": "2026-08-30T02:04:51.102Z",
+  "news": [
+    {
+      "_id": 1735911128,
+      "_model": "news",
+      "_status": "published",
+      "_title": "SheepWeave マーケットプレイスにて公開",
+      "_created_at": "2026-08-30T00:41:59.947Z",
+      "_updated_at": "2026-08-30T00:44:07.387Z",
+      "_published_at": "2026-08-30T00:44:07.387Z",
+      "_last_published_at": "2026-08-30T00:44:07.387Z",
+      "title": "SheepWeave マーケットプレイスにて公開",
+      "type": "news",
+      "body": "これまでローカルでの VSIX からインストールしていた SheepWeave ですが、VS Codeマーケットプレイスと Open VSX にて公開できることとなりました。\n\nファイルをダウンロードすることなく、エディタ画面からのインストールやアップデートが可能となり、これまで以上に便利にお使いいただけます。\n\n今後とも SheepWeave をどうぞよろしくお願いいたします。",
+      "is_pinned": false
+    }
+  ],
+  "tools_blog": []
+}

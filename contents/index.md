@@ -8,6 +8,9 @@ hero:
   name: "Sheep Tools"
   text: "翻訳者のためのツール群<br/>Sheep ファミリー"
   tagline: 翻訳業務をよりスムーズに、より正確に。
+  image:
+    src: /lambuage-logo.png
+    alt: LAMBUAGE
   actions:
     - theme: brand
       text: 一覧へ
@@ -73,6 +76,6 @@ tags:
 
 ***
 
-# 最新の開発日記・発信
+# 公式リンク・SNS
 
-<SocialFeed noteUser="lambuage" xUser="lambuage" />
+<SocialLinksBlock />

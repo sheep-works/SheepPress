@@ -7,7 +7,7 @@ layout: home
 hero:
  name: "合同会社ランベージ"
  text: "よりよい翻訳のための工夫を"
- image: "lambuage.png"
+ image: "lambuage-logo.png"
  imageAlt: "lambuage"
 date: 2024-01-01
 updated: 2026-08-10

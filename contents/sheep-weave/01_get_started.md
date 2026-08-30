@@ -2,7 +2,7 @@
 title: "SheepWeave はじめに"
 description: "SheepWeave のインストールと初期設定ガイド"
 date: 2024-01-01
-updated: 2026-08-10
+updated: 2026-08-30
 author: "合同会社ランベージ & ひつじの翻訳室"
 lang: "ja"
 category: "SheepWeave"
@@ -52,13 +52,26 @@ SheepWeave は単体で XLIFF（mxliff, sdlxliff 等）を翻訳できます。
 
 ## 拡張機能（SheepWeave.vsix）
 
-SheepWeave を VS Code にインストールするためのファイルです。分かりやすいところに保存しておいてください。
+### VS Code 上でインストール
+
+SheepWeave Ver　0.1.3 以降はマーケットプレイスで公開されています。
+VS Code の一番左のサイドバーにある拡張機能のアイコンをクリックし、「SheepWeave」と検索することでインストールができます。
+
+![VS Code Extension Icon](./pict/extension_icon.png)
+
+![VS Code Extension Search Result](./pict/extension_search_result.png)
+
+### VSIX ファイルからインストール
+
+なんらかの理由でマーケットプレイスが使用できなかったり（オフラインなど）、リリース以外のバージョンをご利用になりたい場合は、以下の配布ページから直接 をダウンロードしてインストールすることもできます。
 
 ::: tip ダウンロード
-<a href="https://storage.lambuage.com/#latest" target="_blank" rel="noopener noreferrer">こちら</a>から（最新は Ver 0.1.0）
+<a href="https://storage.lambuage.com/#latest" target="_blank" rel="noopener noreferrer">こちら</a>から
 :::
 
-続いて、VS Code に拡張機能をインストールします。
+ダウンロードしたファイルは、分かりやすいところに置いておいてください。
+
+ダウンロードができたら、VS Code に拡張機能をインストールします。
 [表示]>[拡張機能]（または `Ctrl + Shift + X`）と進むと、左側に拡張機能の一覧が表示されます。
 
 ![VS Code Extension Pane](./pict/extension_pane.png)

@@ -19,3 +19,6 @@ memo.md
 
 # Warehouse
 warehouse/
+
+# Environment variables
+.env
