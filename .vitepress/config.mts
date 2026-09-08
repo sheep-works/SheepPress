@@ -80,10 +80,18 @@ export default defineConfig({
 
     return head
   },
-  // Google Analytics
+  // Google Analytics & BowNow
   head: [
     ["script", { async: "true", src: "https://www.googletagmanager.com/gtag/js?id=G-PFT0GHJFSL" }],
-    ["script", {}, "window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-PFT0GHJFSL');"]
+    ["script", {}, "window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-PFT0GHJFSL');"],
+    [
+      "script",
+      { id: "_bownow_ts" },
+      `var _bownow_ts = document.createElement('script');
+_bownow_ts.charset = 'utf-8';
+_bownow_ts.src = 'https://contents.bownow.jp/js/UTC_0b6e8f464ee2de6eb03f/trace.js';
+document.getElementsByTagName('head')[0].appendChild(_bownow_ts);`
+    ]
   ],
   // Site-wide settings
   title: "LAMBUAGE",
