@@ -150,23 +150,38 @@ function formatDate(dateStr?: string) {
   return `${d.getFullYear()}/${String(d.getMonth() + 1).padStart(2, '0')}/${String(d.getDate()).padStart(2, '0')}`
 }
 
-// 簡易Markdown HTMLレンダラー（NILTOから来たMarkdownテキストを画面用に基本整形）
+import { marked } from 'marked'
+
+marked.setOptions({
+  breaks: true,
+  gfm: true
+})
+
+function transformMediaEmbeds(text: string) {
+  if (!text) return '';
+  text = text.replace(
+    /\[(?:埋め込み動画:?|動画:?)?\s*([^\]]*)\]\((https?:\/\/[^\s\)]+\.(?:mp4|webm|mov|m4v|ogg)(?:\?[^\s\)]*)?)\)/gi,
+    '<video controls style="max-width: 100%; width: 100%; border-radius: 8px; margin: 1.5rem 0;" preload="metadata"><source src="$2">お使いのブラウザは動画タグをサポートしていません。</video>'
+  );
+  text = text.replace(
+    /\[(?:埋め込み動画:?|YouTube:?)?\s*[^\]]*\]\((https?:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]+)[^\s\)]*)\)/gi,
+    '<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 1.5rem 0; border-radius: 8px;"><iframe src="https://www.youtube-nocookie.com/embed/$2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+  );
+  text = text.replace(
+    /\[(?:埋め込み音声:?|音声:?)?\s*([^\]]*)\]\((https?:\/\/[^\s\)]+\.(?:mp3|wav|m4a|aac|ogg)(?:\?[^\s\)]*)?)\)/gi,
+    '<audio controls style="width: 100%; margin: 1rem 0;"><source src="$2">お使いのブラウザは音声タグをサポートしていません。</audio>'
+  );
+  return text;
+}
+
 function renderMarkdown(mdStr?: string) {
   if (!mdStr) return ''
-  // 簡易的にエスケープ & 見出し・リスト・改行の簡易処理（HTMLタグが含まれている場合はそのまま）
-  if (mdStr.includes('<h1') || mdStr.includes('<p>')) {
+  try {
+    const transformed = transformMediaEmbeds(mdStr)
+    return marked.parse(transformed) as string
+  } catch (e) {
     return mdStr
   }
-  let html = mdStr
-    .replace(/^### (.*$)/gim, '<h3>$1</h3>')
-    .replace(/^## (.*$)/gim, '<h2>$1</h2>')
-    .replace(/^# (.*$)/gim, '<h1>$1</h1>')
-    .replace(/^> (.*$)/gim, '<blockquote>$1</blockquote>')
-    .replace(/\*\*(.*)\*\*/gim, '<strong>$1</strong>')
-    .replace(/\*(.*)\*/gim, '<em>$1</em>')
-    .replace(/\n\n/gim, '<br/><br/>')
-
-  return html
 }
 </script>
 
@@ -256,7 +271,7 @@ function renderMarkdown(mdStr?: string) {
           class="article-card"
           :class="{ expanded: expandedItems[item._id] }"
         >
-          <div class="article-header" @click="toggleExpand(item._id)">
+          <div class="article-header">
             <div class="article-meta">
               <span class="article-date">{{ formatDate(item._published_at || item._created_at) }}</span>
               <span v-if="item.isLiveNew" class="badge-new">NEW</span>
@@ -264,14 +279,25 @@ function renderMarkdown(mdStr?: string) {
               <span class="badge-model">雑記</span>
             </div>
 
-            <h3 class="article-title">
-              {{ item.title || item._title }}
+            <h3 class="article-title" @click="toggleExpand(item._id)">
+              <a :href="'/blog/' + (item.slug || item._id)" class="blog-title-link">
+                {{ item.title || item._title }}
+              </a>
               <span class="expand-icon">{{ expandedItems[item._id] ? '▲' : '▼' }}</span>
             </h3>
 
             <p v-if="item.summary && !expandedItems[item._id]" class="article-summary">
               {{ item.summary }}
             </p>
+
+            <div class="article-actions">
+              <a :href="'/blog/' + (item.slug || item._id)" class="read-more-link">
+                個別ページで読む ↗
+              </a>
+              <button class="toggle-preview-btn" @click="toggleExpand(item._id)">
+                {{ expandedItems[item._id] ? 'プレビューを閉じる' : 'ここでプレビュー' }}
+              </button>
+            </div>
           </div>
 
           <div v-show="expandedItems[item._id]" class="article-body">
@@ -472,12 +498,90 @@ function renderMarkdown(mdStr?: string) {
   color: var(--vp-c-text-1);
 }
 
+.blog-title-link {
+  color: var(--vp-c-text-1) !important;
+  text-decoration: none !important;
+}
+
+.blog-title-link:hover {
+  color: var(--vp-c-brand-1) !important;
+}
+
+.article-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.read-more-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 12px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #fff !important;
+  background: var(--vp-c-brand-1);
+  border-radius: 6px;
+  text-decoration: none !important;
+  transition: background 0.2s;
+}
+
+.read-more-link:hover {
+  background: var(--vp-c-brand-2);
+}
+
+.toggle-preview-btn {
+  background: none;
+  border: 1px solid var(--vp-c-divider);
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  color: var(--vp-c-text-2);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.toggle-preview-btn:hover {
+  color: var(--vp-c-text-1);
+  background: var(--vp-c-bg-alt);
+}
+
 .markdown-body :deep(h1),
 .markdown-body :deep(h2),
-.markdown-body :deep(h3) {
+.markdown-body :deep(h3),
+.markdown-body :deep(h4),
+.markdown-body :deep(h5),
+.markdown-body :deep(h6) {
   margin-top: 1.2em;
   margin-bottom: 0.6em;
   font-weight: 700;
+  color: var(--vp-c-text-1);
+}
+
+.markdown-body :deep(h4) { font-size: 1.1rem; }
+.markdown-body :deep(h5) { font-size: 1.0rem; }
+
+.markdown-body :deep(ul) {
+  list-style-type: disc;
+  padding-left: 1.5em;
+  margin: 0.8em 0;
+}
+
+.markdown-body :deep(ol) {
+  list-style-type: decimal;
+  padding-left: 1.5em;
+  margin: 0.8em 0;
+}
+
+.markdown-body :deep(li) {
+  margin-bottom: 0.3em;
+  line-height: 1.6;
+}
+
+.markdown-body :deep(p) {
+  margin: 0.8em 0;
+  line-height: 1.7;
 }
 
 .markdown-body :deep(blockquote) {

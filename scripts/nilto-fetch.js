@@ -101,7 +101,24 @@ async function niltoToMarkdown(targetModel = '') {
       frontmatter[key] = value;
     }
 
-    const bodyContent = item.body || '';
+    function transformMediaEmbeds(text) {
+      if (!text) return '';
+      text = text.replace(
+        /\[(?:埋め込み動画:?|動画:?)?\s*([^\]]*)\]\((https?:\/\/[^\s\)]+\.(?:mp4|webm|mov|m4v|ogg)(?:\?[^\s\)]*)?)\)/gi,
+        '<video controls style="max-width: 100%; width: 100%; border-radius: 8px; margin: 1.5rem 0;" preload="metadata"><source src="$2">お使いのブラウザは動画タグをサポートしていません。</video>'
+      );
+      text = text.replace(
+        /\[(?:埋め込み動画:?|YouTube:?)?\s*[^\]]*\]\((https?:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]+)[^\s\)]*)\)/gi,
+        '<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 1.5rem 0; border-radius: 8px;"><iframe src="https://www.youtube-nocookie.com/embed/$2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+      );
+      text = text.replace(
+        /\[(?:埋め込み音声:?|音声:?)?\s*([^\]]*)\]\((https?:\/\/[^\s\)]+\.(?:mp3|wav|m4a|aac|ogg)(?:\?[^\s\)]*)?)\)/gi,
+        '<audio controls style="width: 100%; margin: 1rem 0;"><source src="$2">お使いのブラウザは音声タグをサポートしていません。</audio>'
+      );
+      return text;
+    }
+
+    const bodyContent = transformMediaEmbeds(item.body || '');
     const mdContent = `${stringifyFrontmatter(frontmatter)}\n${bodyContent.trim()}\n`;
 
     const filename = `${frontmatter.slug || item._id}.md`;
