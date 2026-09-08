@@ -154,6 +154,7 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);`
                 { text: '各ステップの詳細手順', link: '/sheep-comb/02_steps_desc' },
                 { text: '対訳検索（コンコーダンス）', link: '/sheep-comb/11_tools_concordance' },
                 { text: 'テキスト比較（差分ツール）', link: '/sheep-comb/12_tools_diff' },
+                { text: 'データ構造と型定義', link: '/sheep-comb/99_types' },
               ]
             },
           ],
@@ -166,6 +167,7 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);`
                 { text: 'はじめに', link: '/sheep-bobbin/01_introduction' },
                 { text: 'ローカルLLMとの通信', link: '/sheep-bobbin/02_local_llm' },
                 { text: 'クラウドLLMとの通信', link: '/sheep-bobbin/03_cloud_llm' },
+                { text: 'コンソールとログ・消費トークン', link: '/sheep-bobbin/04_console_and_tokens' },
               ]
             },
           ],
@@ -244,6 +246,7 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);`
                 { text: 'Step-by-Step Guide', link: '/en/sheep-comb/02_steps_desc' },
                 { text: 'Concordance Search', link: '/en/sheep-comb/11_tools_concordance' },
                 { text: 'Text Diff Tool', link: '/en/sheep-comb/12_tools_diff' },
+                { text: 'Data Schema & Types', link: '/en/sheep-comb/99_types' },
               ]
             },
           ],
@@ -256,6 +259,7 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);`
                 { text: 'Getting Started', link: '/en/sheep-bobbin/01_introduction' },
                 { text: 'Local LLM Setup', link: '/en/sheep-bobbin/02_local_llm' },
                 { text: 'Cloud LLM Setup', link: '/en/sheep-bobbin/03_cloud_llm' },
+                { text: 'Console, Logs & Tokens', link: '/en/sheep-bobbin/04_console_and_tokens' },
               ]
             },
           ],
@@ -332,6 +336,7 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);`
                 { text: '各步骤详细操作指南', link: '/zh/sheep-comb/02_steps_desc' },
                 { text: '双语语料检索', link: '/zh/sheep-comb/11_tools_concordance' },
                 { text: '文本对比工具', link: '/zh/sheep-comb/12_tools_diff' },
+                { text: '数据结构与类型定义', link: '/zh/sheep-comb/99_types' },
               ]
             },
           ],
@@ -344,6 +349,7 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);`
                 { text: '使用入门', link: '/zh/sheep-bobbin/01_introduction' },
                 { text: '本地LLM通信配置', link: '/zh/sheep-bobbin/02_local_llm' },
                 { text: '云端LLM通信配置', link: '/zh/sheep-bobbin/03_cloud_llm' },
+                { text: '控制台、日志与Token记录', link: '/zh/sheep-bobbin/04_console_and_tokens' },
               ]
             },
           ],

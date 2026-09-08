@@ -31,4 +31,4 @@ Like a bobbin quietly winding thread behind the scenes, it works tirelessly in t
 
 - **User-Friendly for Everyone**: Inspect content in a web browser & configure in a desktop GUI app. Virtually no terminal commands required.
 - **Local LLM Support**: If you run local LLMs via LM Studio or Ollama, processing is completely self-contained on your device.
-- **Support for Free & Paid Cloud AI**: In addition to Vertex AI used in SheepLint, it supports APIs like Google AI Studio, ChatGPT, and DeepSearch, allowing you to use your preferred AI and minimize costs.
+- **Support for Free & Paid Cloud AI**: In addition to Vertex AI used in SheepLint, it supports APIs like Google AI Studio, ChatGPT, and DeepSeek, allowing you to use your preferred AI and minimize costs.

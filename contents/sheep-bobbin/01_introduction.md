@@ -16,14 +16,15 @@ tags:
 # はじめに
 
 SheepBobbin は AI を用いた翻訳処理ツールです。
-翻訳のチェックを主な目的としていますが、翻訳後の文章の作成・修正も可能です。
-基本的には、Web アプリである[SheepCombWeb](https://sheepcomb.netlify.app/)と連携して使うことになります。
-ブラウザ上で対訳ファイル（xliff/xlsx など）を AI 向けのファイル形式である JSONL に変換しつつ、AI が無理なく理解できるトークンサイズに小分け（チャンク化）することで、そのまま投入するよりも高精度な処理が可能となっています。
-また、翻訳メモリ（Translation Memory：TM）や用語集（Glossary、Termbase/TB）も JSON ファイルに情報として保持できるため、コンテクストを活用した翻訳やチェックもやりやすくなっています。
+翻訳のチェックを主な目的としていますが、プロンプト次第で翻訳の作成や、モノリンガルチェック、口調変更なども可能です。
+基本的には、Web アプリである[SheepCombWeb](https://comb.lambuage.com/)や、VS Code拡張型翻訳支援ツール[SheepWeave](/sheep-weave/)と連携して使うことになります。
+
+対訳ファイル（xliff/xlsx など）を AI 向けのファイル形式である JSONL に変換しつつ、AI が無理なく理解できるトークンサイズに小分け（チャンク化）することで、そのまま投入するよりも高精度な処理が可能となっています。
+また、翻訳メモリ（Translation Memory：TM）や用語集（Glossary、Termbase：TB）も JSON ファイルに情報として保持できるため、コンテクストを活用した翻訳やチェックもやりやすくなっています。
 
 # インストール
 
-1. <a href="https://storage.lambuage.com" target="_blank" rel="noopener noreferrer">こちら</a>にアクセスして exe ファイルをダウンロードします（最新は Ver 1.0.1）
+1. <a href="https://storage.lambuage.com" target="_blank" rel="noopener noreferrer">こちら</a>にアクセスして exe ファイルをダウンロードします
 2. ダブルクリックしてインストール＆起動します
 3. 初回起動時はネットワークへのアクセス許可を求められるので、**許可** してください
 
@@ -44,7 +45,7 @@ Ollama と LM Studio は、同じデバイス上でアプリケーションが�
 
 選択した時点で接続が確立されれば、インストールされているモデルが一覧表示されますので、ここから使いたいモデルを選択してください。
 
-### Google AI Studio / ChatGPT/ DeepSearch の使用
+### Google AI Studio / ChatGPT/ DeepSeek の使用
 
 これらのサービスを使用するには、ユーザー自身が各サービスへのアクセス権限を持っており、なおかつ API キーを取得している必要があります。
 プロバイダーの選択後に API キーを入力します。
@@ -66,12 +67,16 @@ API キーの取得方法については[こちら](/sheep-bobbin/03_cloud_llm)�
 もしこれらの処理が難しい場合は、**当社のアカウント** をご利用いただくことを予定しています。
 こちらのユーザー登録および費用については、現在検討中のため、今しばらくお待ちください。
 
-## SheepCombWeb でのデータ準備と AI 依頼
+## SheepCombWeb でのデータ準備と AI へのリクエスト
 
-[SheepCombWeb](https://sheepcomb.netlify.app/)にアクセスし、**抽出（旧名：パース）** ページから処理を開始します。
+[SheepCombWeb](https://comb.lambuage.com/)にアクセスし、**抽出（旧名：パース）** ページから処理を開始します。
 ブラウザ上で「抽出 ＞ フィルタ ＞ 構造化 ＞ 解析 ＞ 管理」の順でデータを加工・準備し、最後に **API** ページに進んで AI（LLM）への処理リクエストを行います。
 
 ::: tip
 SheepCombWeb の具体的な操作手順や、各機能の詳細については、[こちら](/sheep-comb/)を参照してください。
 :::
 
+## SheepWeave から AI へのリクエスト
+
+SheepWeave で翻訳している際にも、SheepBobbin を活用することが可能です。
+詳細については、[こちら](/sheep-weave/08_LLM_usage) を参照してください。

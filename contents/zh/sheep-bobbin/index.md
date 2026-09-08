@@ -31,4 +31,4 @@ SheepComb 的姊妹工具。
 
 - **开箱即用，人人可用**：在网页浏览器中直观核对内容，在桌面端可视化配置，基本无需任何终端命令行操作。
 - **全面支持本地 LLM**：配合 LM Studio 或 Ollama 等本地大模型运行时，所有数据处理完全在本地设备内部闭环完成，数据绝对安全。
-- **兼容各类付费与免费云端 AI**：除 SheepLint 使用的 Vertex AI 外，还支持 Google AI Studio、ChatGPT、DeepSearch 等 API 接口，可直接复用现有 AI 额度降低使用成本。
+- **兼容各类付费与免费云端 AI**：除 SheepLint 使用的 Vertex AI 外，还支持 Google AI Studio、ChatGPT、DeepSeek 等 API 接口，可直接复用现有 AI 额度降低使用成本。

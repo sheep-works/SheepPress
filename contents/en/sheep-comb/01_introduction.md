@@ -19,9 +19,27 @@ tags:
 This page is machine-translated by Gemini.
 :::
 
+# How to Use SheepComb
+
+SheepComb is a composite toolkit combining **Type Definitions**, **Conversion Logic**, **CLI Tools**, a **Web UI**, **API Controllers**, and a **Local API Hub Server**.
+Together, they enable seamless translation data operations:
+
+- Extract translation units from XML (XLIFF), CSV, Excel, etc., count words/characters, and verify structure (TM/TB readiness).
+- Match text against Translation Memories (TM) and Termbases (TB) to identify exact and fuzzy matches.
+- Divide large datasets into AI-friendly chunks or export them to JSON / JSONL formats.
+- Send chunked units and structured prompts to LLMs for batch translation and QA.
+- Enhance AI accuracy through structured payload design and context injection. Compatible with both local and cloud LLMs.
+
+While the CLI is recommended for enterprise batch processing, the **Web UI** is the most intuitive interface for day-to-day workflows.
+This guide focuses primarily on the **Web UI**. For CLI details, refer to the project repository README.
+
+::: tip
+For data schema details, refer to [Data Schema & Types](/en/sheep-comb/99_types). For local API server setup, see [SheepBobbin](/en/sheep-bobbin/).
+:::
+
 # Using SheepComb Web
 
-[SheepComb Web](https://sheepcomb.netlify.app) provides an end-to-end suite of tools for translation data extraction, volume counting, structuring (applying TM/TB), AI-assisted translation/checking, terminology search, and text diffing.
+[SheepComb Web](https://comb.lambuage.com) provides an end-to-end suite of tools for translation data extraction, volume counting, structuring (applying TM/TB), AI-assisted translation/checking, terminology search, and text diffing.
 
 SheepComb Web requires zero installation and runs directly in your browser (Google Chrome, Edge, etc.).
 

@@ -24,6 +24,8 @@ ollama はデフォルトでサーバー機能を備えています。Ollama と
 この状態で、Active Provider に Ollama を選択すると、SheepBobbin から Ollama に対して、インストールされているモデルの一覧が問い合わせされます。一覧が表示されていれば、通信は成功ですので、SheepCombWeb の画面に戻って処理ができるようになっています。
 モデル一覧が表示されない場合は、Ollama を再起動するか、SheepBobbin のコンソールをご確認ください。
 
+![Ollama Setting](./pict/ollama_setting.png)
+
 ::: tip
 SheepBobbin から Ollama への通信はデフォルトのポート（11434）を使用します。変更していた場合は、デフォルトポートに戻しておいてください。
 :::
@@ -35,6 +37,8 @@ LM Studio を起動したら、開発者オプションを開き、左上のサ�
 
 この状態で、Active Provider に LM Studio を選択すると、SheepBobbin から LM Studio に対して、インストールされているモデルの一覧が問い合わせされます。一覧が表示されていれば、通信は成功ですので、SheepCombWeb の画面に戻って処理ができるようになっています。
 モデル一覧が表示されない場合は、LM Studio を再起動するか、SheepBobbin のコンソールをご確認ください。
+
+![LM Studio Setting](./pict/lmstudio_setting.png)
 
 ::: tip
 SheepBobbin から LM Studio への通信はデフォルトのポート（8080）を使用します。変更していた場合は、デフォルトポートに戻しておいてください。

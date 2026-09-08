@@ -29,6 +29,8 @@ Ollama 默认自带后台服务功能。安装 Ollama 并下载好对应模型�
 在此状态下，在 Active Provider 中选择 Ollama，SheepBobbin 会自动查询本地已安装的模型列表。若列表中正常显示模型名称，说明通信成功，即可返回 SheepCombWeb 进行后续数据处理。
 若未显示模型列表，请尝试重启 Ollama 或查看 SheepBobbin 控制台日志。
 
+![Ollama Setting](./pict/ollama_setting.png)
+
 ::: tip
 SheepBobbin 与 Ollama 通信默认使用 11434 端口。若曾修改过端口配置，请还原为默认端口。
 :::
@@ -40,6 +42,8 @@ LM Studio 默认状态下并未开启本地服务。因此需要手动启用 Loc
 
 在此状态下，在 Active Provider 中选择 LM Studio，SheepBobbin 会自动拉取已加载的模型列表。正常显示模型名称即表示连接成功。
 若未检测到模型，请重启 LM Studio 或检查控制台信息。
+
+![LM Studio Setting](./pict/lmstudio_setting.png)
 
 ::: tip
 SheepBobbin 与 LM Studio 通信默认使用 8080 端口。若曾修改过端口，请还原为默认端口。

@@ -29,6 +29,8 @@ Ollama includes built-in server functionality by default. After installing Ollam
 When you select Ollama as the Active Provider, SheepBobbin queries Ollama for installed models. Once the model list appears, the connection is active, and you can proceed with data processing in SheepCombWeb.
 If the list does not load, restart Ollama or check the SheepBobbin console logs.
 
+![Ollama Setting](./pict/ollama_setting.png)
+
 ::: tip
 SheepBobbin communicates with Ollama via the default port (11434). If you changed it, please revert to the default port.
 :::
@@ -40,6 +42,8 @@ Launch LM Studio, open the Developer/Server options, and click the Start Server 
 
 With the server running, select LM Studio as Active Provider in SheepBobbin. It will query the available models. Once the list loads, the connection is verified.
 If models do not appear, restart LM Studio or inspect the console output.
+
+![LM Studio Setting](./pict/lmstudio_setting.png)
 
 ::: tip
 SheepBobbin communicates with LM Studio via the default port (8080). If you customized it, please revert to the default port.

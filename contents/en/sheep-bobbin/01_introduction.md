@@ -21,14 +21,15 @@ This page is machine-translated by Gemini.
 # Getting Started
 
 SheepBobbin is an AI-powered translation processing tool.
-While its primary purpose is translation checking and QA, it also supports generating and revising translated texts.
-Typically, it is used in tandem with the web application [SheepCombWeb](https://sheepcomb.netlify.app/).
-By converting bilingual files (XLIFF, XLSX, etc.) into the AI-optimized JSONL format in the browser and breaking them into optimal token sizes (chunking), it achieves significantly higher accuracy than feeding raw entire files.
+While its primary purpose is translation checking and QA, depending on your prompts, it can also handle translation draft generation, monolingual proofreading, tone rewriting, and more.
+Typically, it is used in tandem with the web application [SheepCombWeb](https://comb.lambuage.com/) or the VS Code-based translation extension [SheepWeave](/en/sheep-weave/).
+
+By converting bilingual files (XLIFF, XLSX, etc.) into the AI-optimized JSONL format and breaking them into optimal token sizes (chunking), it achieves significantly higher accuracy than feeding raw entire files.
 Furthermore, Translation Memories (TM) and Termbases (TB) can be embedded into the JSON payload, making context-aware translation and QA seamless.
 
 # Installation
 
-1. Visit <a href="https://storage.lambuage.com" target="_blank" rel="noopener noreferrer">this link</a> to download the executable (`.exe`) (Latest: Ver 1.0.1).
+1. Visit <a href="https://storage.lambuage.com" target="_blank" rel="noopener noreferrer">this link</a> to download the executable (`.exe`).
 2. Double-click to install and launch the application.
 3. On first startup, if prompted for network firewall permissions, click **Allow**.
 
@@ -49,7 +50,7 @@ For detailed instructions, refer to [Connecting to Local LLMs](/en/sheep-bobbin/
 
 Once selected, if the connection is established, the list of installed models will appear. Select the model you wish to use.
 
-### Using Google AI Studio / ChatGPT / DeepSearch
+### Using Google AI Studio / ChatGPT / DeepSeek
 
 To use these services, you must hold access credentials and an active API key for the respective service.
 Select the provider, enter your API key, and if valid, available models will be populated. Select the model you want.
@@ -68,9 +69,15 @@ If setting up your own GCP project is challenging, we plan to provide access thr
 
 ## Preparing Data in SheepCombWeb and Requesting AI
 
-Access [SheepCombWeb](https://sheepcomb.netlify.app/) and start from the **Extract (Parse)** page.
+Access [SheepCombWeb](https://comb.lambuage.com/) and start from the **Extract (Parse)** page.
 Follow the sequence: "Extract > Filter > Structure > Analyze > Manage", and finally proceed to the **API** page to send requests to your AI models.
 
 ::: tip
 For step-by-step instructions on SheepCombWeb, refer to [SheepComb Documentation](/en/sheep-comb/).
 :::
+
+## Requesting AI from SheepWeave
+
+You can also leverage SheepBobbin while translating directly in SheepWeave.
+For details, refer to [LLM / AI Integration in SheepWeave](/en/sheep-weave/08_LLM_usage).
+
