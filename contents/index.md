@@ -9,7 +9,7 @@ hero:
   text: "翻訳者のためのツール群<br/>Sheep ファミリー"
   tagline: 翻訳業務をよりスムーズに、より正確に。
   image:
-    src: /lambuage-logo.png
+    src: /lambuage-logo-banner.png
     alt: LAMBUAGE
   actions:
     - theme: brand

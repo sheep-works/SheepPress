@@ -41,6 +41,7 @@ const socialLinks: SocialLink[] = [
 
 <template>
   <div class="social-links-container">
+    <!-- Other Social Links Grid -->
     <div class="social-links-grid">
       <a 
         v-for="link in socialLinks" 
@@ -81,6 +82,35 @@ const socialLinks: SocialLink[] = [
         </div>
       </a>
     </div>
+
+    <!-- YouTube Embedded Playlist Card -->
+    <div class="youtube-player-card">
+      <div class="youtube-header">
+        <div class="youtube-title">
+          <svg class="youtube-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+          <span>YouTube 動画解説・デモ再生リスト</span>
+        </div>
+        <a 
+          href="https://youtube.com/playlist?list=PLZo3GhAxn8uE&si=2eIQuoHeZdhZusmm" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="youtube-link"
+        >
+          YouTubeで全動画を開く ↗
+        </a>
+      </div>
+      <div class="youtube-embed-wrapper">
+        <iframe 
+          src="https://www.youtube-nocookie.com/embed/videoseries?list=PLZo3GhAxn8uE" 
+          title="YouTube Playlist" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -89,6 +119,7 @@ const socialLinks: SocialLink[] = [
   margin: 24px 0;
 }
 
+/* Social Grid */
 .social-links-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -184,5 +215,73 @@ const socialLinks: SocialLink[] = [
   font-size: 0.82rem;
   color: var(--vp-c-text-2);
   line-height: 1.4;
+}
+
+/* YouTube Embedded Player */
+.youtube-player-card {
+  margin-top: 20px;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+  transition: border-color 0.25s ease;
+}
+
+.youtube-player-card:hover {
+  border-color: var(--vp-c-brand-1);
+}
+
+.youtube-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.youtube-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--vp-c-text-1);
+}
+
+.youtube-icon {
+  width: 24px;
+  height: 24px;
+  color: #ff0000;
+}
+
+.youtube-link {
+  font-size: 0.85rem;
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.youtube-link:hover {
+  text-decoration: underline;
+}
+
+.youtube-embed-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #000;
+}
+
+.youtube-embed-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 </style>

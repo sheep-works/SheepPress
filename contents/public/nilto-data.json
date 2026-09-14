@@ -1,6 +1,20 @@
 {
-  "buildTimestamp": "2026-09-08T08:01:24.698Z",
+  "buildTimestamp": "2026-09-14T01:03:10.338Z",
   "news": [
+    {
+      "_id": 62300358,
+      "_model": "news",
+      "_status": "published",
+      "_title": "YouTubeチャンネルを開設しました",
+      "_created_at": "2026-09-11T05:05:27.645Z",
+      "_updated_at": "2026-09-11T05:51:12.424Z",
+      "_published_at": "2026-09-11T05:07:19.802Z",
+      "_last_published_at": "2026-09-11T05:51:12.424Z",
+      "title": "YouTubeチャンネルを開設しました",
+      "type": "news",
+      "body": "各種ツールの紹介・説明をするYouTubeチャンネルを開設しました。\n\nどんなツールも、マニュアルのような文字だけでは分かりにくいことも多々あります。それを動画で補いつつ、より身近に感じていただければと思います。\n\n第一弾は「SheepComb による抽出とLLM」です。\n\n<div style=\"position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 1.5rem 0; border-radius: 8px;\"><iframe src=\"https://www.youtube-nocookie.com/embed/FlilrjkswME\" style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div>\n\nぜひご覧ください！",
+      "is_pinned": false
+    },
     {
       "_id": 1735911128,
       "_model": "news",
