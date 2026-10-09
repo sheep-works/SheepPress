@@ -41,9 +41,21 @@ tags:
 ### 游戏本地化（100万字以上）
 
 #### 失落城堡 2（Lost Castle 2）
-<SteamWidget appId="2445690" />
-- 2D Rogue-lite 动作冒险游戏
-- 2026 年 6 月发售
+<SteamWidget appId="2445690">
+  <ul>
+    <li>2D Rogue-lite 动作冒险游戏</li>
+    <li>2026 年 6 月发售</li>
+  </ul>
+</SteamWidget>
+
+#### 月核：星辰之旅（Lunarium）
+<SteamWidget appId="2939790">
+  <ul>
+    <li>奇幻动作冒险 RPG 游戏</li>
+    <li>2026 年 7 月发售</li>
+  </ul>
+  <p>※ 早期包含大量机翻内容上线，后续进行了人工修正与重译。</p>
+</SteamWidget>
 
 
 #### 其他游戏题材

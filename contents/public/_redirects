@@ -1,1 +1,4 @@
-/app/*  https://sheepcombpack.netlify.app/:splat  200
+/app      https://sheepcombpack.netlify.app/         200
+/app/     https://sheepcombpack.netlify.app/         200
+/app/*    https://sheepcombpack.netlify.app/:splat   200
+/_nuxt/*  https://sheepcombpack.netlify.app/_nuxt/:splat  200

@@ -41,9 +41,21 @@ This page is machine-translated by Gemini.
 ### Game Localization (1,000,000+ characters/words)
 
 #### Lost Castle 2
-<SteamWidget appId="2445690" />
-- 2D Rogue-lite action game
-- Released in June 2026
+<SteamWidget appId="2445690">
+  <ul>
+    <li>2D Rogue-lite action game</li>
+    <li>Released in June 2026</li>
+  </ul>
+</SteamWidget>
+
+#### Lunarium
+<SteamWidget appId="2939790">
+  <ul>
+    <li>Fantasy action-adventure RPG</li>
+    <li>Released in July 2026</li>
+  </ul>
+  <p>*Note: Initially released containing extensive raw AI translation; later revised and polished by human linguists.</p>
+</SteamWidget>
 
 
 #### Other Genres
