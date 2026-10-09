@@ -13,8 +13,8 @@ const props = withDefaults(
     tags?: string[]
   }>(),
   {
-    appId: '2623480',
-    url: 'https://store.steampowered.com/app/2623480/Lost_Castle_2/'
+    appId: '2445690',
+    url: 'https://store.steampowered.com/app/2445690/Lost_Castle_2/'
   }
 )
 

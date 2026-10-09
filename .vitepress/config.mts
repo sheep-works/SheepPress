@@ -171,6 +171,15 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);`
               ]
             },
           ],
+          '/sheep-bell/': [
+            { text: 'トップへ戻る', link: '/' },
+            {
+              text: 'SheepBell',
+              items: [
+                { text: '概要', link: '/sheep-bell/' },
+              ]
+            },
+          ],
 
           '/': [
             {
@@ -263,6 +272,15 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);`
               ]
             },
           ],
+          '/en/sheep-bell/': [
+            { text: 'Back to Home', link: '/en/' },
+            {
+              text: 'SheepBell',
+              items: [
+                { text: 'Overview', link: '/en/sheep-bell/' },
+              ]
+            },
+          ],
           '/en/': [
             {
               text: 'Menu',
@@ -350,6 +368,15 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);`
                 { text: '本地LLM通信配置', link: '/zh/sheep-bobbin/02_local_llm' },
                 { text: '云端LLM通信配置', link: '/zh/sheep-bobbin/03_cloud_llm' },
                 { text: '控制台、日志与Token记录', link: '/zh/sheep-bobbin/04_console_and_tokens' },
+              ]
+            },
+          ],
+          '/zh/sheep-bell/': [
+            { text: '返回首页', link: '/zh/' },
+            {
+              text: 'SheepBell',
+              items: [
+                { text: '概要', link: '/zh/sheep-bell/' },
               ]
             },
           ],

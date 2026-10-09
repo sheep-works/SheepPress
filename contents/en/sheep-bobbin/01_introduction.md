@@ -22,7 +22,7 @@ This page is machine-translated by Gemini.
 
 SheepBobbin is an AI-powered translation processing tool.
 While its primary purpose is translation checking and QA, depending on your prompts, it can also handle translation draft generation, monolingual proofreading, tone rewriting, and more.
-Typically, it is used in tandem with the web application [SheepCombWeb](https://comb.lambuage.com/) or the VS Code-based translation extension [SheepWeave](/en/sheep-weave/).
+Typically, it is used in tandem with the web application [SheepCombWeb](https://lambuage.com/app) or the VS Code-based translation extension [SheepWeave](/en/sheep-weave/).
 
 By converting bilingual files (XLIFF, XLSX, etc.) into the AI-optimized JSONL format and breaking them into optimal token sizes (chunking), it achieves significantly higher accuracy than feeding raw entire files.
 Furthermore, Translation Memories (TM) and Termbases (TB) can be embedded into the JSON payload, making context-aware translation and QA seamless.
@@ -69,7 +69,7 @@ If setting up your own GCP project is challenging, we plan to provide access thr
 
 ## Preparing Data in SheepCombWeb and Requesting AI
 
-Access [SheepCombWeb](https://comb.lambuage.com/) and start from the **Extract (Parse)** page.
+Access [SheepCombWeb](https://lambuage.com/app) and start from the **Extract (Parse)** page.
 Follow the sequence: "Extract > Filter > Structure > Analyze > Manage", and finally proceed to the **API** page to send requests to your AI models.
 
 ::: tip

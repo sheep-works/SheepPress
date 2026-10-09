@@ -22,7 +22,7 @@ tags:
 
 SheepBobbin 是一款利用大语言模型（LLM）进行翻译数据处理的桌面辅助工具。
 其核心应用场景为翻译质检与校验，但根据 Prompt 提示词的不同，同样支持译文生成、单语校对、语气口吻重构等丰富任务。
-通常情况下，它与在线 Web 应用 [SheepCombWeb](https://comb.lambuage.com/) 或 VS Code 扩展型翻译辅助工具 [SheepWeave](/zh/sheep-weave/) 配合使用。
+通常情况下，它与在线 Web 应用 [SheepCombWeb](https://lambuage.com/app) 或 VS Code 扩展型翻译辅助工具 [SheepWeave](/zh/sheep-weave/) 配合使用。
 
 在浏览器端将双语对齐文件（XLIFF、XLSX 等）转换为 AI 友好的 JSONL 格式，并自动切分为 AI 能够最佳理解的 Token 长度（分块/Chunking），从而获得显著优于直接盲目投喂整篇原始文件的处理精度。
 此外，翻译记忆库（TM）与术语库（TB）信息亦可作为上下文一并保留在 JSON 数据结构中，实现充分融合背景信息的智能翻译与校验。
@@ -69,7 +69,7 @@ API 密钥获取方式请参阅 [与云端 LLM 通信](/zh/sheep-bobbin/03_cloud
 
 ## 在 SheepCombWeb 中准备数据并发起 AI 请求
 
-访问 [SheepCombWeb](https://comb.lambuage.com/)，从 **提取（Parse）** 页面开始处理。
+访问 [SheepCombWeb](https://lambuage.com/app)，从 **提取（Parse）** 页面开始处理。
 在浏览器端依次按照“提取 ＞ 过滤 ＞ 结构化 ＞ 解析 ＞ 管理”的步骤加工数据，最后进入 **API** 页面向 AI（LLM）发起批量处理请求。
 
 ::: tip

@@ -1,5 +1,8 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, computed } from 'vue'
+import { useData } from 'vitepress'
+
+const { lang } = useData()
 
 const sectionRef = ref<HTMLElement | null>(null)
 const isVisible = ref(false)
@@ -20,6 +23,104 @@ onMounted(() => {
     isVisible.value = true
   }
 })
+
+const currentLang = computed(() => {
+  const l = (lang.value || 'ja').toLowerCase()
+  if (l.startsWith('en')) return 'en'
+  if (l.startsWith('zh')) return 'zh'
+  return 'ja'
+})
+
+const content = computed(() => {
+  if (currentLang.value === 'en') {
+    return {
+      title: 'Tool Development & Comprehensive Language Solutions for Translators',
+      company1: {
+        name: '🐑 Lambuage LLC',
+        linkText: 'About Us →',
+        url: '/en/about',
+        paras: [
+          'We provide comprehensive services including translation project direction, multilingual DTP/editing, and website creation.',
+          'We also develop the Sheep Family translation assistance tools born directly from real-world translation workflows.',
+          'Feel free to consult with us regarding language-related workflow optimization or any challenges you face.'
+        ]
+      },
+      company2: {
+        name: '📖 Sheep Translation Studio',
+        linkText: 'Overview →',
+        url: '/en/about#hitsuji',
+        paras: [
+          'Extensive experience in medical/pharmaceutical, legal/contract, and IT-related translations.',
+          'We also handle numerous projects in creative fields such as gaming and manga localization.',
+          'Whenever you need professional translation services, please reach out to us.'
+        ]
+      },
+      actions: {
+        contact: { text: 'Contact Us', url: '/en/contact' },
+        products: { text: 'Products & Details', url: '/en/product-list' },
+        records: { text: 'Track Record', url: '/en/records' }
+      }
+    }
+  }
+  if (currentLang.value === 'zh') {
+    return {
+      title: '专为译员打造的工具研发与全方位语言解决方案',
+      company1: {
+        name: '🐑 合同会社Lambuage',
+        linkText: '公司概要 →',
+        url: '/zh/about',
+        paras: [
+          '承接翻译项目统筹管理、多语言DTP排版与编辑、网站建设等全方位语言业务。',
+          '同时研发源自一线翻译实战的各类 Sheep Family 翻译辅助工具。',
+          '如您有任何多语言业务优化或技术难题，欢迎随时与我们探讨交流。'
+        ]
+      },
+      company2: {
+        name: '📖 绵羊翻译室',
+        linkText: '概要 →',
+        url: '/zh/about#hitsuji',
+        paras: [
+          '长期深耕医疗医药、商业合同及IT技术领域的专业翻译。',
+          '近年来亦参与了大量游戏、动漫等数字娱乐领域的本地化作品。',
+          '如您需要高品质的翻译与本地化服务，欢迎随时联系我们。'
+        ]
+      },
+      actions: {
+        contact: { text: '联系我们', url: '/zh/contact' },
+        products: { text: '产品列表', url: '/zh/product-list' },
+        records: { text: '业绩成果', url: '/zh/records' }
+      }
+    }
+  }
+  return {
+    title: '翻訳者のためのツール開発と一貫した言語ソリューション',
+    company1: {
+      name: '🐑 合同会社ランベージ',
+      linkText: '会社概要 →',
+      url: '/about',
+      paras: [
+        '翻訳に付随するディレクションや多言語DTP・編集、Webサイト制作などを広く請け負っております。',
+        'さらに、翻訳実務の現場から生まれた各種翻訳支援ツール（Sheep Family）として開発もしています。',
+        '言語にまつわる業務の効率化やお困りごとがあれば、いつでもご相談ください。'
+      ]
+    },
+    company2: {
+      name: '📖 ひつじの翻訳室',
+      linkText: '概要 →',
+      url: '/about#hitsuji',
+      paras: [
+        '医療・医薬品や契約書、IT関連の翻訳に長く携わってきました。',
+        '昨今はゲームや漫画といった分野でも多くの作品を手がけております。',
+        '翻訳が必要なときは、お気軽にお声がけください。'
+      ]
+    },
+    actions: {
+      contact: { text: 'お問い合わせ・ご相談', url: '/contact' },
+      products: { text: 'ツール一覧・詳細', url: '/product-list' },
+      records: { text: '翻訳実績', url: '/records' }
+    }
+  }
+})
 </script>
 
 <template>
@@ -29,35 +130,30 @@ onMounted(() => {
     :class="{ 'is-visible': isVisible }"
   >
     <div class="company-intro-content">
-      <!-- <div class="company-badge">ABOUT US</div> -->
-      <h2 class="company-title">翻訳者のためのツール開発と一貫した言語ソリューション</h2>
+      <h2 class="company-title">{{ content.title }}</h2>
       
       <div class="company-grid">
-        <a href="/about" class="company-item">
+        <a :href="content.company1.url" class="company-item">
           <div class="company-item-header">
-            <h3>🐑 合同会社ランベージ</h3>
-            <span class="company-link-arrow">会社概要 →</span>
+            <h3>{{ content.company1.name }}</h3>
+            <span class="company-link-arrow">{{ content.company1.linkText }}</span>
           </div>
-          <p>翻訳に付随するディレクションや多言語DTP・編集、Webサイト制作などを広く請け負っております。</p>
-          <p>さらに、翻訳実務の現場から生まれた各種翻訳支援ツール（Sheep Family）として開発もしています。</p>
-          <p>言語にまつわる業務の効率化やお困りごとがあれば、いつでもご相談ください。</p>
+          <p v-for="(p, idx) in content.company1.paras" :key="idx">{{ p }}</p>
         </a>
 
-        <a href="/about#hitsuji" class="company-item">
+        <a :href="content.company2.url" class="company-item">
           <div class="company-item-header">
-            <h3>📖 ひつじの翻訳室</h3>
-            <span class="company-link-arrow">概要 →</span>
+            <h3>{{ content.company2.name }}</h3>
+            <span class="company-link-arrow">{{ content.company2.linkText }}</span>
           </div>
-          <p>医療・医薬品や契約書、IT関連の翻訳に長く携わってきました。</p>
-          <p>昨今はゲームや漫画といった分野でも多くの作品を手がけております。</p>
-          <p>翻訳が必要なときは、お気軽にお声がけください。</p>
+          <p v-for="(p, idx) in content.company2.paras" :key="idx">{{ p }}</p>
         </a>
       </div>
 
       <div class="company-actions">
-        <a href="/contact" class="btn-primary">お問い合わせ・ご相談</a>
-        <a href="/product-list" class="btn-secondary">ツール一覧・詳細</a>
-        <a href="/records" class="btn-secondary">翻訳実績</a>
+        <a :href="content.actions.contact.url" class="btn-primary">{{ content.actions.contact.text }}</a>
+        <a :href="content.actions.products.url" class="btn-secondary">{{ content.actions.products.text }}</a>
+        <a :href="content.actions.records.url" class="btn-secondary">{{ content.actions.records.text }}</a>
       </div>
     </div>
   </div>
@@ -70,7 +166,7 @@ onMounted(() => {
   opacity: 0;
   transform: translateY(28px);
   transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
-  transition-delay: 0.5s; /* 初期表示時にHero画像のフェードインに合わせて時間差で出現 */
+  transition-delay: 0.5s;
 }
 
 .company-intro-section.is-visible {

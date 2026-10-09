@@ -41,7 +41,7 @@ This page is machine-translated by Gemini.
 ### Game Localization (1,000,000+ characters/words)
 
 #### Lost Castle 2
-<SteamWidget appId="2623480" />
+<SteamWidget appId="2445690" />
 - 2D Rogue-lite action game
 - Released in June 2026
 

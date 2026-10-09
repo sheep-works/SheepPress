@@ -17,7 +17,7 @@ tags:
 
 SheepBobbin は AI を用いた翻訳処理ツールです。
 翻訳のチェックを主な目的としていますが、プロンプト次第で翻訳の作成や、モノリンガルチェック、口調変更なども可能です。
-基本的には、Web アプリである[SheepCombWeb](https://comb.lambuage.com/)や、VS Code拡張型翻訳支援ツール[SheepWeave](/sheep-weave/)と連携して使うことになります。
+基本的には、Web アプリである[SheepCombWeb](https://lambuage.com/app)や、VS Code拡張型翻訳支援ツール[SheepWeave](/sheep-weave/)と連携して使うことになります。
 
 対訳ファイル（xliff/xlsx など）を AI 向けのファイル形式である JSONL に変換しつつ、AI が無理なく理解できるトークンサイズに小分け（チャンク化）することで、そのまま投入するよりも高精度な処理が可能となっています。
 また、翻訳メモリ（Translation Memory：TM）や用語集（Glossary、Termbase：TB）も JSON ファイルに情報として保持できるため、コンテクストを活用した翻訳やチェックもやりやすくなっています。
@@ -69,7 +69,7 @@ API キーの取得方法については[こちら](/sheep-bobbin/03_cloud_llm)�
 
 ## SheepCombWeb でのデータ準備と AI へのリクエスト
 
-[SheepCombWeb](https://comb.lambuage.com/)にアクセスし、**抽出（旧名：パース）** ページから処理を開始します。
+[SheepCombWeb](https://lambuage.com/app)にアクセスし、**抽出（旧名：パース）** ページから処理を開始します。
 ブラウザ上で「抽出 ＞ フィルタ ＞ 構造化 ＞ 解析 ＞ 管理」の順でデータを加工・準備し、最後に **API** ページに進んで AI（LLM）への処理リクエストを行います。
 
 ::: tip

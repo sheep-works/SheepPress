@@ -41,7 +41,7 @@ tags:
 ### 游戏本地化（100万字以上）
 
 #### 失落城堡 2（Lost Castle 2）
-<SteamWidget appId="2623480" />
+<SteamWidget appId="2445690" />
 - 2D Rogue-lite 动作冒险游戏
 - 2026 年 6 月发售
 

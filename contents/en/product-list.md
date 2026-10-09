@@ -50,6 +50,12 @@ While SheepLint excels at bilingual file checking, daily translation work often 
 
 SheepGroom aligns Office documents at a "coarse granularity" (by paragraph, sheet, or slide), drastically reducing alignment overhead while creating ideal chunked data for AI checking.
 
+## [SheepBell](/en/sheep-bell/)
+
+A video clipping and issue extraction tool for Language Quality Assurance (LQA).
+
+Simply record your voice notes into a microphone while capturing gameplay or test sessions, and SheepBell will automatically detect speech intervals and extract relevant video and image clips. Combined with speech recognition, you can create detailed bug reports and action logs without interrupting your testing flow.
+
 ## [SheepWeave](/en/sheep-weave/)
 
 A lightweight CAT tool extension for Visual Studio Code.

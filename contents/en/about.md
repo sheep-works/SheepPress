@@ -75,3 +75,30 @@ We actively organize study groups on leveraging new technologies and mentoring s
 - Planning, production, sales, distribution, operation, and management of e-commerce and websites
 - Planning, production, sales, and import/export of general merchandise
 - All businesses incidental or related to the above
+
+## About Sheep Translation Studio {#hitsuji}
+
+<div class="hitsuji-intro-card">
+  <div class="hitsuji-intro-logo">
+    <img src="/TRANSHEEP-SET-min.png" alt="Sheep Translation Studio - TRANSHEEP" />
+  </div>
+  <div class="hitsuji-intro-text">
+    <h3>Translation has a life of its own</h3>
+    <p>Soft when it should be.</p>
+    <p>Strong when it must be.</p>
+    <p>Graceful when it can be.</p>
+    <p>Rugged when it needs to be.</p>
+  </div>
+</div>
+
+Sheep Translation Studio is a dedicated team of highly experienced linguists and translation professionals.
+
+We cover a wide spectrum of specialized translation, from industrial translations in medical & pharmaceuticals, legal contracts, and compliance to IT technical documents and academic papers.
+
+In recent years, we have also translated millions of characters in creative sectors including video games, manga, and mobile apps.
+
+Whether you have a quick question or a complex translation project, please feel free to reach out to us.
+
+## Others
+
+Use of this website is governed by our [Privacy Policy](/privacy).

@@ -370,3 +370,71 @@ html.dark .VPNavBar.has-sidebar .content-body {
   line-height: 1.6;
   text-align: center !important;
 }
+
+/* 4. About ページ ひつじの翻訳室 2カラムレイアウト（半々） */
+.hitsuji-intro-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  padding: 2.25rem;
+  margin: 1.5rem 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .hitsuji-intro-card {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+}
+
+.hitsuji-intro-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  background: var(--vp-c-bg);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 10px;
+  min-height: 160px;
+}
+
+.hitsuji-intro-logo img {
+  max-width: 100%;
+  max-height: 140px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.hitsuji-intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.hitsuji-intro-text h3 {
+  margin: 0 0 0.5rem 0 !important;
+  font-size: 1.35rem !important;
+  font-weight: 700 !important;
+  border: none !important;
+  padding: 0 !important;
+  color: var(--vp-c-brand-1) !important;
+  line-height: 1.4 !important;
+}
+
+.hitsuji-intro-text p {
+  margin: 0 !important;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--vp-c-text-1);
+  font-feature-settings: "palt" 1;
+}

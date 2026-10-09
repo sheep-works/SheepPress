@@ -38,7 +38,7 @@ tags:
 ### ゲーム（100万文字以上）
 
 #### ロストキャッスル 2（Lost Castle 2）
-<SteamWidget appId="2623480" />
+<SteamWidget appId="2445690" />
 - 2D ローグライトアクションゲーム
 - 2026 年 6 月発売
 

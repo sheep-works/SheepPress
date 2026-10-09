@@ -1,5 +1,8 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, computed } from 'vue'
+import { useData } from 'vitepress'
+
+const { lang } = useData()
 
 interface SocialLink {
   name: string
@@ -8,6 +11,127 @@ interface SocialLink {
   color: string
   icon: 'note' | 'x' | 'linkedin' | 'github'
 }
+
+const currentLang = computed(() => {
+  const l = (lang.value || 'ja').toLowerCase()
+  if (l.startsWith('en')) return 'en'
+  if (l.startsWith('zh')) return 'zh'
+  return 'ja'
+})
+
+const content = computed(() => {
+  if (currentLang.value === 'en') {
+    return {
+      title: 'Official Links & Social Media',
+      youtubeTitle: 'YouTube Video Guides & Demos Playlist',
+      youtubeLinkText: 'Open all videos on YouTube ↗',
+      links: [
+        {
+          name: 'note',
+          url: 'https://note.com/lambuage',
+          description: 'Development journals, insights on translation tools & workflows',
+          color: '#2cb696',
+          icon: 'note'
+        },
+        {
+          name: 'X (Twitter)',
+          url: 'https://x.com/transheep_biz',
+          description: 'Daily dev updates, announcements & thoughts',
+          color: '#000000',
+          icon: 'x'
+        },
+        {
+          name: 'LinkedIn',
+          url: 'https://www.linkedin.com/in/%E6%85%8E%E4%BB%8B-%E7%9F%B3%E7%94%B0-b867311b5/',
+          description: 'Shinsuke Ishida (CEO, Lambuage LLC)',
+          color: '#0a66c2',
+          icon: 'linkedin'
+        },
+        {
+          name: 'GitHub',
+          url: 'https://github.com/sheep-works',
+          description: 'Sheep Tools Open Source Repository',
+          color: '#24292e',
+          icon: 'github'
+        }
+      ] as SocialLink[]
+    }
+  }
+
+  if (currentLang.value === 'zh') {
+    return {
+      title: '官方链接与社交媒体',
+      youtubeTitle: 'YouTube 视频解说与演示播放列表',
+      youtubeLinkText: '在 YouTube 打开全部视频 ↗',
+      links: [
+        {
+          name: 'note',
+          url: 'https://note.com/lambuage',
+          description: '开发手记、翻译工具与业务实践经验分享',
+          color: '#2cb696',
+          icon: 'note'
+        },
+        {
+          name: 'X (Twitter)',
+          url: 'https://x.com/transheep_biz',
+          description: '日常研发进展、官方公告与动态交流',
+          color: '#000000',
+          icon: 'x'
+        },
+        {
+          name: 'LinkedIn',
+          url: 'https://www.linkedin.com/in/%E6%85%8E%E4%BB%8B-%E7%9F%B3%E7%94%B0-b867311b5/',
+          description: '石田 慎介 (合同会社Lambuage 代表)',
+          color: '#0a66c2',
+          icon: 'linkedin'
+        },
+        {
+          name: 'GitHub',
+          url: 'https://github.com/sheep-works',
+          description: 'Sheep Tools 开源项目代码仓库',
+          color: '#24292e',
+          icon: 'github'
+        }
+      ] as SocialLink[]
+    }
+  }
+
+  return {
+    title: '公式リンク・SNS',
+    youtubeTitle: 'YouTube 動画解説・デモ再生リスト',
+    youtubeLinkText: 'YouTubeで全動画を開く ↗',
+    links: [
+      {
+        name: 'note',
+        url: 'https://note.com/lambuage',
+        description: '開発日記・翻訳ツールや業務に関する知見を発信',
+        color: '#2cb696',
+        icon: 'note'
+      },
+      {
+        name: 'X (旧Twitter)',
+        url: 'https://x.com/transheep_biz',
+        description: '日々の開発進捗・お知らせ・つぶやき',
+        color: '#000000',
+        icon: 'x'
+      },
+      {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/%E6%85%8E%E4%BB%8B-%E7%9F%B3%E7%94%B0-b867311b5/',
+        description: '石田 慎介 (合同会社ランベージ 代表)',
+        color: '#0a66c2',
+        icon: 'linkedin'
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/sheep-works',
+        description: 'Sheep Tools オープンソースリポジトリ',
+        color: '#24292e',
+        icon: 'github'
+      }
+    ] as SocialLink[]
+  }
+})
 
 const containerRef = ref<HTMLElement | null>(null)
 const isVisible = ref(false)
@@ -28,37 +152,6 @@ onMounted(() => {
     isVisible.value = true
   }
 })
-
-const socialLinks: SocialLink[] = [
-  {
-    name: 'note',
-    url: 'https://note.com/lambuage',
-    description: '開発日記・翻訳ツールや業務に関する知見を発信',
-    color: '#2cb696',
-    icon: 'note'
-  },
-  {
-    name: 'X (旧Twitter)',
-    url: 'https://x.com/transheep_biz',
-    description: '日々の開発進捗・お知らせ・つぶやき',
-    color: '#000000',
-    icon: 'x'
-  },
-  {
-    name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/%E6%85%8E%E4%BB%8B-%E7%9F%B3%E7%94%B0-b867311b5/',
-    description: '石田 慎介 (合同会社ランベージ 代表)',
-    color: '#0a66c2',
-    icon: 'linkedin'
-  },
-  {
-    name: 'GitHub',
-    url: 'https://github.com/sheep-works',
-    description: 'Sheep Tools オープンソースリポジトリ',
-    color: '#24292e',
-    icon: 'github'
-  }
-]
 </script>
 
 <template>
@@ -69,13 +162,13 @@ const socialLinks: SocialLink[] = [
   >
     <!-- SNSヘッダー -->
     <div class="social-header">
-      <h2 class="social-main-title">公式リンク・SNS</h2>
+      <h2 class="social-main-title">{{ content.title }}</h2>
     </div>
 
     <!-- Other Social Links Grid -->
     <div class="social-links-grid">
       <a 
-        v-for="(link, index) in socialLinks" 
+        v-for="(link, index) in content.links" 
         :key="link.name" 
         :href="link.url" 
         target="_blank" 
@@ -122,7 +215,7 @@ const socialLinks: SocialLink[] = [
           <svg class="youtube-icon" viewBox="0 0 24 24" fill="currentColor">
             <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
           </svg>
-          <span>YouTube 動画解説・デモ再生リスト</span>
+          <span>{{ content.youtubeTitle }}</span>
         </div>
         <a 
           href="https://youtube.com/playlist?list=PLZo3GhAxn8uE&si=2eIQuoHeZdhZusmm" 
@@ -130,7 +223,7 @@ const socialLinks: SocialLink[] = [
           rel="noopener noreferrer" 
           class="youtube-link"
         >
-          YouTubeで全動画を開く ↗
+          {{ content.youtubeLinkText }}
         </a>
       </div>
       <div class="youtube-embed-wrapper">
