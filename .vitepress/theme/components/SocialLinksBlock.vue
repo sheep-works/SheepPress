@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { ref, onMounted } from 'vue'
+
 interface SocialLink {
   name: string
   url: string
@@ -6,6 +8,26 @@ interface SocialLink {
   color: string
   icon: 'note' | 'x' | 'linkedin' | 'github'
 }
+
+const containerRef = ref<HTMLElement | null>(null)
+const isVisible = ref(false)
+
+onMounted(() => {
+  if (typeof IntersectionObserver !== 'undefined' && containerRef.value) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          isVisible.value = true
+          observer.disconnect()
+        }
+      },
+      { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }
+    )
+    observer.observe(containerRef.value)
+  } else {
+    isVisible.value = true
+  }
+})
 
 const socialLinks: SocialLink[] = [
   {
@@ -40,16 +62,26 @@ const socialLinks: SocialLink[] = [
 </script>
 
 <template>
-  <div class="social-links-container">
+  <div 
+    ref="containerRef" 
+    class="social-links-container" 
+    :class="{ 'is-visible': isVisible }"
+  >
+    <!-- SNSヘッダー -->
+    <div class="social-header">
+      <h2 class="social-main-title">公式リンク・SNS</h2>
+    </div>
+
     <!-- Other Social Links Grid -->
     <div class="social-links-grid">
       <a 
-        v-for="link in socialLinks" 
+        v-for="(link, index) in socialLinks" 
         :key="link.name" 
         :href="link.url" 
         target="_blank" 
         rel="noopener noreferrer"
         class="social-card"
+        :style="{ '--card-index': index }"
       >
         <div class="social-card-header">
           <div class="icon-wrapper" :style="{ '--brand-color': link.color }">
@@ -116,7 +148,33 @@ const socialLinks: SocialLink[] = [
 
 <style scoped>
 .social-links-container {
-  margin: 24px 0;
+  max-width: 1152px;
+  margin: 5rem auto 4rem;
+  border: none !important;
+}
+
+.social-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.social-links-container.is-visible .social-header {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.social-main-title {
+  font-size: 1.6rem !important;
+  font-weight: 700 !important;
+  border: none !important;
+  border-top: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  text-align: center !important;
+  color: var(--vp-c-text-1);
 }
 
 /* Social Grid */
@@ -136,12 +194,27 @@ const socialLinks: SocialLink[] = [
   border-radius: 12px;
   text-decoration: none !important;
   color: var(--vp-c-text-1) !important;
-  transition: all 0.25s ease;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+
+  /* Scroll reveal animation with stagger */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 
+    opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+  transition-delay: calc(var(--card-index, 0) * 60ms);
+}
+
+.social-links-container.is-visible .social-card {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .social-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-3px) !important;
   border-color: var(--vp-c-brand-1);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   background: var(--vp-c-bg-alt);

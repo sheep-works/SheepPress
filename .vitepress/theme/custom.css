@@ -5,9 +5,12 @@
 
 :root {
   /* Brand colors */
-  --vp-c-brand-1: #0d9488; /* Teal 600 */
-  --vp-c-brand-2: #0f766e; /* Teal 700 - Hover */
-  --vp-c-brand-3: #115e59; /* Teal 800 - Active */
+  --vp-c-brand-1: #0d9488;
+  /* Teal 600 */
+  --vp-c-brand-2: #0f766e;
+  /* Teal 700 - Hover */
+  --vp-c-brand-3: #115e59;
+  /* Teal 800 - Active */
   --vp-c-brand-soft: rgba(13, 148, 136, 0.14);
 
   /* Home hero gradients */
@@ -24,6 +27,38 @@
   --vp-button-brand-active-border: var(--vp-c-brand-3);
   --vp-button-brand-active-text: var(--vp-c-white);
   --vp-button-brand-active-bg: var(--vp-c-brand-3);
+}
+
+/**
+ * Dark Mode Background Gradient (High Contrast: Charcoal to Deep Black)
+ */
+html.dark {
+  background-color: #0a0b0e;
+}
+
+html.dark body {
+  background: linear-gradient(180deg, #2d313b 0%, #1a1c22 35%, #0a0b0e 100%) no-repeat fixed !important;
+  background-attachment: fixed !important;
+  min-height: 100vh;
+}
+
+html.dark #app,
+html.dark .VPApp,
+html.dark .Layout,
+html.dark .VPContent,
+html.dark .VPHome,
+html.dark .VPPage {
+  background-color: transparent !important;
+}
+
+html.dark .VPNavBar {
+  background-color: rgba(45, 49, 59, 0.6) !important;
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+html.dark .VPNavBar.has-sidebar .content-body {
+  background-color: transparent !important;
 }
 
 /**
@@ -122,3 +157,216 @@
   font-weight: 600;
 }
 
+/* ==========================================================================
+   Top Page Custom Layout Styling
+   ========================================================================== */
+
+/* トップページ内のセクション区切りボーダー・hrを完全非表示 */
+.VPHome .vp-doc,
+.VPHome .container,
+.VPHome hr {
+  border: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+.VPHome hr {
+  display: none !important;
+}
+
+/* 1. Hero Banner (Seamless) */
+@keyframes heroFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.top-hero-banner {
+  margin: 4rem auto 8rem;
+  max-width: 1152px;
+  text-align: center;
+}
+
+.top-hero-banner img {
+  width: 100%;
+  max-height: 480px;
+  object-fit: contain;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  margin: 0 auto;
+  animation: heroFadeIn 5s ease-out forwards;
+}
+
+/* 2. Company Intro Section (Seamless) */
+.company-intro-section {
+  max-width: 1152px;
+  margin: 0 auto 3rem;
+}
+
+.company-intro-content {
+  padding: 0.5rem 0 1.5rem;
+}
+
+.company-badge {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+  padding: 4px 12px;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+}
+
+.company-title {
+  font-size: 1.6rem !important;
+  font-weight: 700 !important;
+  margin-top: 0 !important;
+  margin-bottom: 1.5rem !important;
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+  line-height: 1.4 !important;
+}
+
+.company-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .company-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.company-item {
+  display: flex;
+  flex-direction: column;
+  background: var(--vp-c-bg-soft);
+  padding: 1.5rem 1.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--vp-c-divider);
+  text-decoration: none !important;
+  color: var(--vp-c-text-1) !important;
+  transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.company-item:hover {
+  border-color: var(--vp-c-brand-1);
+  background-color: var(--vp-c-bg-elv);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.company-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.company-item h3 {
+  margin: 0 !important;
+  font-size: 1.18rem !important;
+  font-weight: 700 !important;
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+  color: var(--vp-c-text-1);
+}
+
+.company-link-arrow {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--vp-c-brand-1);
+  transition: transform 0.2s ease;
+  white-space: nowrap;
+}
+
+.company-item:hover .company-link-arrow {
+  transform: translateX(4px);
+}
+
+.company-item p {
+  margin: 0 !important;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--vp-c-text-2);
+  flex-grow: 1;
+}
+
+.company-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background-color: var(--vp-c-brand-1);
+  color: var(--vp-c-white) !important;
+  border: 1px solid var(--vp-c-brand-1);
+}
+
+.btn-primary:hover {
+  background-color: var(--vp-c-brand-2);
+  border-color: var(--vp-c-brand-2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--vp-c-brand-soft);
+}
+
+.btn-secondary {
+  background-color: var(--vp-c-bg);
+  color: var(--vp-c-text-1) !important;
+  border: 1px solid var(--vp-c-divider);
+}
+
+.btn-secondary:hover {
+  border-color: var(--vp-c-brand-1);
+  color: var(--vp-c-brand-1) !important;
+  transform: translateY(-2px);
+}
+
+/* 3. Section Headers */
+.section-header {
+  margin: 5rem auto 2rem;
+  text-align: center;
+  max-width: 800px;
+}
+
+.section-header h2 {
+  font-size: 1.6rem !important;
+  font-weight: 700 !important;
+  border-bottom: none !important;
+  margin: 0 0 0.6rem 0 !important;
+  padding: 0 !important;
+  text-align: center !important;
+}
+
+.section-header p {
+  font-size: 1rem;
+  color: var(--vp-c-text-2);
+  margin: 0 auto !important;
+  line-height: 1.6;
+  text-align: center !important;
+}

@@ -6,6 +6,8 @@ import SocialFeed from './components/SocialFeed.vue'
 import SocialLinksBlock from './components/SocialLinksBlock.vue'
 import WhatsNewTabs from './components/WhatsNewTabs.vue'
 import SteamWidget from './components/SteamWidget.vue'
+import ToolsGrid from './components/ToolsGrid.vue'
+import CompanyIntro from './components/CompanyIntro.vue'
 
 export default {
   extends: DefaultTheme,
@@ -15,5 +17,7 @@ export default {
     app.component('SocialLinksBlock', SocialLinksBlock)
     app.component('WhatsNewTabs', WhatsNewTabs)
     app.component('SteamWidget', SteamWidget)
+    app.component('ToolsGrid', ToolsGrid)
+    app.component('CompanyIntro', CompanyIntro)
   }
 }
