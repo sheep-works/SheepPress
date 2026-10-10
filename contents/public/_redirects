@@ -1,4 +1,77 @@
+# Proxy for SheepComb App
 /app      https://sheepcombpack.netlify.app/         200
 /app/     https://sheepcombpack.netlify.app/         200
 /app/*    https://sheepcombpack.netlify.app/:splat   200
 /_nuxt/*  https://sheepcombpack.netlify.app/_nuxt/:splat  200
+
+# Documentation 301 Redirects (Japanese)
+/sheep-bell/*       /docs/sheep-bell/:splat       301
+/sheep-bell         /docs/sheep-bell/             301
+/sheep-bobbin/*     /docs/sheep-bobbin/:splat     301
+/sheep-bobbin       /docs/sheep-bobbin/           301
+/sheep-comb/*       /docs/sheep-comb/             301
+/sheep-comb         /docs/sheep-comb/             301
+/sheep-groom/*      /docs/sheep-groom/:splat      301
+/sheep-groom        /docs/sheep-groom/            301
+/sheep-hub/*        /docs/sheep-hub/:splat        301
+/sheep-hub          /docs/sheep-hub/              301
+/sheep-lint/*       /docs/sheep-lint/:splat       301
+/sheep-lint         /docs/sheep-lint/             301
+/sheep-loom/*       /docs/sheep-loom/:splat       301
+/sheep-loom         /docs/sheep-loom/             301
+/sheep-shuttle/*    /docs/sheep-shuttle/:splat    301
+/sheep-shuttle      /docs/sheep-shuttle/          301
+/sheep-spindle/*    /docs/sheep-spindle/:splat    301
+/sheep-spindle      /docs/sheep-spindle/          301
+/sheep-stitch/*     /docs/sheep-stitch/:splat     301
+/sheep-stitch       /docs/sheep-stitch/           301
+/sheep-weave/*      /docs/sheep-weave/:splat      301
+/sheep-weave        /docs/sheep-weave/            301
+
+# Documentation 301 Redirects (English)
+/en/sheep-bell/*    /en/docs/sheep-bell/:splat    301
+/en/sheep-bell      /en/docs/sheep-bell/          301
+/en/sheep-bobbin/*  /en/docs/sheep-bobbin/:splat  301
+/en/sheep-bobbin    /en/docs/sheep-bobbin/        301
+/en/sheep-comb/*    /en/docs/sheep-comb/          301
+/en/sheep-comb      /en/docs/sheep-comb/          301
+/en/sheep-groom/*   /en/docs/sheep-groom/:splat   301
+/en/sheep-groom     /en/docs/sheep-groom/         301
+/en/sheep-hub/*     /en/docs/sheep-hub/:splat     301
+/en/sheep-hub       /en/docs/sheep-hub/           301
+/en/sheep-lint/*    /en/docs/sheep-lint/:splat    301
+/en/sheep-lint      /en/docs/sheep-lint/          301
+/en/sheep-loom/*    /en/docs/sheep-loom/:splat    301
+/en/sheep-loom      /en/docs/sheep-loom/          301
+/en/sheep-shuttle/* /en/docs/sheep-shuttle/:splat 301
+/en/sheep-shuttle   /en/docs/sheep-shuttle/       301
+/en/sheep-spindle/* /en/docs/sheep-spindle/:splat 301
+/en/sheep-spindle   /en/docs/sheep-spindle/       301
+/en/sheep-stitch/*  /en/docs/sheep-stitch/:splat  301
+/en/sheep-stitch    /en/docs/sheep-stitch/        301
+/en/sheep-weave/*   /en/docs/sheep-weave/:splat   301
+/en/sheep-weave     /en/docs/sheep-weave/         301
+
+# Documentation 301 Redirects (Chinese)
+/zh/sheep-bell/*    /zh/docs/sheep-bell/:splat    301
+/zh/sheep-bell      /zh/docs/sheep-bell/          301
+/zh/sheep-bobbin/*  /zh/docs/sheep-bobbin/:splat  301
+/zh/sheep-bobbin    /zh/docs/sheep-bobbin/        301
+/zh/sheep-comb/*    /zh/docs/sheep-comb/          301
+/zh/sheep-comb      /zh/docs/sheep-comb/          301
+/zh/sheep-groom/*   /zh/docs/sheep-groom/:splat   301
+/zh/sheep-groom     /zh/docs/sheep-groom/         301
+/zh/sheep-hub/*     /zh/docs/sheep-hub/:splat     301
+/zh/sheep-hub       /zh/docs/sheep-hub/           301
+/zh/sheep-lint/*    /zh/docs/sheep-lint/:splat    301
+/zh/sheep-lint      /zh/docs/sheep-lint/          301
+/zh/sheep-loom/*    /zh/docs/sheep-loom/:splat    301
+/zh/sheep-loom      /zh/docs/sheep-loom/          301
+/zh/sheep-shuttle/* /zh/docs/sheep-shuttle/:splat 301
+/zh/sheep-shuttle   /zh/docs/sheep-shuttle/       301
+/zh/sheep-spindle/* /zh/docs/sheep-spindle/:splat 301
+/zh/sheep-spindle   /zh/docs/sheep-spindle/       301
+/zh/sheep-stitch/*  /zh/docs/sheep-stitch/:splat  301
+/zh/sheep-stitch    /zh/docs/sheep-stitch/        301
+/zh/sheep-weave/*   /zh/docs/sheep-weave/:splat   301
+/zh/sheep-weave     /zh/docs/sheep-weave/         301

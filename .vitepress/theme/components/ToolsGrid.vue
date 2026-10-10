@@ -30,56 +30,56 @@ const toolsData = computed(() => {
         {
           title: 'SheepComb',
           details: 'Web app for converting, visualizing, and structuring translation data. Integrates other tools.',
-          link: '/en/sheep-comb'
+          link: '/en/docs/sheep-comb'
         },
         {
           title: 'SheepGroom',
           details: 'Bilingual alignment assistance for Office files (Word / Excel / PowerPoint)',
-          link: '/en/sheep-groom'
+          link: '/en/docs/sheep-groom'
         },
         {
           title: 'SheepBell',
           details: 'Video clipping and issue extraction tool for LQA testing',
-          link: '/en/sheep-bell'
+          link: '/en/docs/sheep-bell'
         },
       ] as ToolItem[],
       desktopTools: [
         {
           title: 'SheepWeave',
           details: 'Integrated translation environment extension for VS Code (Lightweight CAT Tool)',
-          link: '/en/sheep-weave'
+          link: '/en/docs/sheep-weave'
         },
         {
           title: 'SheepBobbin',
           details: 'Desktop client for LLM-powered translation processing and QA checking',
-          link: '/en/sheep-bobbin'
+          link: '/en/docs/sheep-bobbin'
         },
         {
           title: 'SheepLint',
           details: 'Large-scale LLM proofreading and QA tool powered by Vertex AI',
-          link: '/en/sheep-lint'
+          link: '/en/docs/sheep-lint'
         }
       ] as ToolItem[],
       baseTools: [
         {
           title: 'SheepShuttle',
           details: 'Core conversion CLI module powering SheepWeave and SheepComb',
-          link: '/en/sheep-shuttle'
+          link: '/en/docs/sheep-shuttle'
         },
         {
           title: 'SheepSpindle',
           details: 'Blazing-fast TM / TB lookup & processing engine powered by WASM',
-          link: '/en/sheep-spindle'
+          link: '/en/docs/sheep-spindle'
         },
         {
           title: 'SheepLoom',
           details: 'Smart document and slide generation tool using Vivliostyle and Marp',
-          link: '/en/sheep-loom'
+          link: '/en/docs/sheep-loom'
         },
         {
           title: 'SheepStitch',
           details: 'Input automation and semi-automated importer for diverse translation platforms',
-          link: '/en/sheep-stitch'
+          link: '/en/docs/sheep-stitch'
         },
       ] as ToolItem[]
     }
@@ -96,56 +96,56 @@ const toolsData = computed(() => {
         {
           title: 'SheepComb',
           details: '支持翻译数据转换、可视化与结构化的 Web 应用，并内嵌多种实用工具',
-          link: '/zh/sheep-comb'
+          link: '/zh/docs/sheep-comb'
         },
         {
           title: 'SheepGroom',
           details: '支持 Office 文件（Word / Excel / PowerPoint）的双语对齐工具',
-          link: '/zh/sheep-groom'
+          link: '/zh/docs/sheep-groom'
         },
         {
           title: 'SheepBell',
           details: '专为 LQA 本地化测试打造的视频剪辑与缺陷提取辅助工具',
-          link: '/zh/sheep-bell'
+          link: '/zh/docs/sheep-bell'
         },
       ] as ToolItem[],
       desktopTools: [
         {
           title: 'SheepWeave',
           details: '基于 VS Code 的集成翻译环境扩展（轻量级 CAT 辅助翻译工具）',
-          link: '/zh/sheep-weave'
+          link: '/zh/docs/sheep-weave'
         },
         {
           title: 'SheepBobbin',
           details: '基于 LLM 大模型的翻译处理与质量审查桌面客户端',
-          link: '/zh/sheep-bobbin'
+          link: '/zh/docs/sheep-bobbin'
         },
         {
           title: 'SheepLint',
           details: '基于 Vertex AI 的大规模 LLM 智能审校与质检工具',
-          link: '/zh/sheep-lint'
+          link: '/zh/docs/sheep-lint'
         }
       ] as ToolItem[],
       baseTools: [
         {
           title: 'SheepShuttle',
           details: 'SheepWeave 与 SheepComb 底层核心数据转换模块（CLI）',
-          link: '/zh/sheep-shuttle'
+          link: '/zh/docs/sheep-shuttle'
         },
         {
           title: 'SheepSpindle',
           details: '基于 WASM 的毫秒级高速 TM / TB 检索与处理引擎',
-          link: '/zh/sheep-spindle'
+          link: '/zh/docs/sheep-spindle'
         },
         {
           title: 'SheepLoom',
           details: '基于 Vivliostyle 与 Marp 的专业文档与幻灯片生成工具',
-          link: '/zh/sheep-loom'
+          link: '/zh/docs/sheep-loom'
         },
         {
           title: 'SheepStitch',
           details: '适用于各类平台的半自动化批量录入与搬运辅助工具',
-          link: '/zh/sheep-stitch'
+          link: '/zh/docs/sheep-stitch'
         },
       ] as ToolItem[]
     }
@@ -161,56 +161,56 @@ const toolsData = computed(() => {
       {
         title: 'SheepComb',
         details: '翻訳データの変換・可視化・構造化が可能な Web アプリ。他のツールも内包',
-        link: '/sheep-comb'
+        link: '/docs/sheep-comb'
       },
       {
         title: 'SheepGroom',
         details: 'Office ファイル（Word / Excel / PowerPoint）の対訳化支援',
-        link: '/sheep-groom'
+        link: '/docs/sheep-groom'
       },
       {
         title: 'SheepBell',
         details: 'LQA 支援のための動画クリップ・エラー抽出ツール',
-        link: '/sheep-bell'
+        link: '/docs/sheep-bell'
       },
     ] as ToolItem[],
     desktopTools: [
       {
         title: 'SheepWeave',
         details: 'VS Code を利用した統合翻訳環境（軽量CATツール）',
-        link: '/sheep-weave'
+        link: '/docs/sheep-weave'
       },
       {
         title: 'SheepBobbin',
         details: 'LLM を用いた翻訳処理・チェックデスクトップクライアント',
-        link: '/sheep-bobbin'
+        link: '/docs/sheep-bobbin'
       },
       {
         title: 'SheepLint',
         details: 'Vertex AI を活用した大規模 LLM 処理ツール',
-        link: '/sheep-lint'
+        link: '/docs/sheep-lint'
       }
     ] as ToolItem[],
     baseTools: [
       {
         title: 'SheepShuttle',
         details: 'SheepWeave / SheepComb の基盤となる変換モジュール（CLI）',
-        link: '/sheep-shuttle'
+        link: '/docs/sheep-shuttle'
       },
       {
         title: 'SheepSpindle',
         details: 'WASM を使った高速 TM / TB 参照・処理エンジン',
-        link: '/sheep-spindle'
+        link: '/docs/sheep-spindle'
       },
       {
         title: 'SheepLoom',
         details: 'Vivliostyle と Marp を使ったスマートな資料作成ツール',
-        link: '/sheep-loom'
+        link: '/docs/sheep-loom'
       },
       {
         title: 'SheepStitch',
         details: '各種プラットフォームでの入力自動化・半自動インポーター',
-        link: '/sheep-stitch'
+        link: '/docs/sheep-stitch'
       },
     ] as ToolItem[]
   }

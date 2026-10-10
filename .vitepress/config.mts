@@ -25,6 +25,9 @@ export default defineConfig({
   sitemap: {
     hostname: 'https://lambuage.com'
   },
+  ignoreDeadLinks: [
+    /\/app\//,
+  ],
   transformHead({ pageData }) {
     const head: HeadConfig[] = []
     const domain = 'https://lambuage.com'
@@ -109,74 +112,76 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);`
           { text: '会社概要', link: '/about' },
           { text: '実績', link: '/records' },
           { text: 'ツール一覧', link: '/product-list' },
+          { text: 'SheepComb (Web)', link: '/app/', target: '_blank' },
           { text: 'お問い合わせ', link: '/contact' },
           { text: "What's new", link: '/news' },
         ],
         sidebar: {
-          '/sheep-lint/': [
+          '/docs/sheep-lint/': [
             { text: 'トップへ戻る', link: '/' },
             {
               text: 'SheepLint',
               items: [
-                { text: '概要', link: '/sheep-lint/' },
-                { text: 'はじめに', link: '/sheep-lint/01_introduction' },
+                { text: '概要', link: '/docs/sheep-lint/' },
+                { text: 'はじめに', link: '/docs/sheep-lint/01_introduction' },
               ]
             },
           ],
-          '/sheep-weave/': [
+          '/docs/sheep-weave/': [
             { text: 'トップへ戻る', link: '/' },
             {
               text: 'SheepWeave',
               items: [
-                { text: '概要', link: '/sheep-weave/' },
-                { text: 'はじめに', link: '/sheep-weave/01_get_started' },
-                { text: 'チュートリアル（基本体験編）', link: '/sheep-weave/02_tutorial' },
-                { text: '実際のファイルの翻訳', link: '/sheep-weave/03_actual_translation' },
-                { text: '画面の見方', link: '/sheep-weave/04_interfaces' },
-                { text: 'ショートカットと便利な機能', link: '/sheep-weave/05_shortcuts_and_functions' },
-                { text: '簡易置換のすすめ', link: '/sheep-weave/06_simple_replace' },
-                { text: '継続的な翻訳', link: '/sheep-weave/07_continuous_translation' },
-                { text: 'LLM / AI 連携', link: '/sheep-weave/08_LLM_usage' },
-                { text: 'その他の機能', link: '/sheep-weave/09_other_usage' },
-                { text: '多言語 Excel の翻訳と Rainbow の活用', link: '/sheep-weave/10_rainbow' },
-                { text: 'CATツールについて', link: '/sheep-weave/11_about_cat' },
-                { text: 'VS Codeの使い方', link: '/sheep-weave/12_vscode_usage' },
+                { text: '概要', link: '/docs/sheep-weave/' },
+                { text: 'はじめに', link: '/docs/sheep-weave/01_get_started' },
+                { text: 'チュートリアル（基本体験編）', link: '/docs/sheep-weave/02_tutorial' },
+                { text: '実際のファイルの翻訳', link: '/docs/sheep-weave/03_actual_translation' },
+                { text: '画面の見方', link: '/docs/sheep-weave/04_interfaces' },
+                { text: 'ショートカットと便利な機能', link: '/docs/sheep-weave/05_shortcuts_and_functions' },
+                { text: '簡易置換のすすめ', link: '/docs/sheep-weave/06_simple_replace' },
+                { text: '継続的な翻訳', link: '/docs/sheep-weave/07_continuous_translation' },
+                { text: 'LLM / AI 連携', link: '/docs/sheep-weave/08_LLM_usage' },
+                { text: 'その他の機能', link: '/docs/sheep-weave/09_other_usage' },
+                { text: '多言語 Excel の翻訳と Rainbow の活用', link: '/docs/sheep-weave/10_rainbow' },
+                { text: 'CATツールについて', link: '/docs/sheep-weave/11_about_cat' },
+                { text: 'VS Codeの使い方', link: '/docs/sheep-weave/12_vscode_usage' },
               ]
             },
           ],
-          '/sheep-comb/': [
+          '/docs/sheep-comb/': [
             { text: 'トップへ戻る', link: '/' },
             {
               text: 'SheepComb',
               items: [
-                { text: '概要', link: '/sheep-comb/' },
-                { text: 'はじめに', link: '/sheep-comb/01_introduction' },
-                { text: '各ステップの詳細手順', link: '/sheep-comb/02_steps_desc' },
-                { text: '対訳検索（コンコーダンス）', link: '/sheep-comb/11_tools_concordance' },
-                { text: 'テキスト比較（差分ツール）', link: '/sheep-comb/12_tools_diff' },
-                { text: 'データ構造と型定義', link: '/sheep-comb/99_types' },
+                { text: '概要', link: '/docs/sheep-comb/' },
+                { text: 'はじめに', link: '/docs/sheep-comb/01_introduction' },
+                { text: 'SheepShuttle の詳細手順', link: '/docs/sheep-comb/11_shuttle_steps_desc' },
+                { text: 'SheepGroom の詳細手順', link: '/docs/sheep-comb/21_groom_steps_desc' },
+                { text: 'SheepBell の詳細手順', link: '/docs/sheep-comb/31_bell_steps_desc' },
+                { text: '対訳検索（コンコーダンス）', link: '/docs/sheep-comb/91_tools_concordance' },
+                { text: 'テキスト比較（差分ツール）', link: '/docs/sheep-comb/92_tools_diff' },
               ]
             },
           ],
-          '/sheep-bobbin/': [
+          '/docs/sheep-bobbin/': [
             { text: 'トップへ戻る', link: '/' },
             {
               text: 'SheepBobbin',
               items: [
-                { text: '概要', link: '/sheep-bobbin/' },
-                { text: 'はじめに', link: '/sheep-bobbin/01_introduction' },
-                { text: 'ローカルLLMとの通信', link: '/sheep-bobbin/02_local_llm' },
-                { text: 'クラウドLLMとの通信', link: '/sheep-bobbin/03_cloud_llm' },
-                { text: 'コンソールとログ・消費トークン', link: '/sheep-bobbin/04_console_and_tokens' },
+                { text: '概要', link: '/docs/sheep-bobbin/' },
+                { text: 'はじめに', link: '/docs/sheep-bobbin/01_introduction' },
+                { text: 'ローカルLLMとの通信', link: '/docs/sheep-bobbin/02_local_llm' },
+                { text: 'クラウドLLMとの通信', link: '/docs/sheep-bobbin/03_cloud_llm' },
+                { text: 'コンソールとログ・消費トークン', link: '/docs/sheep-bobbin/04_console_and_tokens' },
               ]
             },
           ],
-          '/sheep-bell/': [
+          '/docs/sheep-bell/': [
             { text: 'トップへ戻る', link: '/' },
             {
               text: 'SheepBell',
               items: [
-                { text: '概要', link: '/sheep-bell/' },
+                { text: '概要', link: '/docs/sheep-bell/' },
               ]
             },
           ],
@@ -210,74 +215,76 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);`
           { text: 'About', link: '/en/about' },
           { text: 'Records', link: '/en/records' },
           { text: 'Products', link: '/en/product-list' },
+          { text: 'SheepComb (Web)', link: '/app/', target: '_blank' },
           { text: 'Contact', link: '/en/contact' },
           { text: "What's new", link: '/en/news' },
         ],
         sidebar: {
-          '/en/sheep-lint/': [
+          '/en/docs/sheep-lint/': [
             { text: 'Back to Home', link: '/en/' },
             {
               text: 'SheepLint',
               items: [
-                { text: 'Overview', link: '/en/sheep-lint/' },
-                { text: 'Getting Started', link: '/en/sheep-lint/01_introduction' },
+                { text: 'Overview', link: '/en/docs/sheep-lint/' },
+                { text: 'Getting Started', link: '/en/docs/sheep-lint/01_introduction' },
               ]
             },
           ],
-          '/en/sheep-weave/': [
+          '/en/docs/sheep-weave/': [
             { text: 'Back to Home', link: '/en/' },
             {
               text: 'SheepWeave',
               items: [
-                { text: 'Overview', link: '/en/sheep-weave/' },
-                { text: 'Getting Started', link: '/en/sheep-weave/01_get_started' },
-                { text: 'Tutorial', link: '/en/sheep-weave/02_tutorial' },
-                { text: 'Translating Actual Files', link: '/en/sheep-weave/03_actual_translation' },
-                { text: 'UI & Interfaces', link: '/en/sheep-weave/04_interfaces' },
-                { text: 'Shortcuts & Functions', link: '/en/sheep-weave/05_shortcuts_and_functions' },
-                { text: 'Simple Replace', link: '/en/sheep-weave/06_simple_replace' },
-                { text: 'Continuous Translation', link: '/en/sheep-weave/07_continuous_translation' },
-                { text: 'LLM / AI Integration', link: '/en/sheep-weave/08_LLM_usage' },
-                { text: 'Other Features', link: '/en/sheep-weave/09_other_usage' },
-                { text: 'Multilingual Excel & Rainbow', link: '/en/sheep-weave/10_rainbow' },
-                { text: 'About CAT Tools', link: '/en/sheep-weave/11_about_cat' },
-                { text: 'VS Code Usage', link: '/en/sheep-weave/12_vscode_usage' },
+                { text: 'Overview', link: '/en/docs/sheep-weave/' },
+                { text: 'Getting Started', link: '/en/docs/sheep-weave/01_get_started' },
+                { text: 'Tutorial', link: '/en/docs/sheep-weave/02_tutorial' },
+                { text: 'Translating Actual Files', link: '/en/docs/sheep-weave/03_actual_translation' },
+                { text: 'UI & Interfaces', link: '/en/docs/sheep-weave/04_interfaces' },
+                { text: 'Shortcuts & Functions', link: '/en/docs/sheep-weave/05_shortcuts_and_functions' },
+                { text: 'Simple Replace', link: '/en/docs/sheep-weave/06_simple_replace' },
+                { text: 'Continuous Translation', link: '/en/docs/sheep-weave/07_continuous_translation' },
+                { text: 'LLM / AI Integration', link: '/en/docs/sheep-weave/08_LLM_usage' },
+                { text: 'Other Features', link: '/en/docs/sheep-weave/09_other_usage' },
+                { text: 'Multilingual Excel & Rainbow', link: '/en/docs/sheep-weave/10_rainbow' },
+                { text: 'About CAT Tools', link: '/en/docs/sheep-weave/11_about_cat' },
+                { text: 'VS Code Usage', link: '/en/docs/sheep-weave/12_vscode_usage' },
               ]
             },
           ],
-          '/en/sheep-comb/': [
+          '/en/docs/sheep-comb/': [
             { text: 'Back to Home', link: '/en/' },
             {
               text: 'SheepComb',
               items: [
-                { text: 'Overview', link: '/en/sheep-comb/' },
-                { text: 'Getting Started', link: '/en/sheep-comb/01_introduction' },
-                { text: 'Step-by-Step Guide', link: '/en/sheep-comb/02_steps_desc' },
-                { text: 'Concordance Search', link: '/en/sheep-comb/11_tools_concordance' },
-                { text: 'Text Diff Tool', link: '/en/sheep-comb/12_tools_diff' },
-                { text: 'Data Schema & Types', link: '/en/sheep-comb/99_types' },
+                { text: 'Overview', link: '/en/docs/sheep-comb/' },
+                { text: 'Getting Started', link: '/en/docs/sheep-comb/01_introduction' },
+                { text: 'SheepShuttle Guide', link: '/en/docs/sheep-comb/11_shuttle_steps_desc' },
+                { text: 'SheepGroom Guide', link: '/en/docs/sheep-comb/21_groom_steps_desc' },
+                { text: 'SheepBell Guide', link: '/en/docs/sheep-comb/31_bell_steps_desc' },
+                { text: 'Concordance Search', link: '/en/docs/sheep-comb/91_tools_concordance' },
+                { text: 'Text Diff Tool', link: '/en/docs/sheep-comb/92_tools_diff' },
               ]
             },
           ],
-          '/en/sheep-bobbin/': [
+          '/en/docs/sheep-bobbin/': [
             { text: 'Back to Home', link: '/en/' },
             {
               text: 'SheepBobbin',
               items: [
-                { text: 'Overview', link: '/en/sheep-bobbin/' },
-                { text: 'Getting Started', link: '/en/sheep-bobbin/01_introduction' },
-                { text: 'Local LLM Setup', link: '/en/sheep-bobbin/02_local_llm' },
-                { text: 'Cloud LLM Setup', link: '/en/sheep-bobbin/03_cloud_llm' },
-                { text: 'Console, Logs & Tokens', link: '/en/sheep-bobbin/04_console_and_tokens' },
+                { text: 'Overview', link: '/en/docs/sheep-bobbin/' },
+                { text: 'Getting Started', link: '/en/docs/sheep-bobbin/01_introduction' },
+                { text: 'Local LLM Setup', link: '/en/docs/sheep-bobbin/02_local_llm' },
+                { text: 'Cloud LLM Setup', link: '/en/docs/sheep-bobbin/03_cloud_llm' },
+                { text: 'Console, Logs & Tokens', link: '/en/docs/sheep-bobbin/04_console_and_tokens' },
               ]
             },
           ],
-          '/en/sheep-bell/': [
+          '/en/docs/sheep-bell/': [
             { text: 'Back to Home', link: '/en/' },
             {
               text: 'SheepBell',
               items: [
-                { text: 'Overview', link: '/en/sheep-bell/' },
+                { text: 'Overview', link: '/en/docs/sheep-bell/' },
               ]
             },
           ],
@@ -309,74 +316,76 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);`
           { text: '公司概要', link: '/zh/about' },
           { text: '业绩成果', link: '/zh/records' },
           { text: '产品列表', link: '/zh/product-list' },
+          { text: 'SheepComb (Web)', link: '/app/', target: '_blank' },
           { text: '联系我们', link: '/zh/contact' },
           { text: "最新资讯", link: '/zh/news' },
         ],
         sidebar: {
-          '/zh/sheep-lint/': [
+          '/zh/docs/sheep-lint/': [
             { text: '返回首页', link: '/zh/' },
             {
               text: 'SheepLint',
               items: [
-                { text: '概要', link: '/zh/sheep-lint/' },
-                { text: '使用入门', link: '/zh/sheep-lint/01_introduction' },
+                { text: '概要', link: '/zh/docs/sheep-lint/' },
+                { text: '使用入门', link: '/zh/docs/sheep-lint/01_introduction' },
               ]
             },
           ],
-          '/zh/sheep-weave/': [
+          '/zh/docs/sheep-weave/': [
             { text: '返回首页', link: '/zh/' },
             {
               text: 'SheepWeave',
               items: [
-                { text: '概要', link: '/zh/sheep-weave/' },
-                { text: '使用入门', link: '/zh/sheep-weave/01_get_started' },
-                { text: '基础体验教程', link: '/zh/sheep-weave/02_tutorial' },
-                { text: '实际文件翻译实操', link: '/zh/sheep-weave/03_actual_translation' },
-                { text: '界面与面板详解', link: '/zh/sheep-weave/04_interfaces' },
-                { text: '快捷键与高频功能', link: '/zh/sheep-weave/05_shortcuts_and_functions' },
-                { text: '简易替换推荐指南', link: '/zh/sheep-weave/06_simple_replace' },
-                { text: '持续性翻译与资产复用', link: '/zh/sheep-weave/07_continuous_translation' },
-                { text: 'LLM / AI 深度联动', link: '/zh/sheep-weave/08_LLM_usage' },
-                { text: '其他扩展功能', link: '/zh/sheep-weave/09_other_usage' },
-                { text: '多语言 Excel 翻译与 Rainbow', link: '/zh/sheep-weave/10_rainbow' },
-                { text: '关于 CAT 辅助翻译工具', link: '/zh/sheep-weave/11_about_cat' },
-                { text: 'VS Code 使用技巧', link: '/zh/sheep-weave/12_vscode_usage' },
+                { text: '概要', link: '/zh/docs/sheep-weave/' },
+                { text: '使用入门', link: '/zh/docs/sheep-weave/01_get_started' },
+                { text: '基础体验教程', link: '/zh/docs/sheep-weave/02_tutorial' },
+                { text: '实际文件翻译实操', link: '/zh/docs/sheep-weave/03_actual_translation' },
+                { text: '界面与面板详解', link: '/zh/docs/sheep-weave/04_interfaces' },
+                { text: '快捷键与高频功能', link: '/zh/docs/sheep-weave/05_shortcuts_and_functions' },
+                { text: '简易替换推荐指南', link: '/zh/docs/sheep-weave/06_simple_replace' },
+                { text: '持续性翻译与资产复用', link: '/zh/docs/sheep-weave/07_continuous_translation' },
+                { text: 'LLM / AI 深度联动', link: '/zh/docs/sheep-weave/08_LLM_usage' },
+                { text: '其他扩展功能', link: '/zh/docs/sheep-weave/09_other_usage' },
+                { text: '多语言 Excel 翻译与 Rainbow', link: '/zh/docs/sheep-weave/10_rainbow' },
+                { text: '关于 CAT 辅助翻译工具', link: '/zh/docs/sheep-weave/11_about_cat' },
+                { text: 'VS Code 使用技巧', link: '/zh/docs/sheep-weave/12_vscode_usage' },
               ]
             },
           ],
-          '/zh/sheep-comb/': [
+          '/zh/docs/sheep-comb/': [
             { text: '返回首页', link: '/zh/' },
             {
               text: 'SheepComb',
               items: [
-                { text: '概要', link: '/zh/sheep-comb/' },
-                { text: '使用入门', link: '/zh/sheep-comb/01_introduction' },
-                { text: '各步骤详细操作指南', link: '/zh/sheep-comb/02_steps_desc' },
-                { text: '双语语料检索', link: '/zh/sheep-comb/11_tools_concordance' },
-                { text: '文本对比工具', link: '/zh/sheep-comb/12_tools_diff' },
-                { text: '数据结构与类型定义', link: '/zh/sheep-comb/99_types' },
+                { text: '概要', link: '/zh/docs/sheep-comb/' },
+                { text: '使用入门', link: '/zh/docs/sheep-comb/01_introduction' },
+                { text: 'SheepShuttle 详细操作指南', link: '/zh/docs/sheep-comb/11_shuttle_steps_desc' },
+                { text: 'SheepGroom 详细操作指南', link: '/zh/docs/sheep-comb/21_groom_steps_desc' },
+                { text: 'SheepBell 详细操作指南', link: '/zh/docs/sheep-comb/31_bell_steps_desc' },
+                { text: '双语语料检索', link: '/zh/docs/sheep-comb/91_tools_concordance' },
+                { text: '文本对比工具', link: '/zh/docs/sheep-comb/92_tools_diff' },
               ]
             },
           ],
-          '/zh/sheep-bobbin/': [
+          '/zh/docs/sheep-bobbin/': [
             { text: '返回首页', link: '/zh/' },
             {
               text: 'SheepBobbin',
               items: [
-                { text: '概要', link: '/zh/sheep-bobbin/' },
-                { text: '使用入门', link: '/zh/sheep-bobbin/01_introduction' },
-                { text: '本地LLM通信配置', link: '/zh/sheep-bobbin/02_local_llm' },
-                { text: '云端LLM通信配置', link: '/zh/sheep-bobbin/03_cloud_llm' },
-                { text: '控制台、日志与Token记录', link: '/zh/sheep-bobbin/04_console_and_tokens' },
+                { text: '概要', link: '/zh/docs/sheep-bobbin/' },
+                { text: '使用入门', link: '/zh/docs/sheep-bobbin/01_introduction' },
+                { text: '本地LLM通信配置', link: '/zh/docs/sheep-bobbin/02_local_llm' },
+                { text: '云端LLM通信配置', link: '/zh/docs/sheep-bobbin/03_cloud_llm' },
+                { text: '控制台、日志与Token记录', link: '/zh/docs/sheep-bobbin/04_console_and_tokens' },
               ]
             },
           ],
-          '/zh/sheep-bell/': [
+          '/zh/docs/sheep-bell/': [
             { text: '返回首页', link: '/zh/' },
             {
               text: 'SheepBell',
               items: [
-                { text: '概要', link: '/zh/sheep-bell/' },
+                { text: '概要', link: '/zh/docs/sheep-bell/' },
               ]
             },
           ],

@@ -23,7 +23,7 @@ This page is machine-translated by Gemini.
 
 ![Conceptual Overview](/abstract.png)
 
-## [SheepLint](/en/sheep-lint/)
+## [SheepLint](/en/docs/sheep-lint/)
 
 An AI-powered text proofreading and quality assurance tool.
 
@@ -33,30 +33,30 @@ By taking bilingual format inputs (XLF, XLSX, DOCX, etc.) with explicit alignmen
 
 Furthermore, seamless integration with SheepComb enables consistency checks against Translation Memories (TM). Use it as an automated self-check assistant or as a reliable second opinion before final delivery.
 
-## [SheepComb](/en/sheep-comb/)
+## [SheepComb](/en/docs/sheep-comb/)
 
 A versatile data manipulation tool designed for XLF, TMX, and TBX files.
 
 From extracting source and target segments, batch-locking duplicate/similar segments in Phrase (MXLIFF) and memoQ (MQXLIFF) files, to auto-applying Termbases (TB), it packs all the must-have features daily CAT tool users desire.
 
-## [SheepBobbin](/en/sheep-bobbin/)
+## [SheepBobbin](/en/docs/sheep-bobbin/)
 
 A desktop companion tool for processing browser-extracted bilingual datasets with Large Language Models (LLMs).
 While its primary purpose is translation checking and QA, it also supports generating and revising target translations.
 
-## [SheepGroom](/en/sheep-groom/)
+## [SheepGroom](/en/docs/sheep-groom/)
 
 While SheepLint excels at bilingual file checking, daily translation work often uses plain Office files without ready-made bilingual pairs. Creating strict sentence-level bilingual files after drafting is labor-intensive.
 
 SheepGroom aligns Office documents at a "coarse granularity" (by paragraph, sheet, or slide), drastically reducing alignment overhead while creating ideal chunked data for AI checking.
 
-## [SheepBell](/en/sheep-bell/)
+## [SheepBell](/en/docs/sheep-bell/)
 
 A video clipping and issue extraction tool for Language Quality Assurance (LQA).
 
 Simply record your voice notes into a microphone while capturing gameplay or test sessions, and SheepBell will automatically detect speech intervals and extract relevant video and image clips. Combined with speech recognition, you can create detailed bug reports and action logs without interrupting your testing flow.
 
-## [SheepWeave](/en/sheep-weave/)
+## [SheepWeave](/en/docs/sheep-weave/)
 
 A lightweight CAT tool extension for Visual Studio Code.
 
@@ -70,12 +70,12 @@ Of course, generating bilingual files ready for SheepLint is effortless.
 
 This project is actively developed as open source on GitHub.
 
-## [SheepLoom](/en/sheep-loom/)
+## [SheepLoom](/en/docs/sheep-loom/)
 
 A document generation tool powered by Vivliostyle and Marp.
 Rapidly converts Markdown documents into professional ePub, PDF books, and presentation slides.
 
-## [SheepStitch](/en/sheep-stitch/)
+## [SheepStitch](/en/docs/sheep-stitch/)
 
 An automation tool for semi-automated data entry across diverse platforms.
 
