@@ -171,3 +171,16 @@ tags:
 | **Proof** | 译文（`tgt`） | 单语母语润色 |
 | **Diff** | 修改前（`src`）、带标记修改后（`tgt`）、备注（`note`） | 文本修订评估 |
 | **Custom** | 可自由勾选（`src`, `tgt`, `note`, `history`, `terms`） | 高级上下文注入 |
+
+#### TOON 支持（实验性功能）
+
+虽然 JSONL 格式非常适合大语言模型（LLM），但重复的键名往往会导致 Token 消耗增加。
+为此，TOON（Token-Oriented Object Notation）应运而生。
+TOON 是一种专为 LLM 设计的数据格式，与传统 JSON 相比，预计可节省约 30%～60% 的 Token。
+
+SheepShuttle 已支持使用 TOON 格式创建分块及发起 API 请求。
+
+::: warning TOON 支持目前仍为实验性功能
+虽然已确认在基础翻译和检查场景下可正常运行，但对于包含大量 history（历史记录）或 terms（术语）等辅助信息的复杂请求，尚未经过充分验证。
+建议优先在检查、润色等相对简单的场景中尝试使用。
+:::

@@ -18,8 +18,7 @@ Word/Excel/PowerPoint などの Office ファイルを対訳化するツール�
 
 コンセプトは **毛づくろい（Groom）**。
 
-対訳になっていない Office ファイルを簡易な対訳表に変換することで、
-SheepLint での校正を支援します。
+対訳になっていない Office ファイルを簡易な対訳表に変換することで、校正作業や翻訳資産管理をサポートします。
 
 ## 主な機能
 
@@ -27,4 +26,5 @@ SheepLint での校正を支援します。
 
 ## 使い方
 
-詳細は今後の更新をお待ちください。
+SheepGroom は PowerShell、Python 版と JavaScript 版があります。現在は Excel を使わずリッチなエディタを備えた Web ツール「SheepComb」での使用を推奨しています。
+そのため使い方については [SheepComb SheepGroomの使い方](/docs/sheep-comb/21_groom_steps_desc) をご覧ください。

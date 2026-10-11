@@ -57,7 +57,7 @@ const content = computed(() => {
       },
       actions: {
         contact: { text: 'Contact Us', url: '/en/contact' },
-        products: { text: 'Products & Details', url: '/en/product-list' },
+        products: { text: 'Products & Details', url: '/en/docs/' },
         records: { text: 'Track Record', url: '/en/records' }
       }
     }
@@ -87,7 +87,7 @@ const content = computed(() => {
       },
       actions: {
         contact: { text: '联系我们', url: '/zh/contact' },
-        products: { text: '产品列表', url: '/zh/product-list' },
+        products: { text: '产品列表', url: '/zh/docs/' },
         records: { text: '业绩成果', url: '/zh/records' }
       }
     }
@@ -116,7 +116,7 @@ const content = computed(() => {
     },
     actions: {
       contact: { text: 'お問い合わせ・ご相談', url: '/contact' },
-      products: { text: 'ツール一覧・詳細', url: '/product-list' },
+      products: { text: 'ツール一覧・詳細', url: '/docs/' },
       records: { text: '翻訳実績', url: '/records' }
     }
   }

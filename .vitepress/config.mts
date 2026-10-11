@@ -111,7 +111,7 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);`
           { text: 'ホーム', link: '/' },
           { text: '会社概要', link: '/about' },
           { text: '実績', link: '/records' },
-          { text: 'ツール一覧', link: '/product-list' },
+          { text: 'ツール一覧', link: '/docs/' },
           { text: 'SheepComb (Web)', link: '/app/', target: '_blank' },
           { text: 'お問い合わせ', link: '/contact' },
           { text: "What's new", link: '/news' },
@@ -193,7 +193,7 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);`
                 { text: 'ホーム', link: '/' },
                 { text: '会社概要', link: '/about' },
                 { text: '実績', link: '/records' },
-                { text: 'ツール一覧', link: '/product-list' },
+                { text: 'ツール一覧', link: '/docs/' },
                 { text: 'お問い合わせ', link: '/contact' },
                 { text: "What's new", link: '/news' },
               ]
@@ -214,7 +214,7 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);`
           { text: 'Home', link: '/en/' },
           { text: 'About', link: '/en/about' },
           { text: 'Records', link: '/en/records' },
-          { text: 'Products', link: '/en/product-list' },
+          { text: 'Products', link: '/en/docs/' },
           { text: 'SheepComb (Web)', link: '/app/', target: '_blank' },
           { text: 'Contact', link: '/en/contact' },
           { text: "What's new", link: '/en/news' },
@@ -295,7 +295,7 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);`
                 { text: 'Home', link: '/en/' },
                 { text: 'About', link: '/en/about' },
                 { text: 'Records', link: '/en/records' },
-                { text: 'Products', link: '/en/product-list' },
+                { text: 'Products', link: '/en/docs/' },
                 { text: 'Contact', link: '/en/contact' },
                 { text: "What's new", link: '/en/news' },
               ]
@@ -315,7 +315,7 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);`
           { text: '首页', link: '/zh/' },
           { text: '公司概要', link: '/zh/about' },
           { text: '业绩成果', link: '/zh/records' },
-          { text: '产品列表', link: '/zh/product-list' },
+          { text: '产品列表', link: '/zh/docs/' },
           { text: 'SheepComb (Web)', link: '/app/', target: '_blank' },
           { text: '联系我们', link: '/zh/contact' },
           { text: "最新资讯", link: '/zh/news' },
@@ -396,7 +396,7 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);`
                 { text: '首页', link: '/zh/' },
                 { text: '公司概要', link: '/zh/about' },
                 { text: '业绩成果', link: '/zh/records' },
-                { text: '产品列表', link: '/zh/product-list' },
+                { text: '产品列表', link: '/zh/docs/' },
                 { text: '联系我们', link: '/zh/contact' },
                 { text: "最新资讯", link: '/zh/news' },
               ]
@@ -409,6 +409,7 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);`
 
   themeConfig: {
     footer: {
+      message: '<a href="/privacy">プライバシーポリシー</a>',
       copyright: 'Copyright © 2024-present Lambuage LLC & ひつじの翻訳室'
     }
   }

@@ -29,3 +29,8 @@ LQA で手を離すことなく問題点を記録したい方向け。
 - **ローカル でも クラウドでも**: Python の `Silero-VAD` と `Faster Whisper` を利用することで、ローカルで実行可能。さらに Google Colab を使っても OK！
 - **動画・画像を見ながら報告**: ビューワでは、気づきを吹き込んだ箇所のクリップを表示。動画を見ながら、音声入力をレポートとしてまとめられます。
 
+## 使い方
+
+SheepBell は Python による動画処理と、Web UI による編集を組み合わせたツールです。
+Python 側を単体で使うことは少ないと思われるため、使い方については [SheepComb SheepBell の使い方](/docs/sheep-comb/31_bell_steps_desc) にて紹介しています。
+

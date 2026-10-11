@@ -171,3 +171,16 @@ Click the refresh button on individual chunk headers to re-execute single blocks
 | **Proof** | `tgt` | Monolingual fluency check |
 | **Diff** | `src`, tagged `tgt`, `note` | Revision evaluation |
 | **Custom** | Customizable (`src`, `tgt`, `note`, `history`, `terms`) | Advanced contextual prompting |
+
+#### TOON Support (Experimental)
+
+While JSONL is a well-suited format for LLMs, it often leads to higher token usage due to repetitive key names.
+To address this, TOON (Token-Oriented Object Notation) was developed.
+TOON is a data format designed specifically for LLMs, expected to reduce token usage by approximately 30–60% compared to JSON.
+
+SheepShuttle supports chunk creation and API requests in TOON format.
+
+::: warning TOON support is an experimental feature
+While confirmed to work reliably for standard translation and review tasks, complex requests with extensive contextual data—such as history or terminology—have not been fully verified.
+We recommend starting with simpler use cases such as checking and proofreading.
+:::

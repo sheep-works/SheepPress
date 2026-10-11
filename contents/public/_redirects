@@ -13,8 +13,6 @@
 /sheep-comb         /docs/sheep-comb/             301
 /sheep-groom/*      /docs/sheep-groom/:splat      301
 /sheep-groom        /docs/sheep-groom/            301
-/sheep-hub/*        /docs/sheep-hub/:splat        301
-/sheep-hub          /docs/sheep-hub/              301
 /sheep-lint/*       /docs/sheep-lint/:splat       301
 /sheep-lint         /docs/sheep-lint/             301
 /sheep-loom/*       /docs/sheep-loom/:splat       301
@@ -37,8 +35,6 @@
 /en/sheep-comb      /en/docs/sheep-comb/          301
 /en/sheep-groom/*   /en/docs/sheep-groom/:splat   301
 /en/sheep-groom     /en/docs/sheep-groom/         301
-/en/sheep-hub/*     /en/docs/sheep-hub/:splat     301
-/en/sheep-hub       /en/docs/sheep-hub/           301
 /en/sheep-lint/*    /en/docs/sheep-lint/:splat    301
 /en/sheep-lint      /en/docs/sheep-lint/          301
 /en/sheep-loom/*    /en/docs/sheep-loom/:splat    301
@@ -61,8 +57,6 @@
 /zh/sheep-comb      /zh/docs/sheep-comb/          301
 /zh/sheep-groom/*   /zh/docs/sheep-groom/:splat   301
 /zh/sheep-groom     /zh/docs/sheep-groom/         301
-/zh/sheep-hub/*     /zh/docs/sheep-hub/:splat     301
-/zh/sheep-hub       /zh/docs/sheep-hub/           301
 /zh/sheep-lint/*    /zh/docs/sheep-lint/:splat    301
 /zh/sheep-lint      /zh/docs/sheep-lint/          301
 /zh/sheep-loom/*    /zh/docs/sheep-loom/:splat    301
@@ -75,3 +69,11 @@
 /zh/sheep-stitch    /zh/docs/sheep-stitch/        301
 /zh/sheep-weave/*   /zh/docs/sheep-weave/:splat   301
 /zh/sheep-weave     /zh/docs/sheep-weave/         301
+
+# Product List to Docs Redirects
+/product-list         /docs/                        301
+/product-list.html    /docs/                        301
+/en/product-list      /en/docs/                     301
+/en/product-list.html /en/docs/                     301
+/zh/product-list      /zh/docs/                     301
+/zh/product-list.html /zh/docs/                     301
