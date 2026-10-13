@@ -1,6 +1,6 @@
 ---
-title: "首页"
-description: "为翻译从业者开发并提供 Sheep 系列辅助工具"
+title: "Sheep Tools - 专为译员打造的翻译辅助工具集"
+description: "为翻译从业者开发并提供 Sheep Tools 实用辅助工具"
 layout: home
 date: 2024-01-01
 updated: 2026-10-09
@@ -10,18 +10,19 @@ category: "首页"
 tags:
   - "LAMBUAGE"
   - "SheepTools"
+  - "Sheep Tools"
   - "翻译支持"
 ---
 
 <!-- 1. Top Hero Banner -->
 <div class="top-hero-banner">
-  <img src="/hero_lambuageXSheep.png" alt="LAMBUAGE x 绵羊翻译室 - Sheep Family Tools" />
+  <img src="/hero_lambuageXSheep.png" alt="LAMBUAGE x 绵羊翻译室 - Sheep Tools" />
 </div>
 
 <!-- 2. Company & Studio Intro -->
 <CompanyIntro />
 
-<!-- 3. Sheep Family Tools Grid -->
+<!-- 3. Sheep Tools Grid -->
 <ToolsGrid />
 
 <!-- 4. Official Links & SNS -->

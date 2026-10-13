@@ -1,6 +1,6 @@
 ---
 title: "SheepComb のデータ構造と型定義"
-description: "SheepComb および SheepFamily で使用される JSON データ構造（ShWvData）と TypeScript 型定義の解説"
+description: "SheepComb および Sheep Tools で使用される JSON データ構造（ShWvData）と TypeScript 型定義の解説"
 date: 2026-09-08
 updated: 2026-09-08
 author: "合同会社ランベージ & ひつじの翻訳室"
@@ -345,7 +345,7 @@ $data.body.units | Where-Object { $_.src -match '\d' -or $_.tgt -match '\d' } |
 ::: details 完全な type.d.ts を表示
 
 ```typescript
-// ShWvData type definitions for SheepFamily Tools
+// ShWvData type definitions for Sheep Tools
 // Package: @sheep-works/types
 
 /**

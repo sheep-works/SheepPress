@@ -17,6 +17,7 @@ tags:
   - "Company Overview"
   - "Lambuage LLC"
   - "Services"
+  - "Sheep Tools"
   - "Geminiによる翻訳"
 ---
 
@@ -41,7 +42,7 @@ We offer comprehensive post-translation DTP and engineering support.
 ---
 
 ### Translation Tool Development
-In collaboration with "Sheep Translation Studio" (ひつじの翻訳室), Lambuage develops handy tools for translators such as "TraToys" and project management systems for small translation agencies like "Sheep Accounting".
+In collaboration with "Sheep Translation Studio" (ひつじの翻訳室), Lambuage develops the "Sheep Tools" suite of translation assistance tools (such as SheepComb, SheepWeave, and SheepBobbin).
 
 We also utilize VBA, Python, and other technologies to automate pre-processing and post-processing tasks for client Office files.
 

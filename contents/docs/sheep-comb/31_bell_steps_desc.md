@@ -177,5 +177,5 @@ issues/
 また、`Ctrl + S` で手動の保存も可能です。
 
 ::: tip SheepComb エコシステムとの連携
-SheepBell で作成した指摘やテキストは、SheepShuttle の用語集（TB）チェックや、SheepBobbin を経由した LLM チェックなど、他の Sheep ファミリーツールと組み合わせてさらに品質を高めることも可能です。
+SheepBell で作成した指摘やテキストは、SheepShuttle の用語集（TB）チェックや、SheepBobbin を経由した LLM チェックなど、他の Sheep Tools と組み合わせてさらに品質を高めることも可能です。
 :::

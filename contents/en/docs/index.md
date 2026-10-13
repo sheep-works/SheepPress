@@ -1,6 +1,6 @@
 ---
-title: "Documentation & Tools"
-description: "Overview and documentation of the Sheep Tool Family for Translators"
+title: "Sheep Tools - Documentation & Product List"
+description: "Overview and documentation of Sheep Tools for translators"
 date: 2024-01-01
 updated: 2026-10-11
 author: "Lambuage LLC & Sheep Translation Studio"
@@ -10,12 +10,13 @@ tags:
   - "Product List"
   - "Documentation"
   - "SheepTools"
+  - "Sheep Tools"
   - "CAT Tools"
   - "Geminiによる翻訳"
 ---
 
 :::info About Advertising
-Most Sheep tools are fully open source (MIT licensed) and free to use.
+Most Sheep Tools are fully open source (MIT licensed) and free to use.
 
 To support continued development, free distribution, and server maintenance costs, we plan to display unobtrusive advertisements on this documentation site and on our web app [SheepComb](https://lambuage.com/app/).
 
@@ -97,12 +98,13 @@ It reliably processes large-scale files that would be challenging to handle thro
 ## SheepShuttle
 
 The core library handling format conversion and data processing for XLIFF files in SheepComb.
-It also consolidates data schemas and TypeScript definitions used across various tools, serving as the architectural backbone of the Sheep ecosystem.
+It also consolidates data schemas and TypeScript definitions used across various tools, serving as the architectural backbone of the Sheep Tools ecosystem.
 
 ## SheepLoom
 
-A documentation and presentation generation tool powered by Vivliostyle and Marp.
-Rapidly converts Markdown documents into professional ePub, PDF documents, and slide decks, playing an important role in promoting Sheep tools.
+A development environment designed to make SVG animations easily accessible.
+By authoring SVG and Markdown according to simple conventions, it generates an interactive sandbox preview.
+Animations can ultimately be exported and reused as standalone Vue components.
 
 ## SheepStitch
 

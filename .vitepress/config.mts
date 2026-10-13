@@ -39,7 +39,7 @@ export default defineConfig({
     const pageUrl = `${domain}/${cleanPath}`
 
     const title = pageData.title ? `${pageData.title} | LAMBUAGE` : 'LAMBUAGE'
-    const description = pageData.description || 'Lambuage provides tools for translators -- Sheep Family'
+    const description = pageData.description || 'Lambuage provides tools for translators -- Sheep Tools'
     const ogImage = `${domain}/lambuage-logo.png`
 
     // OGP Meta Tags
@@ -83,7 +83,7 @@ export default defineConfig({
 
     return head
   },
-  // Google Analytics & BowNow
+  // Google Analytics & BowNow & Google AdSense
   head: [
     ["script", { async: "true", src: "https://www.googletagmanager.com/gtag/js?id=G-PFT0GHJFSL" }],
     ["script", {}, "window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-PFT0GHJFSL');"],
@@ -94,18 +94,26 @@ export default defineConfig({
 _bownow_ts.charset = 'utf-8';
 _bownow_ts.src = 'https://contents.bownow.jp/js/UTC_0b6e8f464ee2de6eb03f/trace.js';
 document.getElementsByTagName('head')[0].appendChild(_bownow_ts);`
+    ],
+    [
+      "script",
+      {
+        async: "",
+        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8521735422365905",
+        crossorigin: "anonymous"
+      }
     ]
   ],
   // Site-wide settings
   title: "LAMBUAGE",
-  description: "Lambuage provides tools for translators -- Sheep Family ",
+  description: "Lambuage provides tools for translators -- Sheep Tools",
 
   locales: {
     root: {
       label: '日本語',
       lang: 'ja',
       title: 'LAMBUAGE',
-      description: '翻訳者のための Sheep ファミリーツールを開発・提供',
+      description: '翻訳者のための翻訳支援ツール「Sheep Tools」を開発・提供',
       themeConfig: {
         nav: [
           { text: 'ホーム', link: '/' },
@@ -208,7 +216,7 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);`
       lang: 'en',
       link: '/en/',
       title: 'Sheep Tools',
-      description: 'Introducing Sheep family tools for translators',
+      description: 'Introducing Sheep Tools: specialized tools for translators',
       themeConfig: {
         nav: [
           { text: 'Home', link: '/en/' },
@@ -309,7 +317,7 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);`
       lang: 'zh',
       link: '/zh/',
       title: 'Sheep Tools',
-      description: '为翻译者提供的 Sheep 系列工具介绍',
+      description: '为翻译从业者打造的 Sheep Tools 实用工具介绍',
       themeConfig: {
         nav: [
           { text: '首页', link: '/zh/' },

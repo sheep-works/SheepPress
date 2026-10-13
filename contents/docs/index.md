@@ -1,6 +1,6 @@
 ---
-title: "ツール一覧・ドキュメント"
-description: "翻訳者のための SheepFamily 製品一覧と各種ツールのドキュメント"
+title: "Sheep Tools 一覧・ドキュメント"
+description: "翻訳者のための Sheep Tools 製品一覧と各種ツールのドキュメント"
 date: 2024-01-01
 updated: 2026-10-11
 author: "合同会社ランベージ & ひつじの翻訳室"
@@ -10,11 +10,12 @@ tags:
   - "ツール一覧"
   - "ドキュメント"
   - "SheepTools"
+  - "Sheep Tools"
   - "CATツール"
 ---
 
 :::info 広告掲載について
-Sheep ツールはほとんどオープンソース（MITライセンス）として完全無料公開しています。
+Sheep Tools はほとんどオープンソース（MITライセンス）として完全無料公開しています。
 
 開発・無償提供およびサーバー維持費をまかなうため、このドキュメントページおよび Web アプリである[SheepComb](https://lambuage.com/app/)に控えめな広告を掲載する予定です。
 
@@ -109,12 +110,12 @@ SheepComb / SheepWeave と SheepBobbin の連携では対応できないよう�
 ## SheepShuttle
 
 SheepComb で提供している XLIFF 系ファイルの変換や処理を一手に担うライブラリです。
-また、各種ツールで使う「型定義」も取りまとめており、まさに Sheep ツールの屋台骨となっています。
+また、各種ツールで使う「型定義」も取りまとめており、まさに Sheep Tools の屋台骨となっています。
 
 ## SheepLoom
-vivliostyle と Marp を使った資料作成ツール。
-ePub や PDF、プレゼンテーション資料などをマークダウンファイルから高速に作成します。
-Sheep ツールの宣伝を支える重要なツールとなっています。
+SVG アニメーションを身近にするための開発環境。
+一定のルールで SVG と Markdown を書くことで、インタラクティブなサンドボックスを生成。
+最終的に Vue コンポーネントとして再利用できるところまで持っていきます。
 
 ## SheepStitch
 

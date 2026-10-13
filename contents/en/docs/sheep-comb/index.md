@@ -29,7 +29,7 @@ tags:
 
 The core concept is a **comb**.
 
-By combing and organizing translation assets in concert with the SheepFamily toolset, SheepComb creates a smooth, frictionless workflow.
+By combing and organizing translation assets in concert with Sheep Tools, SheepComb creates a smooth, frictionless workflow.
 
 ## Key Features
 

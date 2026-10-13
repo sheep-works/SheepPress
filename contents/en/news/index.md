@@ -10,6 +10,7 @@ tags:
   - "News"
   - "Announcements"
   - "Updates"
+  - "Sheep Tools"
   - "Geminiによる翻訳"
 ---
 
@@ -19,6 +20,6 @@ This page is machine-translated by Gemini.
 
 # What's New
 
-Here you can find all announcements, development blogs, notes, and changelogs related to Lambuage and the Sheep Tools family.
+Here you can find all announcements, development blogs, notes, and changelogs related to Lambuage and Sheep Tools.
 
 <WhatsNewTabs />

@@ -1,6 +1,6 @@
 ---
-title: "产品列表与文档"
-description: "为翻译从业者打造的 Sheep 绵羊工具家族产品一览与文档"
+title: "Sheep Tools 产品列表与文档"
+description: "为翻译从业者打造的 Sheep Tools 实用工具列表与文档"
 date: 2024-01-01
 updated: 2026-10-11
 author: "合同会社ランベージ & 绵羊翻译室"
@@ -10,12 +10,13 @@ tags:
   - "产品列表"
   - "文档"
   - "SheepTools"
+  - "Sheep Tools"
   - "CAT工具"
   - "Geminiによる翻訳"
 ---
 
 :::info 关于广告投放
-绝大多数 Sheep 工具均作为开源项目（MIT 许可协议）完全免费公开。
+绝大多数 Sheep Tools 工具均作为开源项目（MIT 许可协议）完全免费公开。
 
 为支持工具的持续研发、免费分发以及服务器运维成本，我们计划在此文档页面以及 Web 应用 [SheepComb](https://lambuage.com/app/) 中展示克制且适度的广告内容。
 
@@ -97,12 +98,13 @@ SheepWeave 正是本着“让译员也能享受到顶级代码编辑器红利”
 ## SheepShuttle
 
 在 SheepComb 中统筹负责 XLIFF 族文件格式转换与核心数据处理的底层核心库。
-同时统一管理各类工具所使用的 TypeScript 类型定义，堪称整个 Sheep 工具家族的基石支柱。
+同时统一管理各类工具所使用的 TypeScript 类型定义，堪称整个 Sheep Tools 的基石支柱。
 
 ## SheepLoom
 
-基于 vivliostyle 与 Marp 的文档与排版制作工具。
-可从 Markdown 标记文件极速生成专业级 ePub 电子书、PDF 文档以及幻灯片演示文稿，为推广 Sheep 家族工具发挥着重要作用。
+让 SVG 动画制作更加轻量便捷的开发环境。
+只需按照特定规则编写 SVG 与 Markdown，即可自动生成交互式沙盒预览。
+最终可将其导出为独立的 Vue 组件，方便在各种场景中复用。
 
 ## SheepStitch
 

@@ -29,6 +29,8 @@ SheepComb で操作できる SheepShuttle の機能は以下のとおりです�
 | 4 | **ビルド** | 構造化データを修正した後に、もとの XLIFF へと戻します。|
 | 5 | **AI リクエスト（API）** | 小分けにしたデータと指示（プロンプト）を AI へ送り、一括で翻訳やチェックを行います。|
 
+<sheep-shuttle-flow />
+
 # 各ステップの詳細手順
 ## 1a：データの抽出
 
@@ -133,7 +135,7 @@ Excel や XLIFF でテキスト内に改行が含まれている場合、抽出�
 利用できるファイル形式は次のとおりです。
 - **翻訳メモリ(TM)**：過去の対訳データ（`.tmx` `xlf` `sdlxliff` `.mxliff` `.mqxliff` `.csv` `xlsx` `json` `jsonl`）
 - **用語集(TB)**：専門用語や指定訳のリスト（`.tbx` `xlf` `sdlxliff` `.mxliff` `.mqxliff` `.csv` `xlsx` `json` `jsonl`）
-なお、`csv` `xlsx` については**原文・訳文・備考**の順に並んでいるものとし、`json` `jsonl` については SheepFamily ツールで出力されたものに限ります。
+なお、`csv` `xlsx` については**原文・訳文・備考**の順に並んでいるものとし、`json` `jsonl` については Sheep Tools で出力されたものに限ります。
 :::
 
 ## 3：データの管理・QA

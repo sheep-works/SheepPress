@@ -1,15 +1,15 @@
 ---
 title: "SheepLoom 概要"
-description: "SheepLoom 文档与排版生成工具概要"
-date: 2024-01-01
-updated: 2026-08-30
+description: "SheepLoom SVG 动画工具概要"
+date: 2026-10-13
+updated: 2026-10-13
 author: "合同会社ランベージ & 绵羊翻译室"
 lang: "zh"
 category: "产品文档"
 tags:
   - "LAMBUAGE"
   - "SheepTools"
-  - "翻译支持"
+  - "图像与视觉支持"
   - "Geminiによる翻訳"
 ---
 
@@ -19,17 +19,18 @@ tags:
 
 # SheepLoom
 
-PDF 电子出版物与演示幻灯片排版制作工具。
+让 SVG 动画制作更加轻量便捷的实用工具。
 
 核心设计理念是 **织布机（Loom）**。
 
-支持将纯 Markdown 文件高效转化为专业排版文档与演示幻灯片。通过保持纯文本格式存储，大幅拓宽内容复用场景。
+通过 SVG 文件与特定的 Markdown 脚本，生成由 CSS 与 JavaScript 驱动的动态 SVG。
+不仅能在沙盒环境中实时预览交互效果，还能作为独立的 Vue 组件方便地在各类项目中复用。
 
 ## 主要功能
 
-- **PDF 排版生成**：利用 CSS 排版引擎 Vivliostyle 制作高精度的 PDF 文档。
-- **幻灯片制作**：支持基于 Marp 的 Markdown 幻灯片极速生成。
+- **获取 SVG 元素列表**：深度解析 SVG 的 XML 结构并提取元素 ID 列表，极大降低编写 Markdown 动画分镜脚本的门槛。
+- **动态预览与导出**：在 Vue 沙盒环境中实时观察动作并微调脚本。制作完成后可导出为独立的 Vue 组件随时复用。
 
 ## 使用方法
 
-详情请期待后续版本文档更新。
+详情请期待后续更新。

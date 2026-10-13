@@ -21,7 +21,7 @@ const currentLang = computed(() => {
 const toolsData = computed(() => {
   if (currentLang.value === 'en') {
     return {
-      title: '🐑 Sheep Family Tools',
+      title: '🐑 Sheep Tools',
       subtitle: 'Making translation workflows smoother, faster, and more accurate. Translation tools built from real-world practitioner experience.',
       webCategory: 'Web Applications',
       desktopCategory: 'Desktop Applications',
@@ -73,7 +73,7 @@ const toolsData = computed(() => {
         },
         {
           title: 'SheepLoom',
-          details: 'Smart document and slide generation tool using Vivliostyle and Marp',
+          details: 'Sandbox environment for creating SVG animations in conversation with LLMs',
           link: '/en/docs/sheep-loom'
         },
         {
@@ -87,7 +87,7 @@ const toolsData = computed(() => {
 
   if (currentLang.value === 'zh') {
     return {
-      title: '🐑 Sheep Family 实用工具集',
+      title: '🐑 Sheep Tools 实用工具集',
       subtitle: '让翻译工作更顺畅、更高效、更精准。源自一线实战经验的专业翻译辅助工具。',
       webCategory: 'Web 网页应用',
       desktopCategory: '桌面客户端应用',
@@ -139,7 +139,7 @@ const toolsData = computed(() => {
         },
         {
           title: 'SheepLoom',
-          details: '基于 Vivliostyle 与 Marp 的专业文档与幻灯片生成工具',
+          details: '与大模型协同对话构建 SVG 动画的交互式沙盒环境',
           link: '/zh/docs/sheep-loom'
         },
         {
@@ -152,7 +152,7 @@ const toolsData = computed(() => {
   }
 
   return {
-    title: '🐑 Sheep Family ツール群',
+    title: '🐑 Sheep Tools 一覧',
     subtitle: '翻訳業務をよりスムーズに、より正確に。実務者の声から生まれた翻訳支援ツールです。',
     webCategory: 'Web アプリケーション',
     desktopCategory: 'デスクトップアプリ',
@@ -204,7 +204,7 @@ const toolsData = computed(() => {
       },
       {
         title: 'SheepLoom',
-        details: 'Vivliostyle と Marp を使ったスマートな資料作成ツール',
+        details: 'SVG アニメーションを LLM と会話しながらつくるサンドボックス環境',
         link: '/docs/sheep-loom'
       },
       {
@@ -265,6 +265,12 @@ onMounted(() => {
         <p class="tool-details">{{ tool.details }}</p>
       </a>
     </div>
+
+    <!-- ワークフローカルーセル -->
+    <flow-carousel>
+      <sheep-shuttle-flow />
+      <sheep-groom-flow />
+    </flow-carousel>
 
     <h3 class="tools-section-title">{{ toolsData.desktopCategory }}</h3>
     <div class="tools-grid">

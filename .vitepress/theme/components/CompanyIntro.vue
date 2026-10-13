@@ -41,7 +41,7 @@ const content = computed(() => {
         url: '/en/about',
         paras: [
           'We provide comprehensive services including translation project direction, multilingual DTP/editing, and website creation.',
-          'We also develop the Sheep Family translation assistance tools born directly from real-world translation workflows.',
+          'We also develop Sheep Tools, translation assistance tools born directly from real-world translation workflows.',
           'Feel free to consult with us regarding language-related workflow optimization or any challenges you face.'
         ]
       },
@@ -71,7 +71,7 @@ const content = computed(() => {
         url: '/zh/about',
         paras: [
           '承接翻译项目统筹管理、多语言DTP排版与编辑、网站建设等全方位语言业务。',
-          '同时研发源自一线翻译实战的各类 Sheep Family 翻译辅助工具。',
+          '同时研发源自一线翻译实战的各类 Sheep Tools 翻译辅助工具。',
           '如您有任何多语言业务优化或技术难题，欢迎随时与我们探讨交流。'
         ]
       },
@@ -100,7 +100,7 @@ const content = computed(() => {
       url: '/about',
       paras: [
         '翻訳に付随するディレクションや多言語DTP・編集、Webサイト制作などを広く請け負っております。',
-        'さらに、翻訳実務の現場から生まれた各種翻訳支援ツール（Sheep Family）として開発もしています。',
+        'さらに、翻訳実務の現場から生まれた各種翻訳支援ツール「Sheep Tools」の開発も行っています。',
         '言語にまつわる業務の効率化やお困りごとがあれば、いつでもご相談ください。'
       ]
     },

@@ -17,6 +17,7 @@ tags:
   - "公司概要"
   - "Lambuage LLC"
   - "主营业务"
+  - "Sheep Tools"
   - "Geminiによる翻訳"
 ---
 
@@ -41,7 +42,7 @@ Lambuage 团队成员兼具专业译员与项目经理（PM）的双重经验，
 ---
 
 ### 翻译辅助工具研发
-Lambuage 与“绵羊翻译室”（ひつじの翻訳室）联合研发了面向专业译员的实用工具集“TraToys”、面向小型翻译公司的项目管理系统“绵羊财务”等。
+Lambuage 与“绵羊翻译室”（ひつじの翻訳室）联合研发了面向专业译员的实用工具集“Sheep Tools”（包括 SheepComb、SheepWeave、SheepBobbin 等）。
 
 此外，我们还广泛利用 VBA、Python 等编程技术，为各类项目的 Office 文件提供自动化的前处理与后处理解决方案。
 

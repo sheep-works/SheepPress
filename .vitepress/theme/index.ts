@@ -11,6 +11,9 @@ import CompanyIntro from './components/CompanyIntro.vue'
 import SoftwareDownloads from './components/SoftwareDownloads.vue'
 import DocFooter from './components/DocFooter.vue'
 import { h } from 'vue'
+import SheepShuttleFlow from './components/SheepShuttleFlow.standalone.vue'
+import SheepGroomFlow from './components/SheepGroomFlow.standalone.vue'
+import FlowCarousel from './components/FlowCarousel.vue'
 
 export default {
   extends: DefaultTheme,
@@ -30,5 +33,11 @@ export default {
     app.component('CompanyIntro', CompanyIntro)
     app.component('SoftwareDownloads', SoftwareDownloads)
     app.component('DocFooter', DocFooter)
+    app.component('SheepShuttleFlow', SheepShuttleFlow)
+    app.component('sheep-shuttle-flow', SheepShuttleFlow)
+    app.component('SheepGroomFlow', SheepGroomFlow)
+    app.component('sheep-groom-flow', SheepGroomFlow)
+    app.component('FlowCarousel', FlowCarousel)
+    app.component('flow-carousel', FlowCarousel)
   }
 }
