@@ -1,5 +1,5 @@
 <template>
-  <div class="flow-standalone-root">
+  <div class="flow-standalone-root" :style="rootStyle">
     <!-- 操作コントローラー（showControls: true の場合） -->
     <div v-if="showControls" class="standalone-controls">
       <div class="controls-left">
@@ -88,6 +88,7 @@ interface Props {
   showControls?: boolean
   showFrameBorders?: boolean
   loop?: boolean
+  height?: string | number
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -95,7 +96,15 @@ const props = withDefaults(defineProps<Props>(), {
   autoPlay: true,
   showControls: false,
   showFrameBorders: false,
-  loop: true
+  loop: true,
+  height: '360px'
+})
+
+const rootStyle = computed(() => {
+  if (!props.height) return {}
+  return {
+    height: typeof props.height === 'number' ? `${props.height}px` : props.height
+  }
 })
 
 export interface ScenarioStep {
@@ -370,7 +379,7 @@ const zoomToElement = (
     finalH = Math.abs(p2.y - p1.y)
   }
 
-  // 非表示（display: none などで要素サイズが未取得）の場合は安全にスキップ
+  // 非表示等でサイズが未取得の場合は安全にスキップ
   if (finalW <= 1 || finalH <= 1) return
 
   const padRatio = options?.padding ?? 0.15
@@ -626,10 +635,30 @@ defineExpose({
 <style scoped>
 .flow-standalone-root {
   width: 100%;
-  height: 100%;
+  height: 360px;
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
+}
+
+.flow-wrapper {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.flow-wrapper :deep(.flow-svg) {
+  width: 100%;
+  height: 100% !important;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
 }
 
 /* 操作コントローラー */

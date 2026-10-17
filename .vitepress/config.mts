@@ -21,6 +21,7 @@ export default defineConfig({
     }
   },
   srcDir: "contents",
+  srcExclude: ['en/**', 'zh/**'],
   base: "/",
   sitemap: {
     hostname: 'https://lambuage.com'
@@ -211,6 +212,7 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);`
         }
       }
     },
+    /* 一時的に非表示（AdSense審査用）
     en: {
       label: 'English',
       lang: 'en',
@@ -413,6 +415,7 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);`
         }
       }
     }
+    */
   },
 
   themeConfig: {

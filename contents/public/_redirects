@@ -4,6 +4,12 @@
 /app/*    https://sheepcombpack.netlify.app/:splat   200
 /_nuxt/*  https://sheepcombpack.netlify.app/_nuxt/:splat  200
 
+# Temporary Redirects for AdSense Review (Redirect en and zh to Japanese counterpart)
+/en/*    /:splat    302!
+/en      /          302!
+/zh/*    /:splat    302!
+/zh      /          302!
+
 # Documentation 301 Redirects (Japanese)
 /sheep-bell/*       /docs/sheep-bell/:splat       301
 /sheep-bell         /docs/sheep-bell/             301
