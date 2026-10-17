@@ -1,0 +1,19 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "SheepGroom",
+  "url": "https://lambuage.com/app/groom",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web Browser",
+  "description": "Office ファイル（Word / Excel / PowerPoint）の対訳化・アライン支援ツール",
+  "featureList": [
+    "Officeファイル（Word / Excel / PowerPoint）からのテキスト抽出",
+    "原文・訳文の対訳作成（アライン）",
+    "ブラウザ上でのアライン手動調整・編集"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "JPY"
+  }
+}

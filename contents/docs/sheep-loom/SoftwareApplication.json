@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "SheepLoom",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web Browser",
+  "description": "SVG アニメーションを LLM と会話しながらつくるサンドボックス環境",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "JPY"
+  }
+}

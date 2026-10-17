@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "SheepSpindle",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Cross-platform (WASM)",
+  "description": "WASM を使った高速 TM / TB 参照・処理エンジン",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "JPY"
+  }
+}

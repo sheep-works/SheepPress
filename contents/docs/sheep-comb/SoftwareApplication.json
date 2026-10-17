@@ -1,0 +1,20 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "SheepComb",
+  "url": "https://lambuage.com/app",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web Browser",
+  "description": "翻訳データの変換・可視化・構造化が可能な Web ポータルツール",
+  "featureList": [
+    "XLIFF/TMX/TBX抽出・変換",
+    "対訳検索（コンコーダンス）",
+    "テキスト比較・差分抽出",
+    "翻訳QA・検証"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "JPY"
+  }
+}

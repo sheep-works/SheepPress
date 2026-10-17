@@ -49,3 +49,20 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  notify-indexnow:
+    needs: deploy
+    runs-on: ubuntu-latest
+    name: Notify IndexNow
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Send IndexNow Ping
+        run: |
+          sleep 10
+          node scripts/notify-indexnow.js
+        continue-on-error: true

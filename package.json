@@ -10,7 +10,8 @@
     "prebuild": "node scripts/build-nilto-data.js",
     "dev": "vitepress dev",
     "build": "node --max-old-space-size=4096 ./node_modules/vitepress/bin/vitepress.js build",
-    "preview": "vitepress preview"
+    "preview": "vitepress preview",
+    "indexnow": "node scripts/notify-indexnow.js"
   },
   "dependencies": {
     "marked": "^18.0.11"

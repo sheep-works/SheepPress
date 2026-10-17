@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "SheepStitch",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Windows, macOS",
+  "description": "各種プラットフォームでの入力自動化・半自動インポーター",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "JPY"
+  }
+}

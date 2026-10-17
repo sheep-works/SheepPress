@@ -15,11 +15,13 @@ import SheepShuttleFlow from './components/SheepShuttleFlow.standalone.vue'
 import SheepGroomFlow from './components/SheepGroomFlow.standalone.vue'
 import FlowCarousel from './components/FlowCarousel.vue'
 import Toc from './components/Toc.vue'
+import Breadcrumbs from './components/Breadcrumbs.vue'
 
 export default {
   extends: DefaultTheme,
   Layout() {
     return h(DefaultTheme.Layout, null, {
+      'doc-before': () => h(Breadcrumbs),
       'doc-after': () => h(DocFooter),
       'page-bottom': () => h(DocFooter)
     })

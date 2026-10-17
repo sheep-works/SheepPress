@@ -1,0 +1,27 @@
+{
+  "@context": "https://schema.org",
+  "@type": [
+    "SoftwareApplication",
+    "WebApplication"
+  ],
+  "name": "SheepBell",
+  "url": "https://lambuage.com/app/bell",
+  "codeRepository": "https://github.com/sheep-works/SheepBell",
+  "sameAs": [
+    "https://github.com/sheep-works/SheepBell"
+  ],
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Windows, macOS, Linux, Web Browser",
+  "softwareRequirements": "Python 3.10+, Google Colab, Modern Web Browser",
+  "description": "音声認識を活用した LQA テスト支援・動画クリップ＆エラー抽出ツール",
+  "featureList": [
+    "発話区間の自動検知・AI音声認識（文字起こし）",
+    "動画クリップ＆スナップショット自動切り出し",
+    "LQA（言語品質検証）テスト支援・Web校正ビューワ"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "JPY"
+  }
+}

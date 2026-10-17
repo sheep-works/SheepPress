@@ -86,6 +86,106 @@ export default defineConfig({
       JSON.stringify(jsonLd)
     ])
 
+    // SoftwareApplication / WebApplication JSON-LD (if SoftwareApplication.json exists in directory)
+    try {
+      const pageDir = path.dirname(path.resolve('contents', pageData.relativePath))
+      const softwareJsonPath = path.join(pageDir, 'SoftwareApplication.json')
+      if (fs.existsSync(softwareJsonPath) && pageData.relativePath.endsWith('index.md')) {
+        const rawJson = fs.readFileSync(softwareJsonPath, 'utf8')
+        const appData = JSON.parse(rawJson)
+
+        const softwareJsonLd = {
+          '@context': 'https://schema.org',
+          '@type': appData['@type'] || 'SoftwareApplication',
+          'name': appData.name || title,
+          'headline': appData.headline || pageData.title || title,
+          'description': appData.description || description,
+          'url': pageUrl,
+          'applicationCategory': appData.applicationCategory || 'BusinessApplication',
+          'operatingSystem': appData.operatingSystem || 'Windows, macOS, Linux',
+          'offers': appData.offers || {
+            '@type': 'Offer',
+            'price': '0',
+            'priceCurrency': 'JPY'
+          },
+          'publisher': {
+            '@type': 'Organization',
+            'name': '合同会社ランベージ',
+            'url': domain,
+            'logo': {
+              '@type': 'ImageObject',
+              'url': ogImage
+            }
+          },
+          ...appData
+        }
+
+        head.push([
+          'script',
+          { type: 'application/ld+json' },
+          JSON.stringify(softwareJsonLd)
+        ])
+      }
+    } catch (e) {
+      console.warn('Failed to parse SoftwareApplication.json:', e)
+    }
+
+    // BreadcrumbList JSON-LD for /docs/ pages
+    if (cleanPath.startsWith('docs/')) {
+      const toolMap: Record<string, string> = {
+        'sheep-weave': 'SheepWeave',
+        'sheep-comb': 'SheepComb',
+        'sheep-bobbin': 'SheepBobbin',
+        'sheep-lint': 'SheepLint',
+        'sheep-shuttle': 'SheepShuttle',
+        'sheep-groom': 'SheepGroom',
+        'sheep-bell': 'SheepBell',
+        'sheep-spindle': 'SheepSpindle',
+        'sheep-loom': 'SheepLoom',
+        'sheep-stitch': 'SheepStitch'
+      }
+
+      const segs = cleanPath.split('/').filter(Boolean)
+      if (segs.length >= 2) {
+        const toolSlug = segs[1]
+        const toolName = toolMap[toolSlug] || toolSlug
+
+        const breadcrumbItems = [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'ツール一覧',
+            item: `${domain}/docs`
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: toolName,
+            item: `${domain}/docs/${toolSlug}`
+          }
+        ]
+
+        if (segs.length > 2) {
+          breadcrumbItems.push({
+            '@type': 'ListItem',
+            position: 3,
+            name: pageData.title || title,
+            item: pageUrl
+          })
+        }
+
+        head.push([
+          'script',
+          { type: 'application/ld+json' },
+          JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: breadcrumbItems
+          })
+        ])
+      }
+    }
+
     return head
   },
   // Google Analytics & BowNow & Google AdSense
