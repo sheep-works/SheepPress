@@ -23,6 +23,7 @@ export default defineConfig({
   srcDir: "contents",
   srcExclude: ['en/**', 'zh/**'],
   base: "/",
+  cleanUrls: true,
   sitemap: {
     hostname: 'https://lambuage.com'
   },
@@ -33,15 +34,18 @@ export default defineConfig({
     const head: HeadConfig[] = []
     const domain = 'https://lambuage.com'
 
-    // Clean page path for URL
+    // Clean page path for URL (without .html extension)
     const cleanPath = pageData.relativePath
       .replace(/index\.md$/, '')
-      .replace(/\.md$/, '.html')
+      .replace(/\.md$/, '')
     const pageUrl = `${domain}/${cleanPath}`
 
     const title = pageData.title ? `${pageData.title} | LAMBUAGE` : 'LAMBUAGE'
     const description = pageData.description || 'Lambuage provides tools for translators -- Sheep Tools'
     const ogImage = `${domain}/lambuage-logo.png`
+
+    // Canonical URL
+    head.push(['link', { rel: 'canonical', href: pageUrl }])
 
     // OGP Meta Tags
     head.push(['meta', { property: 'og:site_name', content: 'LAMBUAGE' }])
@@ -191,6 +195,17 @@ document.getElementsByTagName('head')[0].appendChild(_bownow_ts);`
               text: 'SheepBell',
               items: [
                 { text: '概要', link: '/docs/sheep-bell/' },
+              ]
+            },
+          ],
+          '/docs/sheep-shuttle/': [
+            { text: 'トップへ戻る', link: '/' },
+            {
+              text: 'SheepShuttle',
+              items: [
+                { text: '概要', link: '/docs/sheep-shuttle/' },
+                { text: 'はじめに', link: '/docs/sheep-shuttle/01_introduction' },
+                { text: 'データ構造と型定義', link: '/docs/sheep-shuttle/99_types' },
               ]
             },
           ],

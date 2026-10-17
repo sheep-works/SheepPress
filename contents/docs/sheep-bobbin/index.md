@@ -29,4 +29,13 @@ SheepComb の姉妹ツール。
 - **ローカル LLM に対応**: LM Studio や Ollama などのローカル LLM を持っていれば、完全にデバイス内だけで処理が完結します。
 - **有料・無料 AI に対応**: SheepLint で使っている Vertex AI 以外にも、Google AI Studio/ChatGPT/DeepSeek などの API にも対応。普段使っている AI を利用することで、コストを抑えられます。
 
+## 目次・ドキュメント一覧
+
+<Toc :items="[
+  { title: 'はじめに', link: './01_introduction', desc: 'SheepBobbin の基本概要と起動・準備手順' },
+  { title: 'ローカルLLMとの通信', link: './02_local_llm', desc: 'LM Studio や Ollama とのローカル接続・設定' },
+  { title: 'クラウドLLMとの通信', link: './03_cloud_llm', desc: 'Gemini / ChatGPT / Claude などの API 連携設定' },
+  { title: 'コンソールとログ・消費トークン', link: './04_console_and_tokens', desc: 'トークン消費量の把握と実行ログの確認' }
+]" />
+
 

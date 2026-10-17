@@ -26,6 +26,9 @@ SheepWeave でできた JSON をさらに活用するためのツールです。
 - **TM/TB 変換**: JSON を TM/TB ファイルに変換して、他のツールでも活用できるように
 - **JSONL 変換**: SheepLint をはじめとする、AI ツールで使いやすい JSONL 形式への変換もサポート
 
-## 使い方
+## 目次・ドキュメント一覧
 
-詳細は今後の更新をお待ちください。
+<Toc :items="[
+  { title: 'はじめに', link: './01_introduction', desc: 'SheepShuttle の役割と基本的な使い方' },
+  { title: 'データ構造と型定義', link: './99_types', desc: 'JSON データ構造（ShWvData）と TypeScript 型定義' }
+]" />

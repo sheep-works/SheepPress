@@ -9,6 +9,7 @@ interface ToolItem {
   details: string
   link: string
   badge?: string
+  docsCount?: string
 }
 
 const currentLang = computed(() => {
@@ -30,56 +31,66 @@ const toolsData = computed(() => {
         {
           title: 'SheepComb',
           details: 'Web app for converting, visualizing, and structuring translation data. Integrates other tools.',
-          link: '/en/docs/sheep-comb'
+          link: '/en/docs/sheep-comb',
+          docsCount: '6 Docs'
         },
         {
           title: 'SheepGroom',
           details: 'Bilingual alignment assistance for Office files (Word / Excel / PowerPoint)',
-          link: '/en/docs/sheep-groom'
+          link: '/en/docs/sheep-groom',
+          docsCount: 'Overview'
         },
         {
           title: 'SheepBell',
           details: 'Video clipping and issue extraction tool for LQA testing',
-          link: '/en/docs/sheep-bell'
+          link: '/en/docs/sheep-bell',
+          docsCount: 'Overview'
         },
       ] as ToolItem[],
       desktopTools: [
         {
           title: 'SheepWeave',
           details: 'Integrated translation environment extension for VS Code (Lightweight CAT Tool)',
-          link: '/en/docs/sheep-weave'
+          link: '/en/docs/sheep-weave',
+          docsCount: '12 Docs'
         },
         {
           title: 'SheepBobbin',
           details: 'Desktop client for LLM-powered translation processing and QA checking',
-          link: '/en/docs/sheep-bobbin'
+          link: '/en/docs/sheep-bobbin',
+          docsCount: '4 Docs'
         },
         {
           title: 'SheepLint',
           details: 'Large-scale LLM proofreading and QA tool powered by Vertex AI',
-          link: '/en/docs/sheep-lint'
+          link: '/en/docs/sheep-lint',
+          docsCount: '1 Doc'
         }
       ] as ToolItem[],
       baseTools: [
         {
           title: 'SheepShuttle',
           details: 'Core conversion CLI module powering SheepWeave and SheepComb',
-          link: '/en/docs/sheep-shuttle'
+          link: '/en/docs/sheep-shuttle',
+          docsCount: '2 Docs'
         },
         {
           title: 'SheepSpindle',
           details: 'Blazing-fast TM / TB lookup & processing engine powered by WASM',
-          link: '/en/docs/sheep-spindle'
+          link: '/en/docs/sheep-spindle',
+          docsCount: 'Overview'
         },
         {
           title: 'SheepLoom',
           details: 'Sandbox environment for creating SVG animations in conversation with LLMs',
-          link: '/en/docs/sheep-loom'
+          link: '/en/docs/sheep-loom',
+          docsCount: 'Overview'
         },
         {
           title: 'SheepStitch',
           details: 'Input automation and semi-automated importer for diverse translation platforms',
-          link: '/en/docs/sheep-stitch'
+          link: '/en/docs/sheep-stitch',
+          docsCount: 'Overview'
         },
       ] as ToolItem[]
     }
@@ -96,56 +107,66 @@ const toolsData = computed(() => {
         {
           title: 'SheepComb',
           details: '支持翻译数据转换、可视化与结构化的 Web 应用，并内嵌多种实用工具',
-          link: '/zh/docs/sheep-comb'
+          link: '/zh/docs/sheep-comb',
+          docsCount: '共6章'
         },
         {
           title: 'SheepGroom',
           details: '支持 Office 文件（Word / Excel / PowerPoint）的双语对齐工具',
-          link: '/zh/docs/sheep-groom'
+          link: '/zh/docs/sheep-groom',
+          docsCount: '概览'
         },
         {
           title: 'SheepBell',
           details: '专为 LQA 本地化测试打造的视频剪辑与缺陷提取辅助工具',
-          link: '/zh/docs/sheep-bell'
+          link: '/zh/docs/sheep-bell',
+          docsCount: '概览'
         },
       ] as ToolItem[],
       desktopTools: [
         {
           title: 'SheepWeave',
           details: '基于 VS Code 的集成翻译环境扩展（轻量级 CAT 辅助翻译工具）',
-          link: '/zh/docs/sheep-weave'
+          link: '/zh/docs/sheep-weave',
+          docsCount: '共12章'
         },
         {
           title: 'SheepBobbin',
           details: '基于 LLM 大模型的翻译处理与质量审查桌面客户端',
-          link: '/zh/docs/sheep-bobbin'
+          link: '/zh/docs/sheep-bobbin',
+          docsCount: '共4章'
         },
         {
           title: 'SheepLint',
           details: '基于 Vertex AI 的大规模 LLM 智能审校与质检工具',
-          link: '/zh/docs/sheep-lint'
+          link: '/zh/docs/sheep-lint',
+          docsCount: '共1章'
         }
       ] as ToolItem[],
       baseTools: [
         {
           title: 'SheepShuttle',
           details: 'SheepWeave 与 SheepComb 底层核心数据转换模块（CLI）',
-          link: '/zh/docs/sheep-shuttle'
+          link: '/zh/docs/sheep-shuttle',
+          docsCount: '共2章'
         },
         {
           title: 'SheepSpindle',
           details: '基于 WASM 的毫秒级高速 TM / TB 检索与处理引擎',
-          link: '/zh/docs/sheep-spindle'
+          link: '/zh/docs/sheep-spindle',
+          docsCount: '概览'
         },
         {
           title: 'SheepLoom',
           details: '与大模型协同对话构建 SVG 动画的交互式沙盒环境',
-          link: '/zh/docs/sheep-loom'
+          link: '/zh/docs/sheep-loom',
+          docsCount: '概览'
         },
         {
           title: 'SheepStitch',
           details: '适用于各类平台的半自动化批量录入与搬运辅助工具',
-          link: '/zh/docs/sheep-stitch'
+          link: '/zh/docs/sheep-stitch',
+          docsCount: '概览'
         },
       ] as ToolItem[]
     }
@@ -161,56 +182,66 @@ const toolsData = computed(() => {
       {
         title: 'SheepComb',
         details: '翻訳データの変換・可視化・構造化が可能な Web アプリ。他のツールも内包',
-        link: '/docs/sheep-comb'
+        link: '/docs/sheep-comb',
+        docsCount: '全6章'
       },
       {
         title: 'SheepGroom',
         details: 'Office ファイル（Word / Excel / PowerPoint）の対訳化支援',
-        link: '/docs/sheep-groom'
+        link: '/docs/sheep-groom',
+        docsCount: '概要'
       },
       {
         title: 'SheepBell',
         details: 'LQA 支援のための動画クリップ・エラー抽出ツール',
-        link: '/docs/sheep-bell'
+        link: '/docs/sheep-bell',
+        docsCount: '概要'
       },
     ] as ToolItem[],
     desktopTools: [
       {
         title: 'SheepWeave',
         details: 'VS Code を利用した統合翻訳環境（軽量CATツール）',
-        link: '/docs/sheep-weave'
+        link: '/docs/sheep-weave',
+        docsCount: '全12章'
       },
       {
         title: 'SheepBobbin',
         details: 'LLM を用いた翻訳処理・チェックデスクトップクライアント',
-        link: '/docs/sheep-bobbin'
+        link: '/docs/sheep-bobbin',
+        docsCount: '全4章'
       },
       {
         title: 'SheepLint',
         details: 'Vertex AI を活用した大規模 LLM 処理ツール',
-        link: '/docs/sheep-lint'
+        link: '/docs/sheep-lint',
+        docsCount: '全1章'
       }
     ] as ToolItem[],
     baseTools: [
       {
         title: 'SheepShuttle',
         details: 'SheepWeave / SheepComb の基盤となる変換モジュール（CLI）',
-        link: '/docs/sheep-shuttle'
+        link: '/docs/sheep-shuttle',
+        docsCount: '全2章'
       },
       {
         title: 'SheepSpindle',
         details: 'WASM を使った高速 TM / TB 参照・処理エンジン',
-        link: '/docs/sheep-spindle'
+        link: '/docs/sheep-spindle',
+        docsCount: '概要'
       },
       {
         title: 'SheepLoom',
         details: 'SVG アニメーションを LLM と会話しながらつくるサンドボックス環境',
-        link: '/docs/sheep-loom'
+        link: '/docs/sheep-loom',
+        docsCount: '概要'
       },
       {
         title: 'SheepStitch',
         details: '各種プラットフォームでの入力自動化・半自動インポーター',
-        link: '/docs/sheep-stitch'
+        link: '/docs/sheep-stitch',
+        docsCount: '概要'
       },
     ] as ToolItem[]
   }
@@ -261,8 +292,15 @@ onMounted(() => {
       >
         <div class="tool-card-header">
           <h4 class="tool-title">{{ tool.title }}</h4>
+          <span v-if="tool.docsCount" class="tool-badge">{{ tool.docsCount }}</span>
         </div>
         <p class="tool-details">{{ tool.details }}</p>
+        <div class="tool-card-footer">
+          <span class="tool-action-label">
+            {{ currentLang === 'en' ? 'View Docs' : currentLang === 'zh' ? '查看目录' : '目次を見る' }}
+          </span>
+          <span class="tool-arrow-icon">→</span>
+        </div>
       </a>
     </div>
 
@@ -283,8 +321,15 @@ onMounted(() => {
       >
         <div class="tool-card-header">
           <h4 class="tool-title">{{ tool.title }}</h4>
+          <span v-if="tool.docsCount" class="tool-badge">{{ tool.docsCount }}</span>
         </div>
         <p class="tool-details">{{ tool.details }}</p>
+        <div class="tool-card-footer">
+          <span class="tool-action-label">
+            {{ currentLang === 'en' ? 'View Docs' : currentLang === 'zh' ? '查看目录' : '目次を見る' }}
+          </span>
+          <span class="tool-arrow-icon">→</span>
+        </div>
       </a>
     </div>
 
@@ -299,8 +344,15 @@ onMounted(() => {
       >
         <div class="tool-card-header">
           <h4 class="tool-title">{{ tool.title }}</h4>
+          <span v-if="tool.docsCount" class="tool-badge">{{ tool.docsCount }}</span>
         </div>
         <p class="tool-details">{{ tool.details }}</p>
+        <div class="tool-card-footer">
+          <span class="tool-action-label">
+            {{ currentLang === 'en' ? 'View Docs' : currentLang === 'zh' ? '查看目录' : '目次を見る' }}
+          </span>
+          <span class="tool-arrow-icon">→</span>
+        </div>
       </a>
     </div>
   </section>
@@ -357,23 +409,24 @@ onMounted(() => {
 .tool-card {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 22px 20px 18px;
   background-color: var(--vp-c-bg-soft);
   border: 1px solid var(--vp-c-divider);
-  border-radius: 12px;
+  border-radius: 14px;
   text-decoration: none !important;
   color: var(--vp-c-text-1) !important;
   position: relative;
+  overflow: hidden;
   
   /* Scroll reveal animation with stagger */
   opacity: 0;
   transform: translateY(24px);
   transition: 
     opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
     background-color 0.25s ease,
     border-color 0.25s ease,
-    box-shadow 0.25s ease;
+    box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   transition-delay: calc(var(--card-index, 0) * 50ms + 100ms);
 }
 
@@ -382,23 +435,38 @@ onMounted(() => {
   transform: translateY(0);
 }
 
+/* ホバー時に滑らかに拡大＆浮き上がり、リッチなシャドウ */
 .tool-card:hover {
   border-color: var(--vp-c-brand-1);
   background-color: var(--vp-c-bg-elv);
-  transform: translateY(-3px) !important;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-5px) scale(1.02) !important;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.09);
+  z-index: 2;
+}
+
+/* ホバー時の上部アクセントグラデーションバー */
+.tool-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--vp-c-brand-1), var(--vp-c-brand-2, #3b82f6));
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.tool-card:hover::before {
+  opacity: 1;
 }
 
 .tool-card-header {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 8px;
-}
-
-.tool-icon {
-  font-size: 1.3rem;
-  line-height: 1;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 10px;
 }
 
 .tool-title {
@@ -408,27 +476,62 @@ onMounted(() => {
   font-weight: 700;
   color: var(--vp-c-text-1);
   border: none !important;
+  transition: color 0.2s ease;
+}
+
+.tool-card:hover .tool-title {
+  color: var(--vp-c-brand-1);
+}
+
+.tool-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: var(--vp-font-family-mono);
+  color: var(--vp-c-brand-1);
+  background-color: var(--vp-c-default-soft);
+  padding: 2px 8px;
+  border-radius: 9999px;
+  border: 1px solid var(--vp-c-divider);
+  white-space: nowrap;
 }
 
 .tool-details {
-  margin: 0 !important;
-  font-size: 0.9rem;
+  margin: 0 0 16px !important;
+  font-size: 0.88rem;
   color: var(--vp-c-text-2);
-  line-height: 1.5;
+  line-height: 1.55;
   flex-grow: 1;
 }
 
-.tool-arrow {
-  margin-top: 14px;
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--vp-c-brand-1);
-  display: inline-flex;
+.tool-card-footer {
+  display: flex;
   align-items: center;
-  transition: transform 0.2s ease;
+  justify-content: flex-end;
+  gap: 6px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--vp-c-divider);
+  margin-top: auto;
 }
 
-.tool-card:hover .tool-arrow {
+.tool-action-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--vp-c-text-3);
+  transition: color 0.2s ease;
+}
+
+.tool-arrow-icon {
+  font-size: 0.95rem;
+  color: var(--vp-c-text-3);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.tool-card:hover .tool-action-label {
+  color: var(--vp-c-brand-1);
+}
+
+.tool-card:hover .tool-arrow-icon {
+  color: var(--vp-c-brand-1);
   transform: translateX(4px);
 }
 

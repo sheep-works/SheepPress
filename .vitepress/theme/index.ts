@@ -14,6 +14,7 @@ import { h } from 'vue'
 import SheepShuttleFlow from './components/SheepShuttleFlow.standalone.vue'
 import SheepGroomFlow from './components/SheepGroomFlow.standalone.vue'
 import FlowCarousel from './components/FlowCarousel.vue'
+import Toc from './components/Toc.vue'
 
 export default {
   extends: DefaultTheme,
@@ -39,5 +40,7 @@ export default {
     app.component('sheep-groom-flow', SheepGroomFlow)
     app.component('FlowCarousel', FlowCarousel)
     app.component('flow-carousel', FlowCarousel)
+    app.component('Toc', Toc)
+    app.component('toc', Toc)
   }
 }
